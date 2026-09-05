@@ -1,5 +1,8 @@
 # playlistF — SPEC (Fase 1: la idea)
 
+> **Estado:** construido y desplegado. Este documento es la idea original;
+> el comportamiento y los comandos actuales están en el `README.md`.
+
 Web estática que muestra la playlist **"Fa"** de Navidrome como una pieza visual:
 portada + letra sincronizada en carrusel, colores que salen de cada portada,
 y dedicatorias/fragmentos favoritos marcados a mano por canción.

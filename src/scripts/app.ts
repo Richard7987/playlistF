@@ -59,7 +59,11 @@ function start(tracks: Track[]) {
   const playIcon = q('#play-icon');
   const scrub = q('#scrub');
   const scrubFill = q('#scrub-fill');
+  const scrubBuffer = q('#scrub-buffer');
   const scrubKnob = q('#scrub-knob');
+  const muteBtn = q<HTMLButtonElement>('#mute');
+  const volIcon = q('#vol-icon');
+  const volInput = q<HTMLInputElement>('#vol');
   const tCur = q('#t-cur');
   const tDur = q('#t-dur');
 
@@ -133,6 +137,10 @@ function start(tracks: Track[]) {
     const pct = Math.min(100, Math.max(0, (ct / dur) * 100));
     scrubFill.style.width = `${pct}%`;
     scrubKnob.style.left = `${pct}%`;
+
+    if (audio.buffered.length) {
+      scrubBuffer.style.width = `${Math.min(100, (audio.buffered.end(audio.buffered.length - 1) / dur) * 100)}%`;
+    }
 
     const sec = ct | 0;
     if (sec !== lastSec || force) {
@@ -327,6 +335,44 @@ function start(tracks: Track[]) {
     if (wantPlaying) audio.play().catch(() => {});
     else audio.pause();
   });
+
+  function updateVolIcon() {
+    const off = audio.muted || audio.volume === 0;
+    const low = audio.volume < 0.5;
+    volIcon.innerHTML = off
+      ? '<path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M15 9l6 6M21 9l-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'
+      : low
+        ? '<path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M15 9a4 4 0 0 1 0 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'
+        : '<path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 0 1 0 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>';
+    muteBtn.setAttribute('aria-label', off ? 'Activar sonido' : 'Silenciar');
+  }
+  function setVolume(v: number, save = true) {
+    audio.volume = Math.max(0, Math.min(1, v));
+    audio.muted = false;
+    volInput.value = String(audio.volume);
+    if (save) {
+      try {
+        localStorage.setItem('fa:vol', String(audio.volume));
+      } catch {
+        /* almacenamiento no disponible */
+      }
+    }
+    updateVolIcon();
+  }
+  let storedVol = 1;
+  try {
+    const v = Number(localStorage.getItem('fa:vol'));
+    if (v >= 0 && v <= 1) storedVol = v;
+  } catch {
+    /* almacenamiento no disponible */
+  }
+  setVolume(storedVol, false);
+  volInput.addEventListener('input', () => setVolume(Number(volInput.value)));
+  muteBtn.addEventListener('click', () => {
+    audio.muted = !audio.muted;
+    updateVolIcon();
+  });
+
   let preloadEl: HTMLAudioElement | null = null;
   let preloadTimer = 0;
   function schedulePreload() {
@@ -475,12 +521,41 @@ function start(tracks: Track[]) {
   });
 
   addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !queue.hidden) setQueue(false);
-    else if (e.key === 'ArrowRight') show(idx + 1);
-    else if (e.key === 'ArrowLeft') show(idx - 1);
-    else if (e.code === 'Space' && e.target === document.body) {
-      e.preventDefault();
-      playBtn.click();
+    if (e.key === 'Escape' && !queue.hidden) return setQueue(false);
+    if (e.target !== document.body || e.metaKey || e.ctrlKey || e.altKey) return;
+    const step = (s: number) => {
+      audio.currentTime = Math.max(0, Math.min(audio.duration || tracks[idx].duration, audio.currentTime + s));
+      tick(true);
+    };
+    switch (e.key) {
+      case 'ArrowRight':
+        show(idx + 1);
+        break;
+      case 'ArrowLeft':
+        show(idx - 1);
+        break;
+      case 'ArrowUp':
+        e.preventDefault();
+        setVolume(audio.volume + 0.05);
+        break;
+      case 'ArrowDown':
+        e.preventDefault();
+        setVolume(audio.volume - 0.05);
+        break;
+      case 'l':
+        step(10);
+        break;
+      case 'j':
+        step(-10);
+        break;
+      case 'm':
+        muteBtn.click();
+        break;
+      case 'k':
+      case ' ':
+        e.preventDefault();
+        playBtn.click();
+        break;
     }
   });
 

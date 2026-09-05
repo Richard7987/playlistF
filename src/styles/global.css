@@ -497,6 +497,14 @@ body {
   cursor: pointer;
 }
 
+.scrub-buffer {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0%;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--muted) 45%, transparent);
+}
+
 .scrub-fill {
   position: absolute;
   inset: 0 auto 0 0;
@@ -525,6 +533,23 @@ body {
   font-size: 0.68rem;
   color: var(--muted);
   transition: color 0.9s var(--ease);
+}
+
+.vol {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vol input {
+  width: 86px;
+  accent-color: var(--accent);
+}
+
+@media (max-width: 520px) {
+  .vol {
+    order: 3;
+  }
 }
 
 .right {

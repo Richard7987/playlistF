@@ -1,28 +1,33 @@
 # Fa
 
-Una playlist, hecha web. Portada, letra sincronizada y dedicatorias.
+Una playlist, hecha web. Portada, letra sincronizada, colores de la carátula y
+dedicatorias. Astro estático en GitHub Pages; instalable y con caché offline (PWA).
 
 → https://richard7987.github.io/playlistF
 
 ## Actualizar la playlist
 
 ```sh
-cp .env.example .env          # rellenar credenciales de Navidrome
+cp .env.example .env          # credenciales de Navidrome
 nix develop                   # o tener Node 22 a mano
 npm install
-npm run pull                  # baja canciones, portadas y letras de "Fa"
+npm run pull                  # snapshot de "Fa": canciones, portadas (WebP), letras
 git add -A && git commit -m "datos: actualizar snapshot"
 git push
 ```
 
-El deploy lo hace GitHub Actions al hacer push a `main`. CI nunca contacta al servidor:
-solo compila el snapshot ya commiteado.
+`pull` corre en local: crea/reutiliza un *share* público de la playlist, baja los
+metadatos, re-codifica las portadas y elige la mejor letra (LRCLIB con verificación
+de duración, si no la embebida en Navidrome). El deploy lo hace GitHub Actions al
+hacer push a `main`; CI **nunca** contacta al servidor.
 
 ## Dedicatorias
 
-A mano en `src/data/dedications.json`. Cada clave es el `slug` de una canción; los slugs
-disponibles quedan en `src/data/dedications.template.json` tras cada `npm run pull`.
-Todas las claves son opcionales.
+A mano en `src/data/dedications.json`, o con el editor visual: `npm run dev` →
+`/playlistF/editor` (audio + clic en la letra para marcar tiempos; suelta el JSON listo).
+
+Cada clave es el `slug` de una canción (los disponibles quedan en
+`dedications.template.json` tras cada `pull`). Todas las claves son opcionales:
 
 ```json
 {
@@ -31,7 +36,6 @@ Todas las claves son opcionales.
     "highlightAt": "2:41"
   },
   "big-thief-paul": {
-    "dedication": "…",
     "highlightFrom": "1:58",
     "highlightTo": "2:37",
     "fragmentNote": "etiqueta corta junto al fragmento"
@@ -39,19 +43,19 @@ Todas las claves son opcionales.
 }
 ```
 
-`highlightAt` resalta la línea que suena en ese minuto. `highlightFrom`/`highlightTo`
-resaltan un rango. Formato `m:ss`.
+- `highlightAt` (`m:ss`) resalta la línea de ese minuto; `highlightFrom`/`highlightTo`, un rango.
+- `lyricsOffset` — segundos sumados a cada tiempo si la letra va desfasada (+ adelantada, − atrasada).
+- `lyricsSource` — `"lrclib"` | `"embedded"` | `"none"` para forzar u omitir la letra en el próximo `pull`.
 
-`lyricsOffset` corrige una letra desfasada: segundos sumados a cada tiempo.
-Positivo si la letra va adelantada, negativo si va atrasada. Se ajusta a ojo con
-`npm run dev` hasta que cuadre.
+## Teclado
 
-`lyricsSource` (`"lrclib"` | `"embedded"` | `"none"`) fuerza de dónde sale la letra
-en el próximo `npm run pull`, o la omite (`"none"`) para pistas instrumentales.
-Por defecto se prefiere la versión sincronizada mejor puntuada.
+`espacio`/`k` play · `←`/`→` cambiar canción · `j`/`l` ±10 s · `↑`/`↓` volumen · `m` mute · `Esc` cierra la playlist
 
 ## Desarrollo
 
 ```sh
-npm run dev
+npm run dev      # servidor local
+npm run check    # astro check + tipos
+npm test         # unit (vitest)
+npm run test:e2e # smoke (playwright; en NixOS: nix-shell -p playwright-driver.browsers)
 ```
