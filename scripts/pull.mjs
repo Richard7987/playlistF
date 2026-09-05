@@ -139,7 +139,7 @@ async function ensureShare(playlistId, songIds) {
     const found = (r.shares?.share || []).find((s) => s.description === tag);
     if (found?.url) {
       console.log(`· share reutilizado: ${found.url}`);
-      return { id: found.id, url: found.url.replace(/\/+$/, '') };
+      return { id: found.id, url: found.url.replace(/\/+$/, ''), expires: found.expires || null };
     }
   } catch (e) {
     console.warn(`· getShares: ${e.message}`);
@@ -155,7 +155,7 @@ async function ensureShare(playlistId, songIds) {
       const share = body.shares?.share?.[0];
       if (share?.url) {
         console.log(`· share creado: ${share.url}`);
-        return { id: share.id, url: share.url.replace(/\/+$/, '') };
+        return { id: share.id, url: share.url.replace(/\/+$/, ''), expires: share.expires || null };
       }
     } catch (e) {
       console.warn(`· createShare (${attempt.id ? 'playlist' : 'canciones'}): ${e.message}`);
@@ -303,6 +303,10 @@ async function main() {
     console.error('✗ No pude crear el share público. Créalo a mano en Navidrome y vuelve a intentar.');
     process.exit(1);
   }
+  if (share.expires) {
+    const days = Math.round((new Date(share.expires) - Date.now()) / 86400000);
+    if (days < 30) console.warn(`⚠ el share caduca en ${days} día(s) (${share.expires}) — renuévalo en Navidrome`);
+  }
 
   let jwts = [];
   try {
@@ -396,6 +400,13 @@ async function main() {
   for (const t of tracks) template[t.slug] = { dedication: '', highlightAt: '', lyricsOffset: 0 };
   await writeFile(resolve(OUT_DATA, 'dedications.template.json'), JSON.stringify(template, null, 2) + '\n');
   console.log('✓ src/data/dedications.template.json');
+
+  const slugSet = new Set(tracks.map((t) => t.slug));
+  for (const k of Object.keys(dedications)) {
+    if (!k.startsWith('_') && !slugSet.has(k)) {
+      console.warn(`⚠ dedications.json: "${k}" ya no coincide con ninguna canción de la playlist`);
+    }
+  }
 
   if (!existsSync(resolve(OUT_DATA, 'dedications.json'))) {
     await writeFile(resolve(OUT_DATA, 'dedications.json'), '{}\n');

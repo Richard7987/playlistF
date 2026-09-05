@@ -1,0 +1,274 @@
+---
+import '../styles/global.css';
+import playlist from '../data/playlist.json';
+import dedications from '../data/dedications.json';
+
+const dev = import.meta.env.DEV;
+const data = {
+  tracks: playlist.tracks.map((t) => ({
+    slug: t.slug,
+    title: t.title,
+    artist: t.artist,
+    streamUrl: t.streamUrl,
+    duration: t.duration,
+    lines: t.lyrics.lines,
+    synced: t.lyrics.synced,
+  })),
+  dedications,
+};
+const dataJson = JSON.stringify(data).split('<').join('\\u003c');
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Editor de dedicatorias · Fa</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    {
+      !dev && (
+        <main class="ed-off">
+          <p>El editor de dedicatorias solo está disponible en <code>npm run dev</code>.</p>
+        </main>
+      )
+    }
+    {
+      dev && (
+        <main class="ed">
+          <header>
+            <h1>Editor de dedicatorias</h1>
+            <select id="track" aria-label="Canción"></select>
+          </header>
+
+          <section class="ed-player">
+            <button id="play" type="button">▶</button>
+            <input id="seek" type="range" min="0" max="1000" value="0" step="1" aria-label="Posición" />
+            <span id="time" class="mono">0:00 / 0:00</span>
+            <span class="ed-off-label">
+              offset
+              <button data-off="-0.5" type="button">−0.5</button>
+              <button data-off="-0.1" type="button">−0.1</button>
+              <b id="offset" class="mono">0</b>
+              <button data-off="0.1" type="button">+0.1</button>
+              <button data-off="0.5" type="button">+0.5</button>
+            </span>
+          </section>
+
+          <section class="ed-grid">
+            <div class="ed-lyrics" id="lyrics" aria-label="Letra (clic para escuchar desde ahí)"></div>
+            <div class="ed-form">
+              <label>
+                Dedicatoria
+                <textarea id="dedication" rows="4" placeholder="texto bajo la letra"></textarea>
+              </label>
+              <label>
+                Nota del fragmento
+                <input id="fragmentNote" type="text" placeholder="etiqueta corta" />
+              </label>
+              <div class="ed-marks">
+                <button id="mark-at" type="button">marcar línea = ahora</button>
+                <button id="mark-from" type="button">desde = ahora</button>
+                <button id="mark-to" type="button">hasta = ahora</button>
+                <button id="mark-clear" type="button">limpiar marca</button>
+              </div>
+              <p class="mono ed-mark-state" id="mark-state">sin marca</p>
+              <label class="ed-src">
+                lyricsSource
+                <select id="lyricsSource">
+                  <option value="">(auto)</option>
+                  <option value="lrclib">lrclib</option>
+                  <option value="embedded">embedded</option>
+                  <option value="none">none</option>
+                </select>
+                <span>· aplica al próximo <code>npm run pull</code></span>
+              </label>
+
+              <div class="ed-out">
+                <div class="ed-out-head">
+                  <span>pegar en <code>src/data/dedications.json</code></span>
+                  <button id="copy" type="button">copiar</button>
+                </div>
+                <pre id="out" class="mono"></pre>
+              </div>
+            </div>
+          </section>
+          <script type="application/json" id="ed-data" is:inline set:html={dataJson} />
+        </main>
+      )
+    }
+    <script>
+      import '../scripts/editor.ts';
+    </script>
+
+    <style>
+      .ed,
+      .ed-off {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: clamp(16px, 3vw, 40px);
+        color: var(--chrome-text);
+      }
+      .ed-off {
+        min-height: 60dvh;
+        display: grid;
+        place-items: center;
+      }
+      .ed header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        align-items: baseline;
+        margin-bottom: 22px;
+      }
+      .ed h1 {
+        font-family: var(--f-display);
+        font-weight: 700;
+        font-size: 1.4rem;
+        letter-spacing: -0.02em;
+      }
+      .mono {
+        font-family: var(--f-mono);
+        font-size: 0.8rem;
+      }
+      .ed select,
+      .ed input,
+      .ed textarea,
+      .ed button {
+        font: inherit;
+        color: var(--chrome-text);
+        background: var(--ground-2);
+        border: 1px solid var(--hair);
+        border-radius: 8px;
+        padding: 7px 10px;
+      }
+      .ed button {
+        cursor: pointer;
+        background: transparent;
+      }
+      .ed button:hover {
+        border-color: var(--accent);
+      }
+      .ed-player {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        padding: 14px;
+        border: 1px solid var(--hair);
+        border-radius: 12px;
+        margin-bottom: 20px;
+      }
+      .ed-player #seek {
+        flex: 1;
+        min-width: 180px;
+        padding: 0;
+      }
+      .ed-off-label {
+        display: inline-flex;
+        gap: 6px;
+        align-items: center;
+        font-family: var(--f-mono);
+        font-size: 0.72rem;
+        color: var(--muted);
+      }
+      .ed-off-label button {
+        padding: 3px 7px;
+      }
+      .ed-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      @media (max-width: 820px) {
+        .ed-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .ed-lyrics {
+        border: 1px solid var(--hair);
+        border-radius: 12px;
+        padding: 10px 14px;
+        max-height: 60dvh;
+        overflow-y: auto;
+      }
+      .ed-line {
+        padding: 5px 4px;
+        cursor: pointer;
+        color: var(--muted);
+        border-radius: 6px;
+        display: flex;
+        gap: 10px;
+      }
+      .ed-line:hover {
+        background: color-mix(in srgb, var(--text) 7%, transparent);
+      }
+      .ed-line.on {
+        color: var(--text);
+        font-weight: 700;
+      }
+      .ed-line.mark {
+        color: var(--accent);
+      }
+      .ed-line .t {
+        font-family: var(--f-mono);
+        font-size: 0.7rem;
+        color: var(--muted);
+        flex: none;
+        width: 3.4em;
+      }
+      .ed-form {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .ed-form label {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-family: var(--f-mono);
+        font-size: 0.72rem;
+        color: var(--muted);
+      }
+      .ed-marks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .ed-src {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px !important;
+      }
+      .ed-out {
+        border: 1px solid var(--hair);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .ed-out-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 12px;
+        background: var(--ground-2);
+        font-family: var(--f-mono);
+        font-size: 0.72rem;
+        color: var(--muted);
+      }
+      .ed-out pre {
+        margin: 0;
+        padding: 12px;
+        white-space: pre-wrap;
+        word-break: break-word;
+        font-size: 0.78rem;
+      }
+      code {
+        font-family: var(--f-mono);
+        color: var(--accent);
+      }
+    </style>
+  </body>
+</html>

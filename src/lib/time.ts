@@ -13,6 +13,8 @@ export interface Dedication {
   fragmentNote?: string;
   // segundos sumados a cada tiempo de la letra; + si va adelantada, - si va atrasada
   lyricsOffset?: number;
+  // fuerza / omite la fuente de letra en el próximo `npm run pull`
+  lyricsSource?: 'lrclib' | 'embedded' | 'none';
 }
 
 export function shiftLines(lines: Line[], offset: number): Line[] {
