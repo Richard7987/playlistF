@@ -137,17 +137,24 @@ async function ensureShare(playlistId, songIds) {
   return null;
 }
 
-async function probeStream(candidates) {
-  for (const url of candidates) {
-    try {
-      const res = await fetch(url, { headers: { Range: 'bytes=0-1' } });
-      const ct = res.headers.get('content-type') || '';
-      if ((res.status === 200 || res.status === 206) && /audio|octet-stream|mpeg|ogg|flac/i.test(ct)) {
-        return url;
-      }
-    } catch { /* siguiente */ }
+async function probeStream(url) {
+  try {
+    const res = await fetch(url, { headers: { Range: 'bytes=0-1' } });
+    const ct = res.headers.get('content-type') || '';
+    return (res.status === 200 || res.status === 206) && /audio|octet-stream|mpeg|ogg|flac/i.test(ct);
+  } catch {
+    return false;
   }
-  return null;
+}
+
+// Los ids de streaming del share son JWTs embebidos en window.__SHARE_INFO__ de su página.
+async function shareTracks(shareUrl) {
+  const res = await fetch(shareUrl);
+  if (!res.ok) throw new Error(`página del share: HTTP ${res.status}`);
+  const html = await res.text();
+  const m = html.match(/window\.__SHARE_INFO__\s*=\s*("(?:[^"\\]|\\.)*")/);
+  if (!m) throw new Error('no encontré __SHARE_INFO__ en la página del share');
+  return JSON.parse(JSON.parse(m[1])).tracks || [];
 }
 
 async function lyricsFor(song) {
@@ -199,27 +206,25 @@ async function main() {
     process.exit(1);
   }
 
-  // patrón de streaming (probado contra la primera canción)
-  const first = entries[0];
-  const shareId = share.id || share.url.split('/').pop();
-  const candidates = [
-    `${share.url}/${first.id}`,
-    `${BASE}/share/${shareId}/${first.id}`,
-  ];
-  if (ALLOW_TOKEN) candidates.push(authStreamURL(first.id));
+  let jwts = [];
+  try {
+    const st = await shareTracks(share.url);
+    if (st.length === entries.length) jwts = st.map((t) => t.id);
+    else console.warn(`· __SHARE_INFO__ trajo ${st.length} pistas y la playlist tiene ${entries.length}`);
+  } catch (e) {
+    console.warn(`· ${e.message}`);
+  }
 
-  const ok = await probeStream(candidates);
   let makeStreamURL = null;
-  if (ok && !ok.includes('/rest/stream')) {
-    const tpl = ok.replace(first.id, '{id}');
-    makeStreamURL = (id) => tpl.replace('{id}', id);
-    console.log(`· streaming: ${tpl}`);
+  if (jwts.length && (await probeStream(`${BASE}/share/s/${jwts[0]}`))) {
+    makeStreamURL = (i) => `${BASE}/share/s/${jwts[i]}`;
+    console.log(`· streaming: ${BASE}/share/s/<token>`);
   } else if (ALLOW_TOKEN) {
-    makeStreamURL = (id) => authStreamURL(id);
-    console.warn('⚠ Ningún patrón público funcionó. Uso URL autenticada: el token quedará en playlist.json (repo público).');
+    makeStreamURL = (i) => authStreamURL(entries[i].id);
+    console.warn('⚠ Uso URL autenticada: el token quedará en playlist.json (repo público).');
   } else {
-    console.error('✗ El share no permite streaming directo por canción.');
-    console.error('  Revisa la config del share en Navidrome, o repite con:  npm run pull -- --allow-token');
+    console.error('✗ No pude resolver el streaming público del share.');
+    console.error('  Reintenta, o usa:  npm run pull -- --allow-token');
     process.exit(1);
   }
 
@@ -264,7 +269,7 @@ async function main() {
       album: e.album || '',
       duration: e.duration || 0,
       cover,
-      streamUrl: makeStreamURL(e.id),
+      streamUrl: makeStreamURL(i),
       colors,
       lyrics,
     });

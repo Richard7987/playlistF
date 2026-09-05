@@ -16,7 +16,8 @@ interface Track {
   lyrics: { synced: boolean; lines: Line[] };
 }
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const withBase = (p: string) => `${base}/${p.replace(/^\//, '')}`;
 const dedications = dedicationsRaw as Record<string, Dedication>;
 const raw = playlistData.tracks as Track[];
 
@@ -31,7 +32,7 @@ const tracks = raw.map((t) => {
     streamUrl: t.streamUrl,
     colors: t.colors,
     synced: t.lyrics.synced,
-    coverUrl: t.cover ? base + t.cover : null,
+    coverUrl: t.cover ? withBase(t.cover) : null,
     lines: t.lyrics.lines,
     marked: markedIndices(d, t.lyrics.lines),
     dedication: d.dedication?.trim() || null,

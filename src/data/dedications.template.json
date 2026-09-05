@@ -1,0 +1,27 @@
+{
+  "_como_usar": "Copia a src/data/dedications.json las canciones que quieras. Claves opcionales: dedication, highlightAt (\"m:ss\"), highlightFrom, highlightTo, fragmentNote.",
+  "zoe-via-lactea-en-vivo": {
+    "dedication": "",
+    "highlightAt": ""
+  },
+  "daft-punk-something-about-us": {
+    "dedication": "",
+    "highlightAt": ""
+  },
+  "la-gusana-ciega-californica": {
+    "dedication": "",
+    "highlightAt": ""
+  },
+  "dead-poet-society-georgia": {
+    "dedication": "",
+    "highlightAt": ""
+  },
+  "jnathyn-dioma-demo": {
+    "dedication": "",
+    "highlightAt": ""
+  },
+  "joan-jett-the-blackhearts-i-hate-myself-for-loving-you": {
+    "dedication": "",
+    "highlightAt": ""
+  }
+}

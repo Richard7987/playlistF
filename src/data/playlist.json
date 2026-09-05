@@ -1,7 +1,697 @@
 {
   "name": "Fa",
-  "generatedAt": null,
+  "generatedAt": "2026-09-05T20:35:02.192Z",
   "navidromeUrl": "https://mu.richard69.lat",
-  "shareUrl": null,
-  "tracks": []
+  "shareUrl": "https://mu.richard69.lat/share/zXqxDyzOAP",
+  "tracks": [
+    {
+      "slug": "zoe-via-lactea-en-vivo",
+      "title": "Vía Láctea - En Vivo",
+      "artist": "Zoé",
+      "album": "MTV Unplugged Música De Fondo (Reissue/Live)",
+      "duration": 248,
+      "cover": "covers/zoe-via-lactea-en-vivo.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiZFVIZzlhSk9pUnZsZ3JPWGozdDlXVSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.FoinqDxefl6DeH5P4pcoCBkyphrC2VJ3IHCSAUdMP8Q",
+      "colors": {
+        "bg": "#2a281b",
+        "bgAlt": "#184554",
+        "accent": "#d1a6a2",
+        "text": "#ede5e3",
+        "muted": "#9b968f"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 12.66,
+            "text": "Llevo tu voz en mi voz"
+          },
+          {
+            "t": 18.46,
+            "text": "Grabada con aerosol"
+          },
+          {
+            "t": 24.21,
+            "text": "Beso fantasma"
+          },
+          {
+            "t": 25.44,
+            "text": "Pegado en mi labio inferior"
+          },
+          {
+            "t": 30.12,
+            "text": "Y el mapa de tu desnudez"
+          },
+          {
+            "t": 35.77,
+            "text": "Llevo el prisma de tus ojos"
+          },
+          {
+            "t": 38.81,
+            "text": "En mi casco de astronauta"
+          },
+          {
+            "t": 41.85,
+            "text": "Y la tímida aurora de tus células"
+          },
+          {
+            "t": 48.28,
+            "text": "Y todas las noches bajo la Vía Láctea"
+          },
+          {
+            "t": 54.43,
+            "text": "Parecen eternas, si tú no estás"
+          },
+          {
+            "t": 61.09,
+            "text": "Y todas las noches desde mi ventana"
+          },
+          {
+            "t": 67.55,
+            "text": "Conjuro tu nombre inmortal"
+          },
+          {
+            "t": 86.16,
+            "text": "Y a veces llora mi piel"
+          },
+          {
+            "t": 92.01,
+            "text": "Cuando se empaña de anhelo"
+          },
+          {
+            "t": 97.68,
+            "text": "Se infla mi mente"
+          },
+          {
+            "t": 98.87,
+            "text": "Con tantos recuerdos"
+          },
+          {
+            "t": 103.59,
+            "text": "Que ya no me puedo dormir"
+          },
+          {
+            "t": 109.21,
+            "text": "Y en la alfombra de tus sueños"
+          },
+          {
+            "t": 112.3,
+            "text": "Soy el rayo vagabundo"
+          },
+          {
+            "t": 115.32,
+            "text": "Desmaya y dolece"
+          },
+          {
+            "t": 118.39,
+            "text": "Pero no se apaga"
+          },
+          {
+            "t": 147.47,
+            "text": "Y todas las noches bajo la Vía Láctea"
+          },
+          {
+            "t": 154.12,
+            "text": "Parecen eternas si tú no estás"
+          },
+          {
+            "t": 160.63,
+            "text": "Y todas las noches desde mi ventana"
+          },
+          {
+            "t": 166.95,
+            "text": "Conjuro tu nombre inmortal"
+          },
+          {
+            "t": 184.7,
+            "text": "Vía Láctea"
+          },
+          {
+            "t": 187.61,
+            "text": "Vía Láctea"
+          },
+          {
+            "t": 190.54,
+            "text": "Vía Láctea"
+          },
+          {
+            "t": 193.5,
+            "text": "Si tú no estas"
+          },
+          {
+            "t": 196.54,
+            "text": "Vía Láctea"
+          },
+          {
+            "t": 199.42,
+            "text": "Vía Láctea"
+          },
+          {
+            "t": 202.37,
+            "text": "Vía Láctea"
+          },
+          {
+            "t": 208.21,
+            "text": "Y sé que te vuelvo a encontrar"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "daft-punk-something-about-us",
+      "title": "Something About Us",
+      "artist": "Daft Punk",
+      "album": "Discovery",
+      "duration": 232,
+      "cover": "covers/daft-punk-something-about-us.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoianlVRk1wOWtKTnV1TlVMY2taQ3ZPcyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.FHbN8r2R4aJ9xFVLfUPegELOTcRqVfP6E3Y0gvzQVBs",
+      "colors": {
+        "bg": "#2a5049",
+        "bgAlt": "#0c3659",
+        "accent": "#b8b187",
+        "text": "#dfe2e7",
+        "muted": "#93a5a5"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 77.45,
+            "text": "It might not be the right time"
+          },
+          {
+            "t": 82.1,
+            "text": "I might not be the right one"
+          },
+          {
+            "t": 85.82,
+            "text": "But there's something about us I want to say"
+          },
+          {
+            "t": 90.42,
+            "text": "'Cause there's something between us anyway"
+          },
+          {
+            "t": 96.25,
+            "text": "I might not be the right one"
+          },
+          {
+            "t": 101.12,
+            "text": "It might not be the right time"
+          },
+          {
+            "t": 105.16,
+            "text": "But there's something about us I've got to do"
+          },
+          {
+            "t": 110.4,
+            "text": "Some kind of secret I will share with you"
+          },
+          {
+            "t": 115.69,
+            "text": "I need you more than anything in my life"
+          },
+          {
+            "t": 120.45,
+            "text": "I want you more than anything in my life"
+          },
+          {
+            "t": 125.38,
+            "text": "I'll miss you more than anyone in my life"
+          },
+          {
+            "t": 130,
+            "text": "I love you more than anyone in my life."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "la-gusana-ciega-californica",
+      "title": "Califórnica",
+      "artist": "La Gusana Ciega",
+      "album": "Monarca",
+      "duration": 210,
+      "cover": "covers/la-gusana-ciega-californica.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiVnNCR3hyTVR4R0FiU1ZIbEFKNktGdSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.62iwQ9XAG_J-LhFKniS72AVW2ll44OJScaX6E0GF9Fw",
+      "colors": {
+        "bg": "#4d4438",
+        "bgAlt": "#442c1c",
+        "accent": "#d4a555",
+        "text": "#eeebde",
+        "muted": "#aaa598"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 28.69,
+            "text": "Le suben al volumen cuando sales a bailar"
+          },
+          {
+            "t": 35.57,
+            "text": "Enseñas tu cintura y luego vuelves a ocultar"
+          },
+          {
+            "t": 50.08,
+            "text": "Sientes mi presencia pero no vas a voltear"
+          },
+          {
+            "t": 56.98,
+            "text": "Y yo me entrego al sueño"
+          },
+          {
+            "t": 63.6,
+            "text": "Quiero clavar mis colmillos en tu carne, morena"
+          },
+          {
+            "t": 67.43,
+            "text": "Quiero verte bailar en una sala de espera"
+          },
+          {
+            "t": 71.08,
+            "text": "Quiero ser tu condena"
+          },
+          {
+            "t": 72.77,
+            "text": "Quiero verte en escena"
+          },
+          {
+            "t": 74.56,
+            "text": "Pero dicen, que nadie te puede tocar"
+          },
+          {
+            "t": 82.01,
+            "text": "Dicen, que nadie te puede cambiar"
+          },
+          {
+            "t": 89.14,
+            "text": "Tu piel de California no se puede comparar"
+          },
+          {
+            "t": 96.12,
+            "text": "Enciendes un cigarro y luego vuelves a bailar"
+          },
+          {
+            "t": 103.37,
+            "text": "Ignoras mis señales no me puedo controlar"
+          },
+          {
+            "t": 110.21,
+            "text": "Y yo me entrego al sueño"
+          },
+          {
+            "t": 116.95,
+            "text": "Quiero clavar mis colmillos en tu carne, morena"
+          },
+          {
+            "t": 120.58,
+            "text": "Quiero hacerte el amor en una sala de espera"
+          },
+          {
+            "t": 124.23,
+            "text": "Quiero ser tu condena"
+          },
+          {
+            "t": 126.19,
+            "text": "Quiero verte en escena"
+          },
+          {
+            "t": 127.95,
+            "text": "Pero dicen, que nadie te puede tocar"
+          },
+          {
+            "t": 135.47,
+            "text": "Dicen, que nadie te puede cambiar"
+          },
+          {
+            "t": 163.91,
+            "text": "Dicen, que nadie te puede tocar"
+          },
+          {
+            "t": 171.07,
+            "text": "Dicen, que nadie te puede cambiar"
+          },
+          {
+            "t": 178.17,
+            "text": "Dicen, que nadie te puede cambiar"
+          },
+          {
+            "t": 185.19,
+            "text": "Dicen, que nadie te puede cambiar"
+          },
+          {
+            "t": 192.21,
+            "text": "Dicen, que nadie te puede tocar"
+          },
+          {
+            "t": 199.3,
+            "text": "Dicen, que nadie te puede cambiar"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "dead-poet-society-georgia",
+      "title": ".georgia.",
+      "artist": "Dead Poet Society",
+      "album": "-!- (Deluxe)",
+      "duration": 202,
+      "cover": "covers/dead-poet-society-georgia.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiSDdmNTRzSUJUQXFoN0psM3JDM05ibCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.9u2VRE-cmtJ-YiF-0eGvcrLV6ESIBLEueInaLzQE6U4",
+      "colors": {
+        "bg": "#57412f",
+        "bgAlt": "#7a4f38",
+        "accent": "#b99d49",
+        "text": "#ede9d9",
+        "muted": "#aea292"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 27.69,
+            "text": "Sweet nineteen, you won't let me know"
+          },
+          {
+            "t": 31.29,
+            "text": "But there's something in your eyes just gives it away"
+          },
+          {
+            "t": 42.56,
+            "text": "Slip away to smoke your cigarette"
+          },
+          {
+            "t": 46.26,
+            "text": "Play like it's nothing, I'm dying to see you again"
+          },
+          {
+            "t": 63.93,
+            "text": "I love you, oh, girl, I love you"
+          },
+          {
+            "t": 67.34,
+            "text": "I need you, Georgia, I know that"
+          },
+          {
+            "t": 70.03,
+            "text": "You'll never understand, yeah, you never will"
+          },
+          {
+            "t": 76.42,
+            "text": "I love you, don't ask why, it's just because I do"
+          },
+          {
+            "t": 82.97,
+            "text": "I love you, girl"
+          },
+          {
+            "t": 113.58,
+            "text": "I don't know, I don't know"
+          },
+          {
+            "t": 116.5,
+            "text": "Have you been here before?"
+          },
+          {
+            "t": 119.94,
+            "text": "I don't know, I don't know"
+          },
+          {
+            "t": 123,
+            "text": "Say my name, close the door"
+          },
+          {
+            "t": 126.67,
+            "text": "I don't know, I don't know"
+          },
+          {
+            "t": 129.97,
+            "text": "Can you swear I'll be yours?"
+          },
+          {
+            "t": 133.27,
+            "text": "I don't know, I don't know"
+          },
+          {
+            "t": 136.57,
+            "text": "Oh, I swear I'll be more"
+          },
+          {
+            "t": 139.82,
+            "text": "I don't know, I don't know"
+          },
+          {
+            "t": 143,
+            "text": "Have you been here beforе?"
+          },
+          {
+            "t": 146.32,
+            "text": "I don't know, I don't know"
+          },
+          {
+            "t": 149.91,
+            "text": "Oh, I swear I'll be yours"
+          },
+          {
+            "t": 154.63,
+            "text": "I love you, oh, girl, I lovе you"
+          },
+          {
+            "t": 157.82,
+            "text": "I need you, Georgia, I know that"
+          },
+          {
+            "t": 160.14,
+            "text": "You'll never understand what you mean to me"
+          },
+          {
+            "t": 165.44,
+            "text": "I remember how lower Allston felt like New Orleans"
+          },
+          {
+            "t": 172.11,
+            "text": "I love you, girl"
+          },
+          {
+            "t": 178.66,
+            "text": "I love you, girl"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "jnathyn-dioma-demo",
+      "title": "Dioma - Demo",
+      "artist": "Jnathyn",
+      "album": "Dioma (Demo)",
+      "duration": 137,
+      "cover": "covers/jnathyn-dioma-demo.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiRWUwYUdEUkx2TXNRMmdTbXpoc3F5NiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.YMS0jTgRt_Jxml9DQPxSDaWrJGqz8qdNguONjiFtboQ",
+      "colors": {
+        "bg": "#444444",
+        "bgAlt": "#424242",
+        "accent": "#bfbfbf",
+        "text": "#e4e4e4",
+        "muted": "#a1a1a1"
+      },
+      "lyrics": {
+        "synced": false,
+        "lines": []
+      }
+    },
+    {
+      "slug": "joan-jett-the-blackhearts-i-hate-myself-for-loving-you",
+      "title": "I Hate Myself for Loving You",
+      "artist": "Joan Jett & the Blackhearts",
+      "album": "Up Your Alley",
+      "duration": 246,
+      "cover": "covers/joan-jett-the-blackhearts-i-hate-myself-for-loving-you.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoia09BSUlUSmtyZVdRUUcyMkpxUEdCMyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.-wFO0ibSRqMcbfnnb57G9alEptrDa0iLXSn_nAT2S_A",
+      "colors": {
+        "bg": "#513630",
+        "bgAlt": "#24040e",
+        "accent": "#d79140",
+        "text": "#ddd9da",
+        "muted": "#a29593"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 24.96,
+            "text": "Midnight, gettin' uptight, where are you?"
+          },
+          {
+            "t": 29.68,
+            "text": "You said you'd meet me, now it's quarter to two"
+          },
+          {
+            "t": 33.64,
+            "text": "I know I'm hangin' but I'm still wantin' you"
+          },
+          {
+            "t": 37.38,
+            "text": "Hey Jack, it's a fact they're talkin' in town"
+          },
+          {
+            "t": 41.82,
+            "text": "I turn my back and you're messin' around"
+          },
+          {
+            "t": 45.65,
+            "text": "I'm not getting jealous, don't like lookin' like a clown"
+          },
+          {
+            "t": 50.16,
+            "text": "I think of you every night and day"
+          },
+          {
+            "t": 54.01,
+            "text": "You took my heart, and you took my pride away"
+          },
+          {
+            "t": 61.85,
+            "text": "I hate myself for loving you"
+          },
+          {
+            "t": 65.75,
+            "text": "Can't break free from the the things that you do"
+          },
+          {
+            "t": 70.33,
+            "text": "I wanna walk but I run back to you"
+          },
+          {
+            "t": 73.48,
+            "text": "That's why I hate myself for loving you"
+          },
+          {
+            "t": 94.24,
+            "text": "Daylight, spent the night without you"
+          },
+          {
+            "t": 98.79,
+            "text": "But I've been dreamin' 'bout the lovin' you do"
+          },
+          {
+            "t": 102.42,
+            "text": "I'm over being angry 'bout the hell you put me through"
+          },
+          {
+            "t": 106.54,
+            "text": "Hey man, bet you can't treat me right"
+          },
+          {
+            "t": 111.08,
+            "text": "You just don't know what you was missin' last night"
+          },
+          {
+            "t": 114.65,
+            "text": "I wanna see you beggin', say, \"Forget it\" just for spite"
+          },
+          {
+            "t": 119.13,
+            "text": "I think of you every night and day"
+          },
+          {
+            "t": 123.23,
+            "text": "You took my heart, and you took my pride away"
+          },
+          {
+            "t": 130.69,
+            "text": "I hate myself for loving you"
+          },
+          {
+            "t": 134.65,
+            "text": "Can't break free from the the things that you do"
+          },
+          {
+            "t": 139.25,
+            "text": "I wanna walk but I run back to you"
+          },
+          {
+            "t": 142.37,
+            "text": "That's why I hate myself for loving you"
+          },
+          {
+            "t": 163.52,
+            "text": "I think of you every night and day"
+          },
+          {
+            "t": 167.41,
+            "text": "You took my heart, and you took my pride away"
+          },
+          {
+            "t": 175.21,
+            "text": "I hate myself for loving you"
+          },
+          {
+            "t": 179.24,
+            "text": "Can't break free from the things that you do"
+          },
+          {
+            "t": 183.96,
+            "text": "I wanna walk but I run back to you"
+          },
+          {
+            "t": 187.02,
+            "text": "That's why I hate myself for loving you"
+          },
+          {
+            "t": 191.62,
+            "text": "I hate myself for loving you"
+          },
+          {
+            "t": 195.43,
+            "text": "Can't break free from the the things that you do"
+          },
+          {
+            "t": 200.01,
+            "text": "I wanna walk but I run back to you"
+          },
+          {
+            "t": 203.17,
+            "text": "That's why I hate myself for loving you"
+          },
+          {
+            "t": 207.62,
+            "text": "I hate myself (ow, uh)"
+          },
+          {
+            "t": 213.53,
+            "text": "For loving you"
+          },
+          {
+            "t": 215.83,
+            "text": "I hate myself (ow, uh)"
+          },
+          {
+            "t": 221.68,
+            "text": "For loving you"
+          },
+          {
+            "t": 223.75,
+            "text": "I hate myself (ow, ow, ow)"
+          },
+          {
+            "t": 229.89,
+            "text": "For loving you"
+          },
+          {
+            "t": 231.84,
+            "text": "I hate myself (ow)"
+          },
+          {
+            "t": 235.69,
+            "text": "I hate myself"
+          },
+          {
+            "t": 237.77,
+            "text": "For loving you"
+          }
+        ]
+      }
+    }
+  ]
 }
