@@ -273,64 +273,81 @@ body {
 
 .queue-list {
   list-style: none;
+  flex: 1;
+  min-height: 0;
   display: flex;
-  gap: 14px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 4px 4px 12px;
-  scroll-snap-type: x mandatory;
+  flex-direction: column;
+  gap: 2px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 2px;
+  scroll-snap-type: y proximity;
   scrollbar-width: thin;
+  overscroll-behavior: contain;
 }
 
 .queue-list li {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
 .queue-item {
-  width: 148px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 0;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 12px;
   border: 0;
+  border-radius: 12px;
   background: transparent;
   text-align: left;
   color: var(--muted);
   cursor: pointer;
-  transition: color 0.2s;
+  transition: color 0.2s, background 0.2s;
 }
 
-.queue-item:hover,
+.queue-item:hover {
+  color: var(--text);
+  background: color-mix(in srgb, var(--text) 6%, transparent);
+}
+
 .queue-item[aria-current='true'] {
   color: var(--text);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.queue-num {
+  flex: none;
+  width: 1.6em;
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.queue-item[aria-current='true'] .queue-num {
+  color: var(--accent);
 }
 
 .queue-cover {
-  position: relative;
-  width: 148px;
-  height: 148px;
-  border-radius: 14px;
+  flex: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 9px;
   background-size: cover;
   background-position: center;
   background-color: color-mix(in srgb, var(--bg-alt) 45%, var(--ground-2));
   box-shadow: 0 0 0 1px var(--hair) inset;
-  display: grid;
-  place-items: end start;
 }
 
 .queue-item[aria-current='true'] .queue-cover {
   box-shadow: 0 0 0 2px var(--accent) inset;
 }
 
-.queue-num {
-  margin: 8px;
-  padding: 2px 7px;
-  font-family: var(--f-mono);
-  font-size: 0.7rem;
-  color: var(--text);
-  background: color-mix(in srgb, var(--ground) 60%, transparent);
-  backdrop-filter: blur(4px);
-  border-radius: 8px;
+.queue-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
 }
 
 .queue-title {
@@ -338,12 +355,25 @@ body {
   font-size: 0.9rem;
   line-height: 1.25;
   color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .queue-artist {
   font-family: var(--f-mono);
   font-size: 0.7rem;
   color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.load-error {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  color: color-mix(in srgb, #ff6b6b 72%, var(--text));
+  margin-top: 2px;
 }
 
 .meta {

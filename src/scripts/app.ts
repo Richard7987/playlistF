@@ -43,7 +43,10 @@ function start(tracks: Track[]) {
   const artistEl = q('#artist');
   const queueToggle = q<HTMLButtonElement>('#queue-toggle');
   const queue = q('#queue');
+  const queuePanel = q('.queue-panel');
+  const queueClose = q<HTMLButtonElement>('#queue-close');
   const queueItems = [...document.querySelectorAll<HTMLButtonElement>('.queue-item')];
+  const loadError = q('#load-error');
   const lyricsBox = q('#lyrics');
   const lyricsInner = q('#lyrics-inner');
   const fragNote = q('#frag-note');
@@ -195,6 +198,7 @@ function start(tracks: Track[]) {
     fragNote.textContent = t.fragmentNote ?? '';
     tDur.textContent = mmss(t.duration);
     applyColors(t.colors, instant);
+    loadError.hidden = true;
     audio.src = t.streamUrl || '';
     audio.currentTime = 0;
     tick(true);
@@ -263,8 +267,12 @@ function start(tracks: Track[]) {
   });
   audio.addEventListener('pause', () => setPlaying(false));
   audio.addEventListener('loadedmetadata', () => tick(true));
+  audio.addEventListener('loadeddata', () => (loadError.hidden = true));
   audio.addEventListener('seeked', () => tick(true));
   audio.addEventListener('ended', () => show(idx + 1));
+  audio.addEventListener('error', () => {
+    if (audio.src) loadError.hidden = false;
+  });
 
   let resizeRaf = 0;
   addEventListener(
@@ -301,8 +309,8 @@ function start(tracks: Track[]) {
       queue.hidden = false;
       requestAnimationFrame(() => {
         queue.classList.add('open');
-        queueItems[idx]?.scrollIntoView({ inline: 'center', block: 'nearest' });
-        q<HTMLButtonElement>('#queue-close').focus();
+        queueItems[idx]?.scrollIntoView({ block: 'center' });
+        queueClose.focus();
       });
     } else {
       queue.classList.remove('open');
@@ -311,7 +319,7 @@ function start(tracks: Track[]) {
     }
   }
   queueToggle.addEventListener('click', () => setQueue(queue.hidden));
-  q('#queue-close').addEventListener('click', () => setQueue(false));
+  queueClose.addEventListener('click', () => setQueue(false));
   q('#queue-backdrop').addEventListener('click', () => setQueue(false));
   queueItems.forEach((b) =>
     b.addEventListener('click', () => {
@@ -319,6 +327,23 @@ function start(tracks: Track[]) {
       setQueue(false);
     }),
   );
+  queuePanel.addEventListener('keydown', (e) => {
+    if (e.key !== 'Tab') return;
+    const f = [queueClose, ...queueItems];
+    const first = f[0];
+    const last = f[f.length - 1];
+    const active = document.activeElement;
+    if (!queuePanel.contains(active)) {
+      e.preventDefault();
+      first.focus();
+    } else if (e.shiftKey && active === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && active === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  });
 
   addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !queue.hidden) setQueue(false);

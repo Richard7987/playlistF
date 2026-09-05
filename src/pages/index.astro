@@ -126,6 +126,7 @@ const first = tracks[0];
                     <div class="times"><span id="t-cur">0:00</span><span id="t-dur">0:00</span></div>
                   </div>
                 </div>
+                <p class="load-error" id="load-error" role="alert" hidden>No se pudo cargar el audio de esta canción.</p>
               </div>
 
               <div class="right">
@@ -155,7 +156,7 @@ const first = tracks[0];
 
           <div class="queue" id="queue" hidden>
             <div class="queue-backdrop" id="queue-backdrop" />
-            <div class="queue-panel" role="dialog" aria-label="Playlist Fa">
+            <div class="queue-panel" role="dialog" aria-modal="true" aria-label="Playlist Fa">
               <div class="queue-head">
                 <span class="label">la playlist</span>
                 <button class="queue-close" id="queue-close" aria-label="Cerrar">&#10005;</button>
@@ -164,11 +165,12 @@ const first = tracks[0];
                 {tracks.map((t, i) => (
                   <li>
                     <button class="queue-item" data-i={i} aria-current={i === 0 ? 'true' : undefined}>
-                      <span class="queue-cover" style={t.coverUrl ? `background-image:url(${t.coverUrl})` : ''}>
-                        <span class="queue-num">{i + 1}</span>
+                      <span class="queue-num">{String(i + 1).padStart(2, '0')}</span>
+                      <span class="queue-cover" style={t.coverUrl ? `background-image:url(${t.coverUrl})` : undefined} />
+                      <span class="queue-text">
+                        <span class="queue-title">{t.title}</span>
+                        <span class="queue-artist">{t.artist}</span>
                       </span>
-                      <span class="queue-title">{t.title}</span>
-                      <span class="queue-artist">{t.artist}</span>
                     </button>
                   </li>
                 ))}
