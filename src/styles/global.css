@@ -592,6 +592,14 @@ body {
   transition: opacity 0.5s var(--ease), filter 0.5s var(--ease), transform 0.5s var(--spring), font-size 0.5s var(--ease);
 }
 
+.line[data-seek] {
+  cursor: pointer;
+}
+
+.line[data-seek]:hover {
+  opacity: 0.85;
+}
+
 .line.near {
   opacity: 0.5;
 }

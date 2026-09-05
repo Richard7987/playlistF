@@ -109,9 +109,11 @@ function start(tracks: Track[]) {
     const marked = new Set(t.marked);
     const frag = document.createDocumentFragment();
     for (let i = 0; i < t.lines.length; i++) {
+      const line = t.lines[i];
       const d = document.createElement('div');
       d.className = marked.has(i) ? 'line marked' : 'line';
-      d.textContent = t.lines[i].text;
+      d.textContent = line.text;
+      if (syncedNow && line.t != null) d.dataset.seek = String(line.t);
       frag.appendChild(d);
     }
     lyricsInner.replaceChildren(frag);
@@ -137,6 +139,18 @@ function start(tracks: Track[]) {
     if (sec !== lastSec || force) {
       lastSec = sec;
       tCur.textContent = mmss(ct);
+      persist();
+      if ('mediaSession' in navigator && isFinite(audio.duration) && audio.duration > 0) {
+        try {
+          navigator.mediaSession.setPositionState({
+            duration: audio.duration,
+            playbackRate: audio.playbackRate || 1,
+            position: Math.min(ct, audio.duration),
+          });
+        } catch {
+          /* algunos navegadores lo rechazan */
+        }
+      }
     }
 
     if (!syncedNow) return;
@@ -172,7 +186,27 @@ function start(tracks: Track[]) {
     }
   }
 
-  function swap(t: Track, instant: boolean) {
+  function updateMediaSession(t: Track) {
+    if (!('mediaSession' in navigator)) return;
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: t.title,
+      artist: t.artist,
+      album: t.album,
+      artwork: t.coverUrl
+        ? [{ src: new URL(t.coverUrl, location.href).href, sizes: '640x640', type: 'image/jpeg' }]
+        : [],
+    });
+  }
+
+  function persist() {
+    try {
+      localStorage.setItem('fa:last', JSON.stringify({ slug: tracks[idx].slug, t: Math.floor(audio.currentTime) }));
+    } catch {
+      /* modo privado / bloqueado */
+    }
+  }
+
+  function swap(t: Track, instant: boolean, seekTo = 0) {
     if (t.coverUrl) {
       cover.src = t.coverUrl;
       cover.style.background = '';
@@ -198,9 +232,20 @@ function start(tracks: Track[]) {
     fragNote.textContent = t.fragmentNote ?? '';
     tDur.textContent = mmss(t.duration);
     applyColors(t.colors, instant);
+    updateMediaSession(t);
     loadError.hidden = true;
     audio.src = t.streamUrl || '';
-    audio.currentTime = 0;
+    if (seekTo > 0) {
+      const onMeta = () => {
+        audio.currentTime = seekTo;
+        audio.removeEventListener('loadedmetadata', onMeta);
+      };
+      audio.addEventListener('loadedmetadata', onMeta);
+    } else {
+      audio.currentTime = 0;
+    }
+    history.replaceState(null, '', `#${t.slug}`);
+    persist();
     tick(true);
   }
 
@@ -217,17 +262,18 @@ function start(tracks: Track[]) {
   const OUT = ['#cover', '.left .meta', '.right', '.dedication'];
   let tl: gsap.core.Timeline | null = null;
 
-  function show(n: number, instant = false) {
+  function show(n: number, instant = false, seekTo = 0) {
     idx = (n + tracks.length) % tracks.length;
     const t = tracks[idx];
     const target = t.lines.length ? 1140 : 560;
     audio.pause();
     tl?.kill();
     gsap.killTweensOf([...OUT, frameMax]);
+    clearPreload();
 
     if (instant || reduce) {
       setFrameMax(target);
-      swap(t, true);
+      swap(t, true, seekTo);
       gsap.set(OUT, { opacity: 1, y: 0, scale: 1, clearProps: 'transform' });
       resume();
       return;
@@ -243,7 +289,7 @@ function start(tracks: Track[]) {
     tl.to(OUT, { opacity: 0, y: 6, duration: 0.28 }, 0)
       .to(frameMax, { v: target, duration: 0.62, onUpdate: () => setFrameMax(frameMax.v) }, 0)
       .add(() => {
-        swap(t, false);
+        swap(t, false, seekTo);
         resume();
       }, 0.26)
       .fromTo('#cover', { opacity: 0, scale: 0.985 }, { opacity: 1, scale: 1, duration: 0.52 }, 0.32)
@@ -260,12 +306,37 @@ function start(tracks: Track[]) {
     if (wantPlaying) audio.play().catch(() => {});
     else audio.pause();
   });
+  let preloadEl: HTMLAudioElement | null = null;
+  let preloadTimer = 0;
+  function schedulePreload() {
+    clearTimeout(preloadTimer);
+    preloadTimer = window.setTimeout(() => {
+      const next = tracks[(idx + 1) % tracks.length];
+      if (!next.streamUrl) return;
+      preloadEl = new Audio();
+      preloadEl.preload = 'auto';
+      preloadEl.src = next.streamUrl;
+    }, 4000);
+  }
+  function clearPreload() {
+    clearTimeout(preloadTimer);
+    if (preloadEl) {
+      preloadEl.removeAttribute('src');
+      preloadEl = null;
+    }
+  }
+
   audio.addEventListener('play', () => {
     wantPlaying = true;
     setPlaying(true);
+    if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
     raf();
+    schedulePreload();
   });
-  audio.addEventListener('pause', () => setPlaying(false));
+  audio.addEventListener('pause', () => {
+    setPlaying(false);
+    if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
+  });
   audio.addEventListener('loadedmetadata', () => tick(true));
   audio.addEventListener('loadeddata', () => (loadError.hidden = true));
   audio.addEventListener('seeked', () => tick(true));
@@ -300,6 +371,43 @@ function start(tracks: Track[]) {
 
   q('#prev').addEventListener('click', () => show(idx - 1));
   q('#next').addEventListener('click', () => show(idx + 1));
+
+  if ('mediaSession' in navigator) {
+    const ms = navigator.mediaSession;
+    ms.setActionHandler('play', () => audio.play().catch(() => {}));
+    ms.setActionHandler('pause', () => audio.pause());
+    ms.setActionHandler('previoustrack', () => show(idx - 1));
+    ms.setActionHandler('nexttrack', () => show(idx + 1));
+    ms.setActionHandler('seekto', (d) => {
+      if (d.seekTime != null) {
+        audio.currentTime = d.seekTime;
+        tick(true);
+      }
+    });
+  }
+
+  lyricsInner.addEventListener('click', (e) => {
+    if (!syncedNow) return;
+    const line = (e.target as Element).closest<HTMLElement>('.line');
+    const s = line?.dataset.seek;
+    if (s == null) return;
+    audio.currentTime = Number(s);
+    if (!wantPlaying) {
+      wantPlaying = true;
+      audio.play().catch(() => {});
+    }
+    tick(true);
+  });
+
+  addEventListener('hashchange', () => {
+    const s = decodeURIComponent(location.hash.slice(1));
+    const i = tracks.findIndex((x) => x.slug === s);
+    if (i >= 0 && i !== idx) show(i);
+  });
+  addEventListener('pagehide', persist);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') persist();
+  });
 
   let queueTimer = 0;
   function setQueue(open: boolean) {
@@ -394,5 +502,26 @@ function start(tracks: Track[]) {
     if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.6) show(idx + (dx < 0 ? 1 : -1));
   });
 
-  show(0, true);
+  function initialState(): [number, number] {
+    const hash = decodeURIComponent(location.hash.slice(1));
+    const hi = tracks.findIndex((x) => x.slug === hash);
+    if (hi >= 0) return [hi, 0];
+    try {
+      const raw = localStorage.getItem('fa:last');
+      if (raw) {
+        const { slug, t } = JSON.parse(raw);
+        const li = tracks.findIndex((x) => x.slug === slug);
+        if (li >= 0) {
+          const at = typeof t === 'number' && t > 5 && t < tracks[li].duration - 10 ? t : 0;
+          return [li, at];
+        }
+      }
+    } catch {
+      /* almacenamiento no disponible */
+    }
+    return [0, 0];
+  }
+
+  const [i0, t0] = initialState();
+  show(i0, true, t0);
 }
