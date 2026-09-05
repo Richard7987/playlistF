@@ -11,6 +11,7 @@ import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { Vibrant } from 'node-vibrant/node';
+import sharp from 'sharp';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DATA = resolve(ROOT, 'src/data');
@@ -343,7 +344,7 @@ async function main() {
     usedSlugs.add(slug);
     process.stdout.write(`  ${String(i + 1).padStart(2)}. ${e.artist} — ${e.title}\n`);
 
-    // portada (autenticada, se guarda como archivo)
+    // portada: se re-codifica a WebP 640px (autenticada, queda como archivo en el repo)
     let colors = { bg: '#1b1b21', bgAlt: '#3a2f45', accent: '#e0a35c', text: '#f6f2f5', muted: '#b3a9b3' };
     let cover = null;
     if (e.coverArt) {
@@ -351,8 +352,9 @@ async function main() {
         const res = await fetchT(restURL('getCoverArt', { id: e.coverArt, size: 900 }));
         if (res.ok) {
           const buf = Buffer.from(await res.arrayBuffer());
-          await writeFile(resolve(OUT_COVERS, `${slug}.jpg`), buf);
-          cover = `covers/${slug}.jpg`;
+          const webp = await sharp(buf).resize(640, 640, { fit: 'cover' }).webp({ quality: 80 }).toBuffer();
+          await writeFile(resolve(OUT_COVERS, `${slug}.webp`), webp);
+          cover = `covers/${slug}.webp`;
           colors = await palette(buf);
         }
       } catch (err) {

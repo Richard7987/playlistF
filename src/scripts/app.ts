@@ -1,5 +1,4 @@
 import gsap from 'gsap';
-import Lenis from 'lenis';
 import { MeshGradient, hexToRgb01, type RGB } from '../lib/gradient';
 
 interface Track {
@@ -38,7 +37,8 @@ function start(tracks: Track[]) {
   if (grad.ok) grad.start();
 
   const wrapEl = q('.wrap');
-  const cover = q<HTMLImageElement>('#cover');
+  let coverFront = q<HTMLImageElement>('#cover-a');
+  let coverBack = q<HTMLImageElement>('#cover-b');
   const titleEl = q('#title');
   const artistEl = q('#artist');
   const queueToggle = q<HTMLButtonElement>('#queue-toggle');
@@ -62,10 +62,6 @@ function start(tracks: Track[]) {
 
   const audio = new Audio();
   audio.preload = 'metadata';
-
-  const lenis = new Lenis({ duration: 1.05, easing: (t) => Math.min(1, 1.001 - 2 ** (-10 * t)) });
-  gsap.ticker.add((time) => lenis.raf(time * 1000));
-  gsap.ticker.lagSmoothing(0);
 
   let idx = 0;
   let wantPlaying = false;
@@ -206,14 +202,37 @@ function start(tracks: Track[]) {
     }
   }
 
-  function swap(t: Track, instant: boolean, seekTo = 0) {
-    if (t.coverUrl) {
-      cover.src = t.coverUrl;
-      cover.style.background = '';
+  function swapCover(url: string | null, instant: boolean) {
+    const back = coverBack;
+    back.onload = null;
+    back.onerror = null;
+    const finish = () => {
+      if (instant || reduce) {
+        gsap.set(back, { opacity: 1 });
+        gsap.set(coverFront, { opacity: 0 });
+      } else {
+        gsap.to(back, { opacity: 1, duration: 0.55, ease: 'power2.out', overwrite: true });
+        gsap.to(coverFront, { opacity: 0, duration: 0.55, ease: 'power2.out', overwrite: true });
+      }
+      [coverFront, coverBack] = [back, coverFront];
+    };
+    if (url) {
+      back.style.background = '';
+      if (back.getAttribute('src') === url) finish();
+      else {
+        back.onload = finish;
+        back.onerror = finish;
+        back.src = url;
+      }
     } else {
-      cover.removeAttribute('src');
-      cover.style.background = 'linear-gradient(160deg, var(--bg-alt), var(--bg))';
+      back.removeAttribute('src');
+      back.style.background = 'linear-gradient(160deg, var(--bg-alt), var(--bg))';
+      finish();
     }
+  }
+
+  function swap(t: Track, instant: boolean, seekTo = 0) {
+    swapCover(t.coverUrl, instant);
     titleEl.textContent = t.title;
     artistEl.textContent = t.album ? `${t.artist} — ${t.album}` : t.artist;
     queueItems.forEach((b, i) => b.toggleAttribute('aria-current', i === idx));
@@ -259,7 +278,7 @@ function start(tracks: Track[]) {
     wrapEl.style.setProperty('--frame-max', `${v}px`);
   };
 
-  const OUT = ['#cover', '.left .meta', '.right', '.dedication'];
+  const OUT = ['.left .meta', '.right', '.dedication'];
   let tl: gsap.core.Timeline | null = null;
 
   function show(n: number, instant = false, seekTo = 0) {
@@ -292,12 +311,11 @@ function start(tracks: Track[]) {
         swap(t, false, seekTo);
         resume();
       }, 0.26)
-      .fromTo('#cover', { opacity: 0, scale: 0.985 }, { opacity: 1, scale: 1, duration: 0.52 }, 0.32)
       .fromTo(
         ['.left .meta', '.right', '.dedication'],
         { opacity: 0, y: 10 },
         { opacity: 1, y: 0, duration: 0.5, stagger: 0.05 },
-        0.36,
+        0.34,
       );
   }
 

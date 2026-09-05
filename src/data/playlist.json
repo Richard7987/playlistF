@@ -1,6 +1,6 @@
 {
   "name": "Fa",
-  "generatedAt": "2026-09-05T22:17:05.161Z",
+  "generatedAt": "2026-09-05T23:11:40.268Z",
   "navidromeUrl": "https://mu.richard69.lat",
   "shareUrl": "https://mu.richard69.lat/share/zXqxDyzOAP",
   "tracks": [
@@ -2887,6 +2887,5456 @@
           {
             "t": 191.35,
             "text": "Please wait by the line"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "fujii-kaze-shinunoga-e-wa",
+      "title": "Shinunoga E-Wa",
+      "artist": "Fujii Kaze",
+      "album": "HELP EVER HURT NEVER",
+      "duration": 185,
+      "cover": "covers/fujii-kaze-shinunoga-e-wa.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiZHVNRktXWWphUGg4ZFh2bWlJZDdYciIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.1n60h_pn4XemLo6iyWkt777bWJ2_WnPR570JImLfBLg",
+      "colors": {
+        "bg": "#1e1515",
+        "bgAlt": "#4b3030",
+        "accent": "#c63939",
+        "text": "#f4f0f0",
+        "muted": "#969090"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 6.44,
+            "text": "Haa, haa"
+          },
+          {
+            "t": 14.79,
+            "text": "Haa, iyee"
+          },
+          {
+            "t": 23.6,
+            "text": "Hei"
+          },
+          {
+            "t": 24.6,
+            "text": "Yubikiri genman hora demo fuitara"
+          },
+          {
+            "t": 27.44,
+            "text": "Hari demo nande mo nomasete itadaki Monday"
+          },
+          {
+            "t": 32.51,
+            "text": "It doesn't matter if it's Sunday"
+          },
+          {
+            "t": 36.65,
+            "text": "Kagami yo kagami yo kono yo de ichiban"
+          },
+          {
+            "t": 39.64,
+            "text": "Kawaru koto no nai ai wo kureru no wa dare"
+          },
+          {
+            "t": 44.69,
+            "text": "No need to ask 'cause it's my darling"
+          },
+          {
+            "t": 48.72,
+            "text": "Watashi no saigo wa anata ga ii (ii)"
+          },
+          {
+            "t": 51.76,
+            "text": "Anata to kono mama osaraba suru yori"
+          },
+          {
+            "t": 54.81,
+            "text": "Shinu no ga ii wa"
+          },
+          {
+            "t": 57.89,
+            "text": "Shinu no ga ii wa"
+          },
+          {
+            "t": 60.93,
+            "text": "Sando no meshi yori anta ga ii no yo (ii)"
+          },
+          {
+            "t": 64.24,
+            "text": "Anta to kono mama osaraba suru yoka"
+          },
+          {
+            "t": 66.88,
+            "text": "Shinu no ga ii wa"
+          },
+          {
+            "t": 69.96,
+            "text": "Shinu no ga ii wa"
+          },
+          {
+            "t": 73.21,
+            "text": "Soredemo tokidoki uwatsuku my heart"
+          },
+          {
+            "t": 76.04,
+            "text": "Shin demo naoranai naoshite misemasu, baby"
+          },
+          {
+            "t": 81.13,
+            "text": "Yeah, I ain't nothin' but ya, baby"
+          },
+          {
+            "t": 85.29,
+            "text": "Ushinatte hajimete kigatsuku nante"
+          },
+          {
+            "t": 88.29,
+            "text": "Sonna dasai koto mou shinai no yo goodbye"
+          },
+          {
+            "t": 93.08,
+            "text": "Oh, don't you ever say: Bye, bye"
+          },
+          {
+            "t": 96.01,
+            "text": "Yeah, yeah"
+          },
+          {
+            "t": 97.49,
+            "text": "Watashi no saigo wa anata ga ii (ii)"
+          },
+          {
+            "t": 100.44,
+            "text": "Anata no kono mama osaraba suru yori"
+          },
+          {
+            "t": 103.32,
+            "text": "Shinu no ga ii wa (shinu no ga ii wa)"
+          },
+          {
+            "t": 106.49,
+            "text": "Shinu no ga ii wa (shinu no ga ii wa)"
+          },
+          {
+            "t": 109.56,
+            "text": "Sando no meshi yori anta ga ii no yo (ii)"
+          },
+          {
+            "t": 112.6,
+            "text": "Anta no kono mama osaraba suru yoka"
+          },
+          {
+            "t": 115.53,
+            "text": "Shinu no ga ii wa (shinu no ga ii wa)"
+          },
+          {
+            "t": 118.65,
+            "text": "Shinu no ga ii wa (shinu no ga ii wa)"
+          },
+          {
+            "t": 146.01,
+            "text": "Watashi no saigo wa anata ga ii"
+          },
+          {
+            "t": 149.04,
+            "text": "Anata no kono mama osaraba suru yori"
+          },
+          {
+            "t": 151.97,
+            "text": "Shinu no ga ii wa (shinu no ga ii wa)"
+          },
+          {
+            "t": 155.13,
+            "text": "Shinu no ga ii wa (shinu no ga ii wa)"
+          },
+          {
+            "t": 158.08,
+            "text": "Sando no meshi yori anta ga ii no yo"
+          },
+          {
+            "t": 161.2,
+            "text": "Anta no kono mama osaraba suru yoka"
+          },
+          {
+            "t": 164.2,
+            "text": "Shinu no ga ii wa (shinu no ga ii wa)"
+          },
+          {
+            "t": 167.2,
+            "text": "Shinu no ga ii wa (shinu no ga ii wa)"
+          },
+          {
+            "t": 170.4,
+            "text": "Soredemo tokidoki uwatsuku my heart"
+          },
+          {
+            "t": 173.44,
+            "text": "Sonna dasai no wa mou iranai no yo bye, bye"
+          },
+          {
+            "t": 178.24,
+            "text": "I'll always stick with ya, my baby"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "marvin-gaye-tammi-terrell-ain-t-no-mountain-high-enough",
+      "title": "Ain't No Mountain High Enough",
+      "artist": "Marvin Gaye; Tammi Terrell",
+      "album": "Favorites",
+      "duration": 147,
+      "cover": "covers/marvin-gaye-tammi-terrell-ain-t-no-mountain-high-enough.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiMkl3NmpqaHNSWkpVaXZnMEZZUzU1MyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.FBWFMBftOpScGK1-GnM8_1qr75AAtFRP30_NJiFhxQM",
+      "colors": {
+        "bg": "#141d1f",
+        "bgAlt": "#1c525f",
+        "accent": "#0db3f2",
+        "text": "#f0f3f4",
+        "muted": "#8f9596"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 6.32,
+            "text": "Listen, baby, ain't no mountain high"
+          },
+          {
+            "t": 10.5,
+            "text": "Ain't no valley low, ain't no river wide enough, baby"
+          },
+          {
+            "t": 16.25,
+            "text": "If you need me, call me, no matter where you are"
+          },
+          {
+            "t": 20.21,
+            "text": "No matter how far, don't worry, baby"
+          },
+          {
+            "t": 23.87,
+            "text": "Just call my name, I'll be there in a hurry"
+          },
+          {
+            "t": 27.71,
+            "text": "You don't have to worry"
+          },
+          {
+            "t": 29.66,
+            "text": "'Cause baby, there ain't no mountain high enough"
+          },
+          {
+            "t": 34.38,
+            "text": "Ain't no valley low enough, ain't no river wide enough"
+          },
+          {
+            "t": 41.59,
+            "text": "To keep me from getting to you, baby"
+          },
+          {
+            "t": 44.67,
+            "text": "Remember the day I set you free"
+          },
+          {
+            "t": 48.2,
+            "text": "I told you, you could always count on me, girl"
+          },
+          {
+            "t": 51.73,
+            "text": "And from that day on I made a vow"
+          },
+          {
+            "t": 55.31,
+            "text": "I'll be there when you want me some way, some how"
+          },
+          {
+            "t": 59.41,
+            "text": "'Cause baby, there ain't no mountain high enough"
+          },
+          {
+            "t": 64.38,
+            "text": "Ain't no valley low enough, ain't no river wide enough"
+          },
+          {
+            "t": 71.41,
+            "text": "To keep me from getting to you, baby"
+          },
+          {
+            "t": 76.65,
+            "text": "Oh no darling, no wind, no rain"
+          },
+          {
+            "t": 82.35,
+            "text": "Or winters cold can stop me baby"
+          },
+          {
+            "t": 87.35,
+            "text": "No, no baby, 'cause you are my love"
+          },
+          {
+            "t": 90.45,
+            "text": "If you ever in trouble, I'll be there on the double"
+          },
+          {
+            "t": 93.68,
+            "text": "Just send for me, oh baby"
+          },
+          {
+            "t": 98.22,
+            "text": "My love is alive, way down in my heart"
+          },
+          {
+            "t": 102.22,
+            "text": "Although we are miles apart"
+          },
+          {
+            "t": 104.33,
+            "text": "If you ever need a helping hand"
+          },
+          {
+            "t": 107.58,
+            "text": "I'll be there on the double just as fast as I can"
+          },
+          {
+            "t": 111.23,
+            "text": "Don't you know that there ain't no mountain high enough"
+          },
+          {
+            "t": 116.1,
+            "text": "Ain't no valley low enough, ain't no river wide enough"
+          },
+          {
+            "t": 123.32,
+            "text": "To keep me from getting to you, baby"
+          },
+          {
+            "t": 126.13,
+            "text": "Don't you know that there ain't no mountain high enough"
+          },
+          {
+            "t": 130.98,
+            "text": "Ain't no valley low enough, ain't no river wide enough"
+          },
+          {
+            "t": 138.18,
+            "text": "Ain't no mountain high enough, ain't no valley low enough"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "kiss-i-was-made-for-lovin-you",
+      "title": "I Was Made For Lovin' You",
+      "artist": "KISS",
+      "album": "Dynasty",
+      "duration": 272,
+      "cover": "covers/kiss-i-was-made-for-lovin-you.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiWUk2ZnBWYUc0NU1VSFRJTzhzVWk3VyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.TtnWWhboMLuMZ5IBoZPorrD_4cPIygG_LskTDJZ0bgs",
+      "colors": {
+        "bg": "#161f14",
+        "bgAlt": "#5f231c",
+        "accent": "#ce4e31",
+        "text": "#f1f4f0",
+        "muted": "#91968f"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 14.45,
+            "text": "Mm, yeah"
+          },
+          {
+            "t": 18.31,
+            "text": "♪"
+          },
+          {
+            "t": 22.72,
+            "text": "Ha"
+          },
+          {
+            "t": 23.26,
+            "text": "Do, do, do, do-do, do-do, do, do"
+          },
+          {
+            "t": 26.9,
+            "text": "Do, do, do, do-do, do-do"
+          },
+          {
+            "t": 30.69,
+            "text": "Do, do, do, do-do, do-do, do, do"
+          },
+          {
+            "t": 34.35,
+            "text": "Do, do, do, do-do, do-do"
+          },
+          {
+            "t": 37.99,
+            "text": "Tonight, I wanna give it all to you"
+          },
+          {
+            "t": 42.27,
+            "text": "♪"
+          },
+          {
+            "t": 44.89,
+            "text": "In the darkness, there's so much I wanna do"
+          },
+          {
+            "t": 52.35,
+            "text": "And tonight, I wanna lay it at your feet"
+          },
+          {
+            "t": 59.24,
+            "text": "'Cause, girl, I was made for you"
+          },
+          {
+            "t": 63.04,
+            "text": "And, girl, you were made for me"
+          },
+          {
+            "t": 68.04,
+            "text": "I was made for lovin' you, baby"
+          },
+          {
+            "t": 71.84,
+            "text": "You were made for lovin' me"
+          },
+          {
+            "t": 75.28,
+            "text": "And I can't get enough of you, baby"
+          },
+          {
+            "t": 79.24,
+            "text": "Can you get enough of me?"
+          },
+          {
+            "t": 82.81,
+            "text": "Tonight, I wanna see it in your eyes"
+          },
+          {
+            "t": 89.77,
+            "text": "Feel the magic, there's something that drives me wild"
+          },
+          {
+            "t": 97.22,
+            "text": "And tonight, we're gonna make it all come true"
+          },
+          {
+            "t": 104.22,
+            "text": "'Cause, girl, you were made for me"
+          },
+          {
+            "t": 108.04,
+            "text": "And, girl, I was made for you"
+          },
+          {
+            "t": 112.96,
+            "text": "I was made for lovin' you, baby"
+          },
+          {
+            "t": 116.67,
+            "text": "You were made for lovin' me"
+          },
+          {
+            "t": 120.39,
+            "text": "And I can't get enough of you, baby"
+          },
+          {
+            "t": 124.18,
+            "text": "Can you get enough of me?"
+          },
+          {
+            "t": 127.82,
+            "text": "I was made for lovin' you, baby"
+          },
+          {
+            "t": 131.62,
+            "text": "You were made for lovin' me"
+          },
+          {
+            "t": 135.18,
+            "text": "And I can give it all to you, baby"
+          },
+          {
+            "t": 139.18,
+            "text": "Can you give it all to me?"
+          },
+          {
+            "t": 143.53,
+            "text": "♪"
+          },
+          {
+            "t": 146.2,
+            "text": "Oh-oh-oh"
+          },
+          {
+            "t": 149.3,
+            "text": "Can't get enough, oh-oh"
+          },
+          {
+            "t": 156.66,
+            "text": "I can't get enough, oh-oh"
+          },
+          {
+            "t": 164.03,
+            "text": "I can't get enough"
+          },
+          {
+            "t": 169.22,
+            "text": "♪"
+          },
+          {
+            "t": 185.26,
+            "text": "Yeah"
+          },
+          {
+            "t": 200.72,
+            "text": "Do, do, do, do-do, do-do, do, do"
+          },
+          {
+            "t": 204.45,
+            "text": "Do, do, do, do-do, do-do"
+          },
+          {
+            "t": 208.15,
+            "text": "Do, do, do, do-do, do-do, do, do"
+          },
+          {
+            "t": 211.98,
+            "text": "Do, do, do, do-do, do-do"
+          },
+          {
+            "t": 215.67,
+            "text": "I was made for lovin' you, baby"
+          },
+          {
+            "t": 219.36,
+            "text": "You were made for lovin' me"
+          },
+          {
+            "t": 222.87,
+            "text": "And I can't get enough of you, baby"
+          },
+          {
+            "t": 226.96,
+            "text": "Can you get enough of me?"
+          },
+          {
+            "t": 229.72,
+            "text": "Oh, I was made"
+          },
+          {
+            "t": 234.21,
+            "text": "You were made"
+          },
+          {
+            "t": 237.75,
+            "text": "I can't get enough"
+          },
+          {
+            "t": 241.24,
+            "text": "No, I can't get enough"
+          },
+          {
+            "t": 245.48,
+            "text": "I was made for lovin' you, baby"
+          },
+          {
+            "t": 249.25,
+            "text": "You were made for lovin' me"
+          },
+          {
+            "t": 252.69,
+            "text": "And I can't get enough of you, baby"
+          },
+          {
+            "t": 256.62,
+            "text": "Can you get enough of me?"
+          },
+          {
+            "t": 260.38,
+            "text": "I was made for lovin' you, baby"
+          },
+          {
+            "t": 264.03,
+            "text": "You were made for lovin' me"
+          },
+          {
+            "t": 267.88,
+            "text": "And I can give it all"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "arctic-monkeys-do-i-wanna-know",
+      "title": "Do I Wanna Know?",
+      "artist": "Arctic Monkeys",
+      "album": "AM",
+      "duration": 272,
+      "cover": "covers/arctic-monkeys-do-i-wanna-know.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiOHlzdjV0dmFMazdPUHVWdXJlUmsySSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.9y_FvATljn1zQvsHSbdNfjfHtY1UCvEZ5TgdwDvLW3w",
+      "colors": {
+        "bg": "#151b1e",
+        "bgAlt": "#1c4a5f",
+        "accent": "#309ecf",
+        "text": "#f0f3f4",
+        "muted": "#909496"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 29.2,
+            "text": "Have you got colour in your cheeks?"
+          },
+          {
+            "t": 34.22,
+            "text": "Do you ever get that fear that you can't shift the type"
+          },
+          {
+            "t": 37.79,
+            "text": "That sticks around like summat in your teeth?"
+          },
+          {
+            "t": 42.06,
+            "text": "Are there some aces up your sleeve?"
+          },
+          {
+            "t": 45.72,
+            "text": "Have you no idea that you're in deep?"
+          },
+          {
+            "t": 48.73,
+            "text": "I've dreamt about you nearly every night this week"
+          },
+          {
+            "t": 53.25,
+            "text": "How many secrets can you keep?"
+          },
+          {
+            "t": 57.2,
+            "text": "'Cause there's this tune I found that makes me think of you somehow"
+          },
+          {
+            "t": 61.91,
+            "text": "And I play it on repeat until I fall asleep"
+          },
+          {
+            "t": 68.84,
+            "text": "Spillin' drinks on my settee"
+          },
+          {
+            "t": 72.9,
+            "text": "(Do I wanna know) if this feelin' flows both ways?"
+          },
+          {
+            "t": 78.45,
+            "text": "(Sad to see you go) was sorta hopin' that you'd stay"
+          },
+          {
+            "t": 84.12,
+            "text": "(Baby, we both know) that the nights were mainly made"
+          },
+          {
+            "t": 89.57,
+            "text": "For sayin' things that you can't say tomorrow day"
+          },
+          {
+            "t": 94.51,
+            "text": "Crawlin' back to you"
+          },
+          {
+            "t": 97.83,
+            "text": "Ever thought of callin' when you've had a few?"
+          },
+          {
+            "t": 103.42,
+            "text": "'Cause I always do"
+          },
+          {
+            "t": 106.73,
+            "text": "Maybe I'm too"
+          },
+          {
+            "t": 109.11,
+            "text": "Busy being yours to fall for somebody new"
+          },
+          {
+            "t": 114.94,
+            "text": "Now I've thought it through"
+          },
+          {
+            "t": 117.38,
+            "text": "Crawlin' back to you"
+          },
+          {
+            "t": 120.2,
+            "text": "So have you got the guts?"
+          },
+          {
+            "t": 124.98,
+            "text": "Been wonderin' if your heart's still open"
+          },
+          {
+            "t": 128.08,
+            "text": "And if so, I wanna know what time it shuts"
+          },
+          {
+            "t": 133.05,
+            "text": "Simmer down and pucker up"
+          },
+          {
+            "t": 136.14,
+            "text": "I'm sorry to interrupt, it's just I'm constantly on the cusp"
+          },
+          {
+            "t": 141.09,
+            "text": "Of tryin' to kiss you"
+          },
+          {
+            "t": 146.24,
+            "text": "I don't know if you feel the same as I do"
+          },
+          {
+            "t": 154.21,
+            "text": "But we could be together"
+          },
+          {
+            "t": 160.09,
+            "text": "If you wanted to"
+          },
+          {
+            "t": 163.35,
+            "text": "(Do I wanna know) if this feelin' flows both ways?"
+          },
+          {
+            "t": 168.92,
+            "text": "(Sad to see you go) was sorta hopin' that you'd stay"
+          },
+          {
+            "t": 174.42,
+            "text": "(Baby, we both know) that the nights were mainly made"
+          },
+          {
+            "t": 179.84,
+            "text": "For sayin' things that you can't say tomorrow day"
+          },
+          {
+            "t": 184.98,
+            "text": "Crawlin' back to you (crawlin' back to you)"
+          },
+          {
+            "t": 188.24,
+            "text": "Ever thought of callin' when you've had a few? (You've had a few)"
+          },
+          {
+            "t": 193.88,
+            "text": "'Cause I always do ('cause I always do)"
+          },
+          {
+            "t": 197.14,
+            "text": "Maybe I'm too (maybe I'm too busy)"
+          },
+          {
+            "t": 199.74,
+            "text": "Busy being yours to fall for somebody new (being yours)"
+          },
+          {
+            "t": 205.29,
+            "text": "Now I've thought it through"
+          },
+          {
+            "t": 207.59,
+            "text": "Crawlin' back to you"
+          },
+          {
+            "t": 208.55,
+            "text": "(Do I wanna know) if this feelin' flows both ways?"
+          },
+          {
+            "t": 214.04,
+            "text": "(Sad to see you go) was sorta hopin' that you'd stay"
+          },
+          {
+            "t": 219.71,
+            "text": "(Baby, we both know) that the nights were mainly made"
+          },
+          {
+            "t": 225.13,
+            "text": "For sayin' things that you can't say tomorrow day"
+          },
+          {
+            "t": 230.86,
+            "text": "(Do I wanna know?) Too busy bein' yours to fall"
+          },
+          {
+            "t": 236.55,
+            "text": "(Sad to see you go) ever thought of callin', darlin'?"
+          },
+          {
+            "t": 242.55,
+            "text": "(Do I wanna know?) Do you want me crawlin' back to you?"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "arctic-monkeys-r-u-mine",
+      "title": "R U Mine?",
+      "artist": "Arctic Monkeys",
+      "album": "AM",
+      "duration": 201,
+      "cover": "covers/arctic-monkeys-r-u-mine.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiUW5POXNMWFpQWVdWMWJkRVZveXRwNiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.5-qFewksFP2ONHJt5rJKJ4HFShSPcRL2O0qDVHtUXy0",
+      "colors": {
+        "bg": "#151b1e",
+        "bgAlt": "#1c4a5f",
+        "accent": "#309ecf",
+        "text": "#f0f3f4",
+        "muted": "#909496"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 3.17,
+            "text": "I'm a puppet on a string"
+          },
+          {
+            "t": 5.55,
+            "text": "Tracy Island, time-travelin' diamond cutter-shaped heartaches"
+          },
+          {
+            "t": 10.29,
+            "text": "Come to find you four in some velvet mornin' years too late"
+          },
+          {
+            "t": 15.08,
+            "text": "She's a silver linin', lone ranger ridin' through an open space"
+          },
+          {
+            "t": 20.33,
+            "text": "In my mind, when she's not right there beside me"
+          },
+          {
+            "t": 23.56,
+            "text": "I go crazy 'cause here isn't where I wanna be"
+          },
+          {
+            "t": 27.9,
+            "text": "And satisfaction feels like a distant memory"
+          },
+          {
+            "t": 32.87,
+            "text": "And I can't help myself"
+          },
+          {
+            "t": 35.88,
+            "text": "All I wanna ever say is, \"Are you mine?\""
+          },
+          {
+            "t": 42.41,
+            "text": "Well, are you mine?"
+          },
+          {
+            "t": 47.47,
+            "text": "Are you mine?"
+          },
+          {
+            "t": 52.2,
+            "text": "Are you mine? Oh, ah"
+          },
+          {
+            "t": 58.85,
+            "text": "♪"
+          },
+          {
+            "t": 62.45,
+            "text": "I guess what I'm tryin' to say is I need the deep end"
+          },
+          {
+            "t": 65.94,
+            "text": "Keep imaginin' meetin', wished away entire lifetimes"
+          },
+          {
+            "t": 70.85,
+            "text": "Unfair we're not somewhere misbehavin' for days"
+          },
+          {
+            "t": 75.57,
+            "text": "Great escape, lost track of time and space"
+          },
+          {
+            "t": 79.37,
+            "text": "She's a silver linin', climbin' on my desire"
+          },
+          {
+            "t": 82.74,
+            "text": "And I go crazy 'cause here isn't where I wanna be"
+          },
+          {
+            "t": 87.27,
+            "text": "And satisfaction feels like a distant memory"
+          },
+          {
+            "t": 92.17,
+            "text": "And I can't help myself"
+          },
+          {
+            "t": 95.28,
+            "text": "All I wanna ever say is, \"Are you mine?\""
+          },
+          {
+            "t": 101.73,
+            "text": "Well, are you mine? (Are you mine tomorrow?)"
+          },
+          {
+            "t": 107.13,
+            "text": "Are you mine? (Or just mine tonight?)"
+          },
+          {
+            "t": 111.78,
+            "text": "Are you mine? (Are you mine? Mine?)"
+          },
+          {
+            "t": 117.35,
+            "text": "♪"
+          },
+          {
+            "t": 123.56,
+            "text": "And the thrill of the chase moves in mysterious ways"
+          },
+          {
+            "t": 128.92,
+            "text": "So in case I'm mistaken, I"
+          },
+          {
+            "t": 133.57,
+            "text": "Just wanna hear you say, \"You got me baby\""
+          },
+          {
+            "t": 136.32,
+            "text": "\"Are you mine?\""
+          },
+          {
+            "t": 139.07,
+            "text": "♪"
+          },
+          {
+            "t": 148.36,
+            "text": "She's a silver linin', lone ranger ridin' through an open space"
+          },
+          {
+            "t": 153.6,
+            "text": "In my mind, when she's not right there beside me"
+          },
+          {
+            "t": 157.07,
+            "text": "I go crazy 'cause here isn't where I wanna be"
+          },
+          {
+            "t": 161.53,
+            "text": "And satisfaction feels like a distant memory"
+          },
+          {
+            "t": 166.36,
+            "text": "And I can't help myself"
+          },
+          {
+            "t": 169.46,
+            "text": "All I wanna ever say is, \"Are you mine?\""
+          },
+          {
+            "t": 175.91,
+            "text": "Well, are you mine? (Are you mine tomorrow?)"
+          },
+          {
+            "t": 181.09,
+            "text": "Are you mine? (Or just mine tonight?)"
+          },
+          {
+            "t": 185.83,
+            "text": "Are you mine? (Are you mine tomorrow?)"
+          },
+          {
+            "t": 191.32,
+            "text": "(Oh, ah, or just mine tonight?)"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "arctic-monkeys-i-want-it-all",
+      "title": "I Want It All",
+      "artist": "Arctic Monkeys",
+      "album": "AM",
+      "duration": 185,
+      "cover": "covers/arctic-monkeys-i-want-it-all.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiTTNLRFJldTI1TmU3WjRJYmRoNVR3WiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.xEsUBAsoftEFYMdbqzR8IhJsm4SveUIUvVB7WQ9dqAo",
+      "colors": {
+        "bg": "#151b1e",
+        "bgAlt": "#1c4a5f",
+        "accent": "#309ecf",
+        "text": "#f0f3f4",
+        "muted": "#909496"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 14.61,
+            "text": "Blind faith, heartache"
+          },
+          {
+            "t": 18.21,
+            "text": "Mind games, mistakes"
+          },
+          {
+            "t": 21.78,
+            "text": "My sweet fireball"
+          },
+          {
+            "t": 25.1,
+            "text": "My sweet rigmarole"
+          },
+          {
+            "t": 28.65,
+            "text": "I want it all"
+          },
+          {
+            "t": 35.15,
+            "text": "I want it all"
+          },
+          {
+            "t": 43.55,
+            "text": "Old dogs, new tricks"
+          },
+          {
+            "t": 47.45,
+            "text": "Can you feel it?"
+          },
+          {
+            "t": 50.98,
+            "text": "Space-age country girl"
+          },
+          {
+            "t": 54.52,
+            "text": "Stone cold miracle"
+          },
+          {
+            "t": 57.92,
+            "text": "I want it all"
+          },
+          {
+            "t": 65.23,
+            "text": "I want it all"
+          },
+          {
+            "t": 72.09,
+            "text": "And then suddenly it hit me"
+          },
+          {
+            "t": 75.74,
+            "text": "It's a year ago"
+          },
+          {
+            "t": 79.1,
+            "text": "Since I drank miniature whiskey"
+          },
+          {
+            "t": 83.02,
+            "text": "And we shared your Coke"
+          },
+          {
+            "t": 86.63,
+            "text": "Said ain't it just like you to kiss me"
+          },
+          {
+            "t": 91.88,
+            "text": "And then hit the road"
+          },
+          {
+            "t": 94.97,
+            "text": "Leave me listenin' to The Stones"
+          },
+          {
+            "t": 98.45,
+            "text": "2000 Light Years From Home"
+          },
+          {
+            "t": 106.69,
+            "text": "Shoo-Wop, Shoo-Wop Shoo-Wop, Shoo-Wop"
+          },
+          {
+            "t": 110.73,
+            "text": "Shoo-Wop, Shoo-Wop Shoo-Wop, Shoo-Wop"
+          },
+          {
+            "t": 115.37,
+            "text": "Shoo-Wop, Shoo-Wop Shoo-Wop, Shoo-Wop"
+          },
+          {
+            "t": 121.36,
+            "text": "Shoo-Wop, Shoo-Wop Shoo-Wop, Shoo-Wop"
+          },
+          {
+            "t": 124.65,
+            "text": "Shoo-Wop, Shoo-Wop"
+          },
+          {
+            "t": 131.34,
+            "text": "I want it all"
+          },
+          {
+            "t": 138.55,
+            "text": "I want it all"
+          },
+          {
+            "t": 145.95,
+            "text": "I want it all"
+          },
+          {
+            "t": 153.2,
+            "text": "I want it all"
+          },
+          {
+            "t": 161.36,
+            "text": "I want it all"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "arctic-monkeys-why-d-you-only-call-me-when-you-re-high",
+      "title": "Why'd You Only Call Me When You're High?",
+      "artist": "Arctic Monkeys",
+      "album": "AM",
+      "duration": 161,
+      "cover": "covers/arctic-monkeys-why-d-you-only-call-me-when-you-re-high.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiYXM5UHlSNkVna1VkVWxjeFFUdXJtWSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.XD_Ii2f9dto_nS_XGH_9dSvONZzxAEUaHIOEsHDtgiM",
+      "colors": {
+        "bg": "#151b1e",
+        "bgAlt": "#1c4a5f",
+        "accent": "#309ecf",
+        "text": "#f0f3f4",
+        "muted": "#909496"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 11.06,
+            "text": "The mirror's image, it tells me it's home time"
+          },
+          {
+            "t": 16.17,
+            "text": "But I'm not finished, 'cause you're not by my side"
+          },
+          {
+            "t": 21.26,
+            "text": "And as I arrived I thought I saw you leavin', carryin' your shoes"
+          },
+          {
+            "t": 26.52,
+            "text": "Decided that once again I was just dreamin' of bumpin' into you"
+          },
+          {
+            "t": 32.31,
+            "text": "Now it's three in the mornin' and I'm tryin' to change your mind"
+          },
+          {
+            "t": 37.16,
+            "text": "Left you multiple missed calls and to my message, you reply"
+          },
+          {
+            "t": 42.74,
+            "text": "\"Why'd you only call me when you're high?\""
+          },
+          {
+            "t": 46.88,
+            "text": "\"Hi, why'd you only call me when you're high?\""
+          },
+          {
+            "t": 52.75,
+            "text": "Somewhere darker, talkin' the same shite"
+          },
+          {
+            "t": 57.89,
+            "text": "I need a partner, well, are you out tonight?"
+          },
+          {
+            "t": 62.92,
+            "text": "It's harder and harder to get you to listen"
+          },
+          {
+            "t": 66.78,
+            "text": "More I get through the gears"
+          },
+          {
+            "t": 68.53,
+            "text": "Incapable of makin' alright decisions, and havin' bad ideas"
+          },
+          {
+            "t": 73.98,
+            "text": "Now it's three in the mornin' and I'm tryin' to change your mind"
+          },
+          {
+            "t": 78.85,
+            "text": "Left you multiple missed calls and to my message you reply"
+          },
+          {
+            "t": 84.53,
+            "text": "\"Why'd you only call me when you're high?\""
+          },
+          {
+            "t": 88.67,
+            "text": "\"Hi, why'd you only call me when you're high?\""
+          },
+          {
+            "t": 95.57,
+            "text": "And I can't see you here, wonderin' where I might"
+          },
+          {
+            "t": 100.95,
+            "text": "It sort of feels like I'm runnin' out of time"
+          },
+          {
+            "t": 106.16,
+            "text": "I haven't found all I was hopin' to find"
+          },
+          {
+            "t": 111.46,
+            "text": "You said you gotta be up in the mornin'"
+          },
+          {
+            "t": 113.05,
+            "text": "Gonna have an early night"
+          },
+          {
+            "t": 114.76,
+            "text": "And you're startin' to bore me, baby"
+          },
+          {
+            "t": 116.22,
+            "text": "Why'd you only call me when you're high?"
+          },
+          {
+            "t": 119.2,
+            "text": "♪"
+          },
+          {
+            "t": 137.69,
+            "text": "\"Why'd you only ever phone me when you're high?\""
+          },
+          {
+            "t": 142.83,
+            "text": "\"Why'd you only ever phone me when you're high?\""
+          },
+          {
+            "t": 148.05,
+            "text": "\"Why'd you only ever phone me when you're high?\""
+          },
+          {
+            "t": 153.24,
+            "text": "\"Why'd you only ever phone me when you're high?\""
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "esteman-lila-downs-si-volviera-a-nacer",
+      "title": "Si Volviera A Nacer",
+      "artist": "Esteman • Lila Downs",
+      "album": "Si Volviera A Nacer",
+      "duration": 224,
+      "cover": "covers/esteman-lila-downs-si-volviera-a-nacer.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiVnBTT08yOUVhQUNxUG43QTdSaXBucCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.-JX0LTTHnzJF3_bNnwZu97H0QK3QCwvAnyjRTh7xdL4",
+      "colors": {
+        "bg": "#231910",
+        "bgAlt": "#5f3e1c",
+        "accent": "#f3d32c",
+        "text": "#f4f2f0",
+        "muted": "#98938d"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 3.26,
+            "text": "Si volviera a nacer, lo haría para entender"
+          },
+          {
+            "t": 8.66,
+            "text": "Que por tu amor, por tu amor, muero"
+          },
+          {
+            "t": 13.21,
+            "text": "Y si volviera a crecer, te escogería otra vez"
+          },
+          {
+            "t": 19.29,
+            "text": "Para ver sin filtro el mundo al lado tuyo"
+          },
+          {
+            "t": 23.43,
+            "text": "Quedarme ahí contigo, hablar hasta dormirnos"
+          },
+          {
+            "t": 28.32,
+            "text": "Perderme en tus dibujos"
+          },
+          {
+            "t": 30.97,
+            "text": "Volver a la montaña, sentir la tierra fría"
+          },
+          {
+            "t": 36.12,
+            "text": "Volver a tu mirada y ver esa sonrisa"
+          },
+          {
+            "t": 41.83,
+            "text": "Y si volviera a nacer"
+          },
+          {
+            "t": 45.14,
+            "text": "No cambiaría nada del ayer"
+          },
+          {
+            "t": 50.53,
+            "text": "Tu voz abraza todo lo que fue"
+          },
+          {
+            "t": 55.59,
+            "text": "Yo quiero regresar, sentir tu arrullo"
+          },
+          {
+            "t": 59.99,
+            "text": "Sentir tu arrullo"
+          },
+          {
+            "t": 62.39,
+            "text": "Y si volviera a nacer"
+          },
+          {
+            "t": 67.76,
+            "text": "Me quedaría en el instante capturado por tus ojos (uh)"
+          },
+          {
+            "t": 75.27,
+            "text": "Y si pudiera escoger"
+          },
+          {
+            "t": 80.43,
+            "text": "Me quedaría el trazo del pincel que usas"
+          },
+          {
+            "t": 85.34,
+            "text": "Viviendo en tus pinturas, corriendo por el valle"
+          },
+          {
+            "t": 90.44,
+            "text": "El lienzo que se extiende y llega hasta mi mente"
+          },
+          {
+            "t": 95.52,
+            "text": "Sentir que estás presente"
+          },
+          {
+            "t": 98.27,
+            "text": "Volver a tu mirada y ver esa sonrisa"
+          },
+          {
+            "t": 103.78,
+            "text": "Y si volviera a nacer"
+          },
+          {
+            "t": 107.1,
+            "text": "No cambiaría nada del ayer"
+          },
+          {
+            "t": 112.44,
+            "text": "Tu voz abraza todo lo que fue"
+          },
+          {
+            "t": 117.5,
+            "text": "Hoy quiero regresar, sentir tu arrullo"
+          },
+          {
+            "t": 121.87,
+            "text": "Sentir tu arrullo"
+          },
+          {
+            "t": 134.96,
+            "text": "Si volviera a nacer"
+          },
+          {
+            "t": 145.17,
+            "text": "Si volviera a nacer"
+          },
+          {
+            "t": 148.57,
+            "text": "No cambiaría nada del ayer"
+          },
+          {
+            "t": 153.64,
+            "text": "Tu voz abraza todo lo que fue"
+          },
+          {
+            "t": 158.8,
+            "text": "Hoy quiero regresar, sentir tu arrullo"
+          },
+          {
+            "t": 163.43,
+            "text": "Sentir tu arrullo"
+          },
+          {
+            "t": 176.1,
+            "text": "Si volviera a nacer"
+          },
+          {
+            "t": 186.22,
+            "text": "Y si volviera a nacer"
+          },
+          {
+            "t": 192.23,
+            "text": "Si volviera, volviera, volviera"
+          },
+          {
+            "t": 196.84,
+            "text": "Si volviera, volviera a nacer"
+          },
+          {
+            "t": 199.34,
+            "text": "Si volviera, volviera a nacer"
+          },
+          {
+            "t": 202.01,
+            "text": "(Si volviera a nacer, un arrullo a este manto)"
+          },
+          {
+            "t": 205.36,
+            "text": "Si volviera, volviera, volviera"
+          },
+          {
+            "t": 207.18,
+            "text": "Si volviera a nacer, ¡uh!"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "zoe-poli-love-en-vivo",
+      "title": "Poli / Love - En Vivo",
+      "artist": "Zoé",
+      "album": "MTV Unplugged Música De Fondo (Reissue/Live)",
+      "duration": 254,
+      "cover": "covers/zoe-poli-love-en-vivo.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoibUR5TlNOaDVDV1ZzY2xLTXhhOTM0eCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.LAkf6DlcQJgh_3oLlQElb2Q505aa1L-6HHr4nkmkhfk",
+      "colors": {
+        "bg": "#1f1e14",
+        "bgAlt": "#1c4e5f",
+        "accent": "#c64539",
+        "text": "#f4f4f0",
+        "muted": "#96968f"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 32.14,
+            "text": "Recuerdo a Poli"
+          },
+          {
+            "t": 34.4,
+            "text": "Era mi chica ideal"
+          },
+          {
+            "t": 39.49,
+            "text": "Dulce perla blanca mexicana"
+          },
+          {
+            "t": 42.62,
+            "text": "La cual yo amaba"
+          },
+          {
+            "t": 45.38,
+            "text": "Pero nunca pude tener"
+          },
+          {
+            "t": 49.85,
+            "text": "Ni mostrarle todo lo que le escribí..."
+          },
+          {
+            "t": 53.62,
+            "text": "En el fondo del mar"
+          },
+          {
+            "t": 57.51,
+            "text": "Satélites"
+          },
+          {
+            "t": 60.42,
+            "text": "Flotando por el universo"
+          },
+          {
+            "t": 63.09,
+            "text": "En busca de señal"
+          },
+          {
+            "t": 65.37,
+            "text": "Señales de vida"
+          },
+          {
+            "t": 67.55,
+            "text": "En su constelación, ouh ooh"
+          },
+          {
+            "t": 70.64,
+            "text": "Electrocardiograma de amor"
+          },
+          {
+            "t": 75.51,
+            "text": "Destellos de mil años luz..."
+          },
+          {
+            "t": 81.25,
+            "text": "Esta es la historia de una vieja canción"
+          },
+          {
+            "t": 85.9,
+            "text": "La de la primera vez"
+          },
+          {
+            "t": 100.08,
+            "text": "Recuerdo a Poli"
+          },
+          {
+            "t": 102.46,
+            "text": "Era mi chica ideal"
+          },
+          {
+            "t": 107.38,
+            "text": "Una dulce perla blanca mexicana"
+          },
+          {
+            "t": 110.64,
+            "text": "La cual yo amaba"
+          },
+          {
+            "t": 113.28,
+            "text": "Pero nunca pude tener"
+          },
+          {
+            "t": 117.82,
+            "text": "Ni mostrarle todo lo que le escribí en la espalda del sol"
+          },
+          {
+            "t": 125.45,
+            "text": "Satélites"
+          },
+          {
+            "t": 128.97,
+            "text": "Flotando por el universo"
+          },
+          {
+            "t": 132.12,
+            "text": "En busca de señal"
+          },
+          {
+            "t": 137.85,
+            "text": "Señales de vida"
+          },
+          {
+            "t": 140.45,
+            "text": "En su constelación, ouh ooh"
+          },
+          {
+            "t": 143.24,
+            "text": "Mensajes o evidencia de amor..."
+          },
+          {
+            "t": 148.28,
+            "text": "Destellos de mil años luz..."
+          },
+          {
+            "t": 153.64,
+            "text": "Esta es la historia de una vieja canción"
+          },
+          {
+            "t": 159.29,
+            "text": "La de la primera vez"
+          },
+          {
+            "t": 193.32,
+            "text": "Love, love, love"
+          },
+          {
+            "t": 198.74,
+            "text": "Love, love, love"
+          },
+          {
+            "t": 203.88,
+            "text": "Love, love, love"
+          },
+          {
+            "t": 209.05,
+            "text": "Love, love, love"
+          },
+          {
+            "t": 214.33,
+            "text": "Love, love, love"
+          },
+          {
+            "t": 219.53,
+            "text": "Love, love, love"
+          },
+          {
+            "t": 224.88,
+            "text": "Love, love, love"
+          },
+          {
+            "t": 229.85,
+            "text": "Love, love, love"
+          },
+          {
+            "t": 235.15,
+            "text": "Love, love"
+          },
+          {
+            "t": 237.77,
+            "text": "Love, love"
+          },
+          {
+            "t": 240.12,
+            "text": "Love, love, love..."
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "lucky-dog-elliot-lee-papertiger",
+      "title": "Papertiger",
+      "artist": "Lucky Dog • Elliot Lee",
+      "album": "The Boneyard, Vol. 1",
+      "duration": 147,
+      "cover": "covers/lucky-dog-elliot-lee-papertiger.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiMHJ3Uk5URkxXeENtOE9PNGlVZVUySiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.rvaxsVgH1XzRRjPDRcWKh0Lir4lAyku5YQojTP-Nu5Q",
+      "colors": {
+        "bg": "#161221",
+        "bgAlt": "#5e1d5e",
+        "accent": "#3cc6be",
+        "text": "#f1f0f4",
+        "muted": "#918e97"
+      },
+      "lyrics": {
+        "synced": false,
+        "source": "lrclib",
+        "lines": [
+          {
+            "t": null,
+            "text": "Call me when you give up"
+          },
+          {
+            "t": null,
+            "text": "Oh, haven't you had enough"
+          },
+          {
+            "t": null,
+            "text": "You got liquor in your teacup"
+          },
+          {
+            "t": null,
+            "text": "I'm a lover, not biter"
+          },
+          {
+            "t": null,
+            "text": "A lover, not biter"
+          },
+          {
+            "t": null,
+            "text": "Cut me like a paper tiger"
+          },
+          {
+            "t": null,
+            "text": "Oh, I want love I'm not a fighter"
+          },
+          {
+            "t": null,
+            "text": "Yeah, you cut me like a paper tiger"
+          },
+          {
+            "t": null,
+            "text": "I'm a lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "A lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "Cut me like a paper tiger (Roar)"
+          },
+          {
+            "t": null,
+            "text": "Oh, I want love I'm not a fighter"
+          },
+          {
+            "t": null,
+            "text": "But you cut me like a paper tiger"
+          },
+          {
+            "t": null,
+            "text": "I'm a lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "A lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "Sip a day to day life"
+          },
+          {
+            "t": null,
+            "text": "Just a glass to make it all right"
+          },
+          {
+            "t": null,
+            "text": "Oh, you walkin' on a fine line"
+          },
+          {
+            "t": null,
+            "text": "I'm a lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "A lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "Cut me like a paper tiger"
+          },
+          {
+            "t": null,
+            "text": "Oh, I want love I'm not a fighter"
+          },
+          {
+            "t": null,
+            "text": "Yeah, you cut me like a paper tiger"
+          },
+          {
+            "t": null,
+            "text": "I'm a lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "A lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "Cut me like a paper tiger (Roar)"
+          },
+          {
+            "t": null,
+            "text": "Oh, I want love I'm not a fighter"
+          },
+          {
+            "t": null,
+            "text": "But you cut me like a paper tiger"
+          },
+          {
+            "t": null,
+            "text": "I'm a lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "A lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "(Roar)"
+          },
+          {
+            "t": null,
+            "text": "(Instrumental)"
+          },
+          {
+            "t": null,
+            "text": "Cut me like a paper tiger (Roar)"
+          },
+          {
+            "t": null,
+            "text": "Oh, I want love I'm not a fighter"
+          },
+          {
+            "t": null,
+            "text": "Yeah, you cut me like a paper tiger"
+          },
+          {
+            "t": null,
+            "text": "I'm a lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "A lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "Cut me like a paper tiger (Roar)"
+          },
+          {
+            "t": null,
+            "text": "Oh, I want love I'm not a fighter"
+          },
+          {
+            "t": null,
+            "text": "Yeah, you cut me like a paper tiger"
+          },
+          {
+            "t": null,
+            "text": "I'm a lover, not fighter"
+          },
+          {
+            "t": null,
+            "text": "A lover, not fighter"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "electric-light-orchestra-don-t-bring-me-down",
+      "title": "Don't Bring Me Down",
+      "artist": "Electric Light Orchestra",
+      "album": "Discovery",
+      "duration": 243,
+      "cover": "covers/electric-light-orchestra-don-t-bring-me-down.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiUUt3cE5IUHo5MnpSemRlb2Y4R09kUyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.unVH3Fv1gzVapV5zjIikcjpWAdG28nUxJ0a53W3tJkI",
+      "colors": {
+        "bg": "#211312",
+        "bgAlt": "#5f1c2b",
+        "accent": "#e5ad31",
+        "text": "#f4f1f0",
+        "muted": "#978f8e"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 15.02,
+            "text": "You got me runnin', goin' out of my mind"
+          },
+          {
+            "t": 19.28,
+            "text": "You got me thinkin' that I'm wastin' my time"
+          },
+          {
+            "t": 21.96,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 24.25,
+            "text": "No, no, no, no, no, ooh-ooh-hoo"
+          },
+          {
+            "t": 30.97,
+            "text": "I'll tell you once more before I get off the floor"
+          },
+          {
+            "t": 34.22,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 39.87,
+            "text": "You wanna stay out with your fancy friends"
+          },
+          {
+            "t": 44.09,
+            "text": "I'm tellin' you it's got to be the end"
+          },
+          {
+            "t": 46.76,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 49.45,
+            "text": "No, no, no, no, no, ooh-ooh-hoo"
+          },
+          {
+            "t": 55.83,
+            "text": "I'll tell you once more before I get off the floor"
+          },
+          {
+            "t": 59.74,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 64.3,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 66.48,
+            "text": "Grooss"
+          },
+          {
+            "t": 67.94,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 70.69,
+            "text": "Grooss"
+          },
+          {
+            "t": 72.43,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 74.38,
+            "text": "Grooss"
+          },
+          {
+            "t": 76.01,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 82.24,
+            "text": "What happened to the girl I used to know?"
+          },
+          {
+            "t": 85.25,
+            "text": "You let your mind out somewhere down the road"
+          },
+          {
+            "t": 88.77,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 91.42,
+            "text": "No, no, no, no, no, ooh-ooh-hoo"
+          },
+          {
+            "t": 97.65,
+            "text": "I'll tell you once more before I get off the floor"
+          },
+          {
+            "t": 101.13,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 107.28,
+            "text": "You're always talkin' 'bout your crazy nights"
+          },
+          {
+            "t": 110.04,
+            "text": "One of these days you're gonna get it right"
+          },
+          {
+            "t": 113.61,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 117.52,
+            "text": "No, no, no, no, no, ooh-ooh-hoo"
+          },
+          {
+            "t": 123.4,
+            "text": "I'll tell you once more before I get off the floor"
+          },
+          {
+            "t": 126.97,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 131.28,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 133.92,
+            "text": "Grooss"
+          },
+          {
+            "t": 135.57,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 138.2,
+            "text": "Grooss"
+          },
+          {
+            "t": 139.63,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 142.28,
+            "text": "Grooss"
+          },
+          {
+            "t": 143.88,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 151.32,
+            "text": "You're lookin' good, just like a snake in the grass"
+          },
+          {
+            "t": 155.32,
+            "text": "One of these days you're gonna break your glass"
+          },
+          {
+            "t": 158.32,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 161.32,
+            "text": "No, no, no, no, no, no, no, no, no, ooh-ooh-hoo"
+          },
+          {
+            "t": 166.8,
+            "text": "I'll tell you once more before I get off the floor"
+          },
+          {
+            "t": 170.92,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 192.88,
+            "text": "You got me shakin', got me runnin' away"
+          },
+          {
+            "t": 197.12,
+            "text": "You got me crawlin' up to you everyday"
+          },
+          {
+            "t": 200.03,
+            "text": "Don't bring me down"
+          },
+          {
+            "t": 203.03,
+            "text": "No, no, no, no, no, ooh-ooh-hoo"
+          },
+          {
+            "t": 209.17,
+            "text": "I'll tell you once more before I get off the floor"
+          },
+          {
+            "t": 212.68,
+            "text": "Don't bring me down, down, down, down, down, down"
+          },
+          {
+            "t": 234.4,
+            "text": "I'll tell you once more before I get off the floor"
+          },
+          {
+            "t": 237.92,
+            "text": "Don't bring me down"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "i-monster-lust-for-a-vampyr",
+      "title": "Lust for a Vampyr",
+      "artist": "I Monster",
+      "album": "A Dense Swarm of Ancient Stars",
+      "duration": 273,
+      "cover": "covers/i-monster-lust-for-a-vampyr.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiMFVDM2EyMmt5c3VGUnNVZGVlaE52YSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.IOgJwQ4Kwg0OC-nQrBaVMl81fs7PVAOhYbSMd9gZ3Z0",
+      "colors": {
+        "bg": "#1f1914",
+        "bgAlt": "#593e21",
+        "accent": "#cc8434",
+        "text": "#f4f2f0",
+        "muted": "#96938f"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 22.54,
+            "text": "In the light of the moon"
+          },
+          {
+            "t": 27.46,
+            "text": "When the stars are in bloom"
+          },
+          {
+            "t": 32.57,
+            "text": "On a hot night in June"
+          },
+          {
+            "t": 37.49,
+            "text": "That's when I call for you"
+          },
+          {
+            "t": 43.72,
+            "text": "♪"
+          },
+          {
+            "t": 46.48,
+            "text": "I've been working the whole day long"
+          },
+          {
+            "t": 51.52,
+            "text": "Getting older while you stay young"
+          },
+          {
+            "t": 56.52,
+            "text": "Give me shelter, the night is dark"
+          },
+          {
+            "t": 61.48,
+            "text": "Live forever"
+          },
+          {
+            "t": 66.58,
+            "text": "When you meet anyone you can find"
+          },
+          {
+            "t": 71.5,
+            "text": "Sink your teeth, you're in love for one night"
+          },
+          {
+            "t": 76.6,
+            "text": "As you sleep in the day, you are mine"
+          },
+          {
+            "t": 81.26,
+            "text": "I just want your love, so don't waste my time"
+          },
+          {
+            "t": 87.27,
+            "text": "♪"
+          },
+          {
+            "t": 95.13,
+            "text": "Take me now, in the dark"
+          },
+          {
+            "t": 100.16,
+            "text": "I can't wait, make your mark"
+          },
+          {
+            "t": 106.62,
+            "text": "I've been working the whole day long"
+          },
+          {
+            "t": 111.55,
+            "text": "Getting older while you stay young"
+          },
+          {
+            "t": 116.65,
+            "text": "Give me shelter, the night is dark"
+          },
+          {
+            "t": 121.68,
+            "text": "Live forever"
+          },
+          {
+            "t": 126.77,
+            "text": "When you meet anyone you can find"
+          },
+          {
+            "t": 131.67,
+            "text": "Sink your teeth, you're in love for one night"
+          },
+          {
+            "t": 136.77,
+            "text": "As you sleep in the day, you are mine"
+          },
+          {
+            "t": 141.36,
+            "text": "I just want your love, so don't waste my time"
+          },
+          {
+            "t": 147.5,
+            "text": "♪"
+          },
+          {
+            "t": 177.82,
+            "text": "By the light of the sun"
+          },
+          {
+            "t": 183.41,
+            "text": "I knew your time had come"
+          },
+          {
+            "t": 188.55,
+            "text": "I opened the box"
+          },
+          {
+            "t": 190.64,
+            "text": "And in just one go, you had gone"
+          },
+          {
+            "t": 196.13,
+            "text": "♪"
+          },
+          {
+            "t": 199.58,
+            "text": "When you meet anyone you can find"
+          },
+          {
+            "t": 204.45,
+            "text": "Sink your teeth, you're in love for one night"
+          },
+          {
+            "t": 209.49,
+            "text": "As you sleep in the day, you are mine"
+          },
+          {
+            "t": 214.02,
+            "text": "I just want your love, so don't waste my time"
+          },
+          {
+            "t": 219.48,
+            "text": "When you meet anyone you can find"
+          },
+          {
+            "t": 224.33,
+            "text": "Sink your teeth, you're in love for one night"
+          },
+          {
+            "t": 229.58,
+            "text": "As you sleep in the day, you are mine"
+          },
+          {
+            "t": 234.15,
+            "text": "I just want your love, so don't waste my time (waste my time)"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "johnny-goth-come-2-me",
+      "title": "Come 2 Me",
+      "artist": "Johnny Goth",
+      "album": "Voulez-Vous",
+      "duration": 158,
+      "cover": "covers/johnny-goth-come-2-me.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiY1hjZWZYaVdQYW92TVBlY1BTS2kyYSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.SveToNK84F-mPH0iPVEpSix7arWY72eJsfwIhBFywAI",
+      "colors": {
+        "bg": "#201613",
+        "bgAlt": "#5f1c1e",
+        "accent": "#f1161e",
+        "text": "#f4f1f0",
+        "muted": "#97918f"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 16.02,
+            "text": "Give it all to me tonight"
+          },
+          {
+            "t": 20.12,
+            "text": "Your body on my mind"
+          },
+          {
+            "t": 23.24,
+            "text": "Oh, I've been dreamin' of this night"
+          },
+          {
+            "t": 28.38,
+            "text": "For so long"
+          },
+          {
+            "t": 30.84,
+            "text": "Come"
+          },
+          {
+            "t": 33.28,
+            "text": "Come sit by my side"
+          },
+          {
+            "t": 36.64,
+            "text": "You've got a sad look in your eye"
+          },
+          {
+            "t": 40.04,
+            "text": "Don't let them pull you in tonight"
+          },
+          {
+            "t": 45.29,
+            "text": "Oh, no"
+          },
+          {
+            "t": 49.09,
+            "text": "I don't want to see you alone"
+          },
+          {
+            "t": 64.86,
+            "text": "If you try to fly too close, you might die"
+          },
+          {
+            "t": 70.34,
+            "text": "Like a moth to my light"
+          },
+          {
+            "t": 73.51,
+            "text": "Don't let those flames get you high"
+          },
+          {
+            "t": 78.83,
+            "text": "Oh, no"
+          },
+          {
+            "t": 82.36,
+            "text": "When you are high, do you feel it?"
+          },
+          {
+            "t": 91.15,
+            "text": "Oh, no"
+          },
+          {
+            "t": 99.15,
+            "text": "And if I dim the lights, will you still be in my head?"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "cesare-cremonini-poetica",
+      "title": "Poetica",
+      "artist": "Cesare Cremonini",
+      "album": "Possibili Scenari",
+      "duration": 293,
+      "cover": "covers/cesare-cremonini-poetica.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiY0Z5dWd0RkVub0tpS0VDbzh2TVc0NSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.mQH9siygY23xkqe9zsa90m1dju4t8EwIFbfRgK47o2U",
+      "colors": {
+        "bg": "#171221",
+        "bgAlt": "#1c3f5f",
+        "accent": "#17abe8",
+        "text": "#f2f0f4",
+        "muted": "#928e97"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 20.5,
+            "text": "Anche quando poi saremo stanchi"
+          },
+          {
+            "t": 24.3,
+            "text": "Troveremo il modo per navigare nel buio"
+          },
+          {
+            "t": 29.36,
+            "text": "Che tanto è facile abbandonarsi alle onde"
+          },
+          {
+            "t": 38.13,
+            "text": "Che si infrangono su di noi"
+          },
+          {
+            "t": 51.36,
+            "text": "Dimmi dove sei, vorrei parlarti"
+          },
+          {
+            "t": 55.02,
+            "text": "Di tutte quelle cose che"
+          },
+          {
+            "t": 57.75,
+            "text": "Ho mandato già in fumo"
+          },
+          {
+            "t": 60.35,
+            "text": "Colpa della solitudine"
+          },
+          {
+            "t": 63.78,
+            "text": "Non l'ho mai detto a nessuno"
+          },
+          {
+            "t": 68.97,
+            "text": "A nessuno tranne che a te"
+          },
+          {
+            "t": 74.06,
+            "text": "Questa sera sei bellissima"
+          },
+          {
+            "t": 81.37,
+            "text": "Se lo sai che non è finita abbracciami"
+          },
+          {
+            "t": 92.36,
+            "text": "E anche quando poi saremo stanchi"
+          },
+          {
+            "t": 96.42,
+            "text": "Troveremo il modo per navigare nel buio"
+          },
+          {
+            "t": 101.41,
+            "text": "Che tanto è facile abbandonarsi alle onde"
+          },
+          {
+            "t": 110.05,
+            "text": "Che si infrangono su di noi"
+          },
+          {
+            "t": 133.64,
+            "text": "Dimmi come stai, perché non parli"
+          },
+          {
+            "t": 137.38,
+            "text": "Ora tienimi con te, la tua mano nel buio"
+          },
+          {
+            "t": 142.45,
+            "text": "Guarisce la mia solitudine"
+          },
+          {
+            "t": 146,
+            "text": "Non l'ho mai chiesto a nessuno"
+          },
+          {
+            "t": 151.02,
+            "text": "A nessuno tranne che a te"
+          },
+          {
+            "t": 156.28,
+            "text": "Questa sera sei bellissima"
+          },
+          {
+            "t": 163.63,
+            "text": "Se lo sai che non è finita abbracciami"
+          },
+          {
+            "t": 174.08,
+            "text": "Anche se penserai che non è poetica"
+          },
+          {
+            "t": 182.15,
+            "text": "Questa vita ci ha sorriso e lo sai"
+          },
+          {
+            "t": 187.33,
+            "text": "Non è mai finita"
+          },
+          {
+            "t": 190.07,
+            "text": "Abbracciami"
+          },
+          {
+            "t": 192.37,
+            "text": "Abbracciami"
+          },
+          {
+            "t": 194.85,
+            "text": "Abbracciami"
+          },
+          {
+            "t": 205.86,
+            "text": "Anche quando poi saremo stanchi troveremo il modo"
+          },
+          {
+            "t": 210.66,
+            "text": "Anche quando poi saremo stanchi troveremo il modo"
+          },
+          {
+            "t": 215.95,
+            "text": "Anche quando poi saremo stanchi troveremo il modo"
+          },
+          {
+            "t": 220.96,
+            "text": "Anche quando poi saremo stanchi troveremo il modo"
+          },
+          {
+            "t": 226.22,
+            "text": "Anche quando poi saremo stanchi troveremo il modo"
+          },
+          {
+            "t": 231.29,
+            "text": "Anche quando poi saremo stanchi troveremo il modo"
+          },
+          {
+            "t": 236.43,
+            "text": "Anche quando poi saremo stanchi troveremo il modo"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "lykke-li-autoerotique-little-bit-feat-autoerotique-remix",
+      "title": "Little Bit (feat. Autoerotique) - Remix",
+      "artist": "Lykke Li • Autoerotique",
+      "album": "Little Bit (feat. Autoerotique) [Remix]",
+      "duration": 234,
+      "cover": "covers/lykke-li-autoerotique-little-bit-feat-autoerotique-remix.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiT3NZZ0RTRFpDRUNXTHZ4czYwYkpCdSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.Sx-tEGI9KYC6L_T7pxmvSYx6iW6ndsTJFmC3LPDzD9g",
+      "colors": {
+        "bg": "#1e1515",
+        "bgAlt": "#4b3030",
+        "accent": "#c63939",
+        "text": "#f4f0f0",
+        "muted": "#969090"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 14.7,
+            "text": "And for you I keep my legs apart"
+          },
+          {
+            "t": 18.11,
+            "text": "And forget about my tainted heart"
+          },
+          {
+            "t": 22.04,
+            "text": "And I will never ever be the first to say it"
+          },
+          {
+            "t": 26.2,
+            "text": "But still I, you know I, I, I"
+          },
+          {
+            "t": 29.84,
+            "text": "I would do it"
+          },
+          {
+            "t": 30.62,
+            "text": "Push a button"
+          },
+          {
+            "t": 31.67,
+            "text": "Pull the trigger"
+          },
+          {
+            "t": 32.51,
+            "text": "Climb a mountain"
+          },
+          {
+            "t": 33.43,
+            "text": "Jump off a cliff"
+          },
+          {
+            "t": 34.42,
+            "text": "'Cause you know baby, I love you, love you a little bit"
+          },
+          {
+            "t": 37.43,
+            "text": "You would do it, you would say it"
+          },
+          {
+            "t": 38.81,
+            "text": "You would mean it, and we could do it"
+          },
+          {
+            "t": 40.94,
+            "text": "It was you and I, not only I (mm)"
+          },
+          {
+            "t": 44.38,
+            "text": "Think I'm a little bit, little bit"
+          },
+          {
+            "t": 48.5,
+            "text": "A little bit in love with you"
+          },
+          {
+            "t": 51.28,
+            "text": "But only if you're a little bit, little bit"
+          },
+          {
+            "t": 56.28,
+            "text": "A little bit in love with you"
+          },
+          {
+            "t": 58.95,
+            "text": "But only if you're a little bit, little bit"
+          },
+          {
+            "t": 63.74,
+            "text": "A little bit in love with you"
+          },
+          {
+            "t": 66.79,
+            "text": "But only if you're a little bit, little bit (little bit)"
+          },
+          {
+            "t": 71.54,
+            "text": "In lo-lo-lo-lo-lo love with me (oh)"
+          },
+          {
+            "t": 75.21,
+            "text": "Oh, oh, oh, oh, oh, oh"
+          },
+          {
+            "t": 79.09,
+            "text": "Oh, oh, oh, oh, oh, oh"
+          },
+          {
+            "t": 82.65,
+            "text": "Oh, oh, oh, oh, oh, oh"
+          },
+          {
+            "t": 86.42,
+            "text": "Oh, oh, oh, oh, oh, oh"
+          },
+          {
+            "t": 90.02,
+            "text": "Oh, oh, oh, oh, oh, oh (hands down)"
+          },
+          {
+            "t": 93.64,
+            "text": "Oh, oh, oh, oh, oh, oh"
+          },
+          {
+            "t": 97.88,
+            "text": "Oh, oh, oh, oh, oh, oh"
+          },
+          {
+            "t": 101.44,
+            "text": "Oh, oh, oh, oh, oh, oh"
+          },
+          {
+            "t": 105.38,
+            "text": "Oh, oh, oh, oh, oh, oh"
+          },
+          {
+            "t": 108.94,
+            "text": "Oh, oh, oh, oh, oh, oh"
+          },
+          {
+            "t": 112.54,
+            "text": "Oh, oh, oh, oh, oh, oh"
+          },
+          {
+            "t": 116.49,
+            "text": "Oh, oh, oh, oh, oh, oh"
+          },
+          {
+            "t": 135.19,
+            "text": "Hands down, I'm too proud for love"
+          },
+          {
+            "t": 142.05,
+            "text": "But with eyes shut, it's you I'm thinking of"
+          },
+          {
+            "t": 149.14,
+            "text": "But how we move from A to B"
+          },
+          {
+            "t": 151.31,
+            "text": "It can't be up to me 'cause you don't know (don't know)"
+          },
+          {
+            "t": 157.64,
+            "text": "Eye to eye, thigh to thigh, I let go"
+          },
+          {
+            "t": 171.46,
+            "text": "I think I'm a little bit, little bit"
+          },
+          {
+            "t": 176.25,
+            "text": "A little bit in love with you"
+          },
+          {
+            "t": 179.25,
+            "text": "But only if you're a little bit, little bit"
+          },
+          {
+            "t": 183.7,
+            "text": "A little bit in love with you"
+          },
+          {
+            "t": 186.46,
+            "text": "But only if you're a little bit, little bit"
+          },
+          {
+            "t": 191,
+            "text": "A little bit in love with you"
+          },
+          {
+            "t": 193.99,
+            "text": "But only if you're a"
+          },
+          {
+            "t": 195.46,
+            "text": "But only if you're with"
+          },
+          {
+            "t": 197.58,
+            "text": "But only if you're a"
+          },
+          {
+            "t": 199.37,
+            "text": "But only if you're with"
+          },
+          {
+            "t": 201.42,
+            "text": "But only if you're a"
+          },
+          {
+            "t": 203.22,
+            "text": "But only if you're with"
+          },
+          {
+            "t": 205.07,
+            "text": "But only if you're a"
+          },
+          {
+            "t": 206.86,
+            "text": "But only if you're with"
+          },
+          {
+            "t": 208.94,
+            "text": "But only if you're a"
+          },
+          {
+            "t": 210.46,
+            "text": "But only if you're with"
+          },
+          {
+            "t": 212.51,
+            "text": "But only if you're a"
+          },
+          {
+            "t": 214.36,
+            "text": "But only if you're with"
+          },
+          {
+            "t": 216.08,
+            "text": "But only if you're a"
+          },
+          {
+            "t": 218.36,
+            "text": "But, but, but, but, but, but"
+          },
+          {
+            "t": 221.35,
+            "text": "But only"
+          },
+          {
+            "t": 221.83,
+            "text": "But, but, but, only"
+          },
+          {
+            "t": 223.94,
+            "text": "But, but, but, but, but, but"
+          },
+          {
+            "t": 226,
+            "text": "But, but, but, but, but, but"
+          },
+          {
+            "t": 228.88,
+            "text": "But, but, but, but, but, but"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "deorro-dycy-adrian-delgado-perdoname-feat-dycy-adrian-delgado",
+      "title": "Perdoname (feat. DyCy & Adrian Delgado)",
+      "artist": "Deorro • DyCy • Adrian Delgado",
+      "album": "Perdoname (feat. DyCy & Adrian Delgado)",
+      "duration": 270,
+      "cover": "covers/deorro-dycy-adrian-delgado-perdoname-feat-dycy-adrian-delgado.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiOUh5NG5WN3lSbnFZTjRjN3ZRU1QwMyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.KQvJ4XeBH9r57khUPGA7s2ATCmXBjsKf73VkyzRyJGQ",
+      "colors": {
+        "bg": "#1e1b15",
+        "bgAlt": "#5a4620",
+        "accent": "#c69739",
+        "text": "#f4f3f0",
+        "muted": "#969490"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 16.14,
+            "text": "(¡Uh!)"
+          },
+          {
+            "t": 19.5,
+            "text": "(Yeah!)"
+          },
+          {
+            "t": 21.4,
+            "text": "¡Oh-oh-oh-uh-oh-oh-oh-uh-oh!"
+          },
+          {
+            "t": 24.11,
+            "text": "¡Oh-oh-oh-uh-oh-oh (yeh)-oh-uh-oh!"
+          },
+          {
+            "t": 28.72,
+            "text": "¡Oh-oh-oh-uh-oh-oh-oh-uh-oh! (c'mon!)"
+          },
+          {
+            "t": 31.23,
+            "text": "¡Oh-oh-oh-uh-oh!"
+          },
+          {
+            "t": 32.69,
+            "text": "Son las tres de la mañana y estoy en tu ventana"
+          },
+          {
+            "t": 34.78,
+            "text": "Buscándote, amor, escucha por favor"
+          },
+          {
+            "t": 38.17,
+            "text": "¿Y tú que estás pensando llegando aquí tomando?"
+          },
+          {
+            "t": 42.05,
+            "text": "Vete ya de aquí, déjame dormir"
+          },
+          {
+            "t": 45.6,
+            "text": "Pero yo no puedo irme sin un beso (beso, beso, uh-oh-oh-uh-oh-oh)"
+          },
+          {
+            "t": 53.53,
+            "text": "Pero ya es muy tarde y no te quiero ver (uh-oh-oh-oh-uh-oh-oh)"
+          },
+          {
+            "t": 61.34,
+            "text": "Hago lo que quieras"
+          },
+          {
+            "t": 63.16,
+            "text": "Perdóname mi nena (nena, nena, mi nena,), oh-oh-oh-oh-oh"
+          },
+          {
+            "t": 68.49,
+            "text": "Yo no te creo"
+          },
+          {
+            "t": 70.38,
+            "text": "Que no tienes pena (pena, que no tienes pena)"
+          },
+          {
+            "t": 74.41,
+            "text": "Estoy cantando, oh, ¡oh-oh-oh-uh-oh-oh-oh-uh-oh!"
+          },
+          {
+            "t": 79.8,
+            "text": "¡Oh-oh-oh!, perdóname"
+          },
+          {
+            "t": 83.46,
+            "text": "¡Oh-oh-oh-uh-oh-oh-oh-uh-oh!"
+          },
+          {
+            "t": 87.44,
+            "text": "¡Oh-oh-oh-uh-oh!, te estoy diciendo"
+          },
+          {
+            "t": 91.29,
+            "text": "¿Qué más puedo esperar de ti? (de ti, de ti, de ti, uh)"
+          },
+          {
+            "t": 99.39,
+            "text": "Tú no sabes todo lo que yo sufrí (sufrí), no-no-no"
+          },
+          {
+            "t": 106.43,
+            "text": "Sal un ratito, deja te explico (explico, explico lo qué paso)"
+          },
+          {
+            "t": 113.5,
+            "text": "Soy un maldito, te necesito (-sito, -sito, perdóname)"
+          },
+          {
+            "t": 121.26,
+            "text": "Hago lo que quieras"
+          },
+          {
+            "t": 123.19,
+            "text": "Perdóname mi nena (nena, mi nena, nena), oh-oh-oh-oh"
+          },
+          {
+            "t": 128.47,
+            "text": "Yo no te lo creo"
+          },
+          {
+            "t": 130.09,
+            "text": "Que no tienes pena (pena, que no tienes pena)"
+          },
+          {
+            "t": 134.45,
+            "text": "Estoy cantando, oh, ¡oh-oh-oh-uh-oh-oh-oh-uh-oh!"
+          },
+          {
+            "t": 140.1,
+            "text": "¡Oh-oh-oh!, perdóname"
+          },
+          {
+            "t": 143.41,
+            "text": "¡Oh-oh-oh-uh-oh-oh-oh-uh-oh!"
+          },
+          {
+            "t": 147.49,
+            "text": "¡Oh-oh-oh-uh-oh!, te estoy diciendo"
+          },
+          {
+            "t": 157.01,
+            "text": "Estoy cantando"
+          },
+          {
+            "t": 164.52,
+            "text": "Estoy cantando"
+          },
+          {
+            "t": 171.8,
+            "text": "Estoy cantando"
+          },
+          {
+            "t": 179.33,
+            "text": "¡Uno, dos, tres!"
+          },
+          {
+            "t": 188.15,
+            "text": "¡Hay acción!"
+          },
+          {
+            "t": 193.1,
+            "text": "(That wasn't even funny)"
+          },
+          {
+            "t": 194.62,
+            "text": "(Alright, alright, I'll bring it back, bring it back)"
+          },
+          {
+            "t": 197.32,
+            "text": "¡Oh-oh-oh-uh-oh-oh-oh-uh-oh!"
+          },
+          {
+            "t": 199.85,
+            "text": "¡Oh-oh-oh!, perdóname"
+          },
+          {
+            "t": 203.42,
+            "text": "¡Oh-oh-oh-uh-oh-oh-oh-uh-oh!"
+          },
+          {
+            "t": 206.96,
+            "text": "¡Oh-oh-oh!, perdóname"
+          },
+          {
+            "t": 211.1,
+            "text": "Hago lo que quieras"
+          },
+          {
+            "t": 212.89,
+            "text": "Perdóname mi nena (nena, nena, nena), oh-oh-oh-oh"
+          },
+          {
+            "t": 218.45,
+            "text": "Yo no te lo creo"
+          },
+          {
+            "t": 220.18,
+            "text": "Que no tienes pena (pena, pena, pena)"
+          },
+          {
+            "t": 224.39,
+            "text": "Estoy cantando, ¡oh-oh-oh-uh-oh-oh-oh-uh-oh!"
+          },
+          {
+            "t": 229.75,
+            "text": "¡Oh-oh-oh!, perdóname"
+          },
+          {
+            "t": 233.54,
+            "text": "¡Oh-oh-oh-uh-oh-oh-oh-uh-oh!"
+          },
+          {
+            "t": 237.24,
+            "text": "¡Oh-oh-oh!, perdóname"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "blood-cultures-emptylands",
+      "title": "Emptylands",
+      "artist": "Blood Cultures",
+      "album": "Skate Story: Vol. I",
+      "duration": 442,
+      "cover": "covers/blood-cultures-emptylands.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiNTBmZEd5b29FQWowVmdBWG1NT0tkUiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.Sh_F-JwHF5PYSX_6X132IuWHf7eO-Kb-N7eFYf-sb_U",
+      "colors": {
+        "bg": "#260d0d",
+        "bgAlt": "#5f1c1c",
+        "accent": "#f21010",
+        "text": "#f4f0f0",
+        "muted": "#998c8c"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 57.32,
+            "text": "We live by a melody"
+          },
+          {
+            "t": 62.29,
+            "text": "And the beat of a drum"
+          },
+          {
+            "t": 66.98,
+            "text": "A misplaced memory"
+          },
+          {
+            "t": 71.35,
+            "text": "Don't know where ya heard it from"
+          },
+          {
+            "t": 76.15,
+            "text": "The spirit and the entity"
+          },
+          {
+            "t": 80.92,
+            "text": "Arise from the tomb"
+          },
+          {
+            "t": 85.66,
+            "text": "They're made of smoke and treachery"
+          },
+          {
+            "t": 90.2,
+            "text": "That they told you to consume"
+          },
+          {
+            "t": 93.89,
+            "text": "Well you can't turn it back"
+          },
+          {
+            "t": 96.07,
+            "text": "To the situation you were at"
+          },
+          {
+            "t": 98.58,
+            "text": "And you can't come back to where ya from"
+          },
+          {
+            "t": 103.14,
+            "text": "And you can't run away"
+          },
+          {
+            "t": 105.38,
+            "text": "From the people you betray"
+          },
+          {
+            "t": 107.83,
+            "text": "And you can't run away from the gun"
+          },
+          {
+            "t": 170.95,
+            "text": "The spirit and the entity"
+          },
+          {
+            "t": 175.27,
+            "text": "Arise from the tomb"
+          },
+          {
+            "t": 179.71,
+            "text": "They're made of smoke and treachery"
+          },
+          {
+            "t": 184.26,
+            "text": "That they told you to consume"
+          },
+          {
+            "t": 188.26,
+            "text": "Well you can't turn back"
+          },
+          {
+            "t": 190.04,
+            "text": "To the station you've passed"
+          },
+          {
+            "t": 192.59,
+            "text": "And you can't come back to where ya from"
+          },
+          {
+            "t": 197.24,
+            "text": "And you can't turn away"
+          },
+          {
+            "t": 199.4,
+            "text": "From the electric soundscape"
+          },
+          {
+            "t": 201.82,
+            "text": "And you can't run away once it's done"
+          },
+          {
+            "t": 245.55,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 247.59,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 249.86,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 252.14,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 254.74,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 256.89,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 258.85,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 261.65,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 368.07,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 369.82,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 372.22,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 374.51,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 376.94,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 379.07,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 381.52,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 383.82,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 386.33,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 388.51,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 390.88,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 393.23,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 395.63,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 398.14,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 400.58,
+            "text": "I think it's working again"
+          },
+          {
+            "t": 402.75,
+            "text": "I think it's working again"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "the-zombies-time-of-the-season-mono-remastered",
+      "title": "Time of the Season - Mono Remastered",
+      "artist": "The Zombies",
+      "album": "Odessey and Oracle (Mono Remastered)",
+      "duration": 210,
+      "cover": "covers/the-zombies-time-of-the-season-mono-remastered.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiMU1BdzNLeGw0cEVBRlFPV242VUdBRSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.wtA8N8MaLadGXQVJqdXij72ppED4dAyL7-vopdg71F4",
+      "colors": {
+        "bg": "#1f2013",
+        "bgAlt": "#1f495b",
+        "accent": "#e5511a",
+        "text": "#f4f4f0",
+        "muted": "#96978f"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 7.94,
+            "text": "It's the time of the season"
+          },
+          {
+            "t": 13.29,
+            "text": "When love runs high"
+          },
+          {
+            "t": 16.29,
+            "text": "In this time, give it to me easy"
+          },
+          {
+            "t": 21.53,
+            "text": "And let me try with pleasured hands"
+          },
+          {
+            "t": 25.8,
+            "text": "To take you in the sun to"
+          },
+          {
+            "t": 28.16,
+            "text": "Promised lands"
+          },
+          {
+            "t": 29.99,
+            "text": "To show you everyone"
+          },
+          {
+            "t": 32.27,
+            "text": "It's the time of the season for loving"
+          },
+          {
+            "t": 48.79,
+            "text": "What's your name? (What's your name?)"
+          },
+          {
+            "t": 51.14,
+            "text": "Who's your daddy? (Who's your daddy?)"
+          },
+          {
+            "t": 52.9,
+            "text": "(He rich) Is he rich like me?"
+          },
+          {
+            "t": 57.31,
+            "text": "Has he taken (has he taken)"
+          },
+          {
+            "t": 59.49,
+            "text": "Any time (any time)"
+          },
+          {
+            "t": 61.31,
+            "text": "(To show) to show you what you need to live?"
+          },
+          {
+            "t": 66.82,
+            "text": "Tell it to me slowly"
+          },
+          {
+            "t": 69.1,
+            "text": "Tell you what"
+          },
+          {
+            "t": 70.83,
+            "text": "I really want to know"
+          },
+          {
+            "t": 73.35,
+            "text": "It's the time of the season for loving"
+          },
+          {
+            "t": 120.9,
+            "text": "What's your name? (What's your name?)"
+          },
+          {
+            "t": 123.82,
+            "text": "Who's your daddy? (Who's your daddy?)"
+          },
+          {
+            "t": 125.52,
+            "text": "(He rich) Is he rich like me?"
+          },
+          {
+            "t": 129.85,
+            "text": "Has he taken (has he taken)"
+          },
+          {
+            "t": 131.92,
+            "text": "Any time (any time)"
+          },
+          {
+            "t": 133.97,
+            "text": "(To show) to show you what you need to live?"
+          },
+          {
+            "t": 139.4,
+            "text": "Tell it to me slowly"
+          },
+          {
+            "t": 141.7,
+            "text": "Tell you what"
+          },
+          {
+            "t": 143.45,
+            "text": "I really want to know"
+          },
+          {
+            "t": 145.78,
+            "text": "It's the time of the season for loving"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "siames-mr-fear",
+      "title": "Mr. Fear",
+      "artist": "SIAMES",
+      "album": "BOUNCE INTO THE MUSIC",
+      "duration": 246,
+      "cover": "covers/siames-mr-fear.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiU053SjduT08zRUxzRTdkZHVLalFiZyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.72XY4YadxlfBrnhY1XZH3wPmCcjr_Ls0GSJE0wlA0rU",
+      "colors": {
+        "bg": "#1e1915",
+        "bgAlt": "#5f291c",
+        "accent": "#e54d1a",
+        "text": "#f4f2f0",
+        "muted": "#969390"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 13.03,
+            "text": "Hello"
+          },
+          {
+            "t": 15.31,
+            "text": "My name is Mr. Fear"
+          },
+          {
+            "t": 22.16,
+            "text": "I wish I had a faster therapy"
+          },
+          {
+            "t": 30.79,
+            "text": "I've come"
+          },
+          {
+            "t": 33.18,
+            "text": "To mind control your needs"
+          },
+          {
+            "t": 39.79,
+            "text": "Tonight I'm gonna star all of your leads"
+          },
+          {
+            "t": 48.55,
+            "text": "You know"
+          },
+          {
+            "t": 50.91,
+            "text": "I'll never disappear"
+          },
+          {
+            "t": 55.52,
+            "text": "Now get me out of here"
+          },
+          {
+            "t": 59.69,
+            "text": "Just trust in me, my dear"
+          },
+          {
+            "t": 64.62,
+            "text": "No cure is coming near"
+          },
+          {
+            "t": 75.32,
+            "text": "How long"
+          },
+          {
+            "t": 77.7,
+            "text": "You'll call me insincere?"
+          },
+          {
+            "t": 84.33,
+            "text": "I'm not here to fulfill your parody"
+          },
+          {
+            "t": 93.15,
+            "text": "How come my song become unreal?"
+          },
+          {
+            "t": 101.9,
+            "text": "You never understand my melody"
+          },
+          {
+            "t": 110.92,
+            "text": "You know"
+          },
+          {
+            "t": 113.12,
+            "text": "I'll never disappear"
+          },
+          {
+            "t": 117.75,
+            "text": "Now get me out of here"
+          },
+          {
+            "t": 121.93,
+            "text": "Just trust in me, my dear"
+          },
+          {
+            "t": 126.96,
+            "text": "No cure is coming you know"
+          },
+          {
+            "t": 130.91,
+            "text": "I'll never disappear"
+          },
+          {
+            "t": 135.7,
+            "text": "Now get us out of here"
+          },
+          {
+            "t": 139.95,
+            "text": "Don't fight with me, my dear"
+          },
+          {
+            "t": 144.39,
+            "text": "Why can't I be in here?"
+          },
+          {
+            "t": 155.4,
+            "text": "'Cause you make me feel"
+          },
+          {
+            "t": 158.26,
+            "text": "Like I'm so alone"
+          },
+          {
+            "t": 164.15,
+            "text": "I know it's not real"
+          },
+          {
+            "t": 167.54,
+            "text": "But it's in my soul"
+          },
+          {
+            "t": 174.44,
+            "text": "And I just can try to face"
+          },
+          {
+            "t": 177.34,
+            "text": "The dark inside my head"
+          },
+          {
+            "t": 199.88,
+            "text": "You know"
+          },
+          {
+            "t": 201.94,
+            "text": "I'll never disappear"
+          },
+          {
+            "t": 206.62,
+            "text": "Now get me out of here"
+          },
+          {
+            "t": 210.88,
+            "text": "Just trust in me, my dear"
+          },
+          {
+            "t": 215.52,
+            "text": "No cure is coming you know"
+          },
+          {
+            "t": 219.73,
+            "text": "I'll never disappear"
+          },
+          {
+            "t": 224.55,
+            "text": "Now get us out of here"
+          },
+          {
+            "t": 228.77,
+            "text": "Don't trust in me my dear"
+          },
+          {
+            "t": 233.57,
+            "text": "What cure is coming near?"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "mareux-the-perfect-girl",
+      "title": "The Perfect Girl",
+      "artist": "Mareux",
+      "album": "The Perfect Girl",
+      "duration": 194,
+      "cover": "covers/mareux-the-perfect-girl.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiNUZUSlFQaGVxY3VkQ2QwcGNyTW54MCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.qzgtj3tQ5-Nl6jIOT7loFv6ftaRqQyeQc4D3hi3oy04",
+      "colors": {
+        "bg": "#151e1b",
+        "bgAlt": "#231c5f",
+        "accent": "#4432cd",
+        "text": "#f0f4f3",
+        "muted": "#909694"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 28.66,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 31.9,
+            "text": "I think you come from another world"
+          },
+          {
+            "t": 35.13,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 38.77,
+            "text": "I really don't understand a word"
+          },
+          {
+            "t": 42.93,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 45.93,
+            "text": "I'd like to shake you around and around"
+          },
+          {
+            "t": 50.94,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 53.74,
+            "text": "I'd like to turn you all upside down"
+          },
+          {
+            "t": 58.73,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 60.62,
+            "text": "The way you look like you do"
+          },
+          {
+            "t": 65.88,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 68.18,
+            "text": "I want to be with you"
+          },
+          {
+            "t": 73.23,
+            "text": "I think I'm falling, I think I'm falling in"
+          },
+          {
+            "t": 76.62,
+            "text": "I think I'm falling in love with you, with you"
+          },
+          {
+            "t": 80.71,
+            "text": "I think I'm falling, I think I'm falling in"
+          },
+          {
+            "t": 84.89,
+            "text": "I think I'm falling in love with you"
+          },
+          {
+            "t": 112.36,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 115.22,
+            "text": "I think you come from another world"
+          },
+          {
+            "t": 119.01,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 122.93,
+            "text": "I really don't understand a word"
+          },
+          {
+            "t": 127.25,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 129.97,
+            "text": "I'd like to shake you around and around"
+          },
+          {
+            "t": 134.65,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 137.61,
+            "text": "I'd like to turn you all upside down"
+          },
+          {
+            "t": 143.21,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 144.49,
+            "text": "The way you look like you do"
+          },
+          {
+            "t": 149.9,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 152.05,
+            "text": "I want to be with you"
+          },
+          {
+            "t": 157.5,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 159.45,
+            "text": "The way you look like you do"
+          },
+          {
+            "t": 164.54,
+            "text": "You're such a strange girl"
+          },
+          {
+            "t": 167.13,
+            "text": "I want to be with you"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "muse-madness",
+      "title": "Madness",
+      "artist": "Muse",
+      "album": "The 2nd Law",
+      "duration": 281,
+      "cover": "covers/muse-madness.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiV2VRTmFudDFkaVlDM05SVkVCNGZhWCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.43-wo-2Wiv1CKuDvZiVmaUse_4G5YWQsjsy2G1A8-6E",
+      "colors": {
+        "bg": "#111322",
+        "bgAlt": "#5f1c3f",
+        "accent": "#5079cc",
+        "text": "#f0f1f4",
+        "muted": "#8e8f98"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 11.26,
+            "text": "I, I can't get these memories out of my mind"
+          },
+          {
+            "t": 19.72,
+            "text": "And some kind of madness has started to evolve"
+          },
+          {
+            "t": 32.01,
+            "text": "And I, I tried so hard to let you go"
+          },
+          {
+            "t": 40.95,
+            "text": "But some kind of madness is swallowing me whole, yeah"
+          },
+          {
+            "t": 53.54,
+            "text": "I have finally seen the light"
+          },
+          {
+            "t": 64.18,
+            "text": "And I have finally realized what you mean"
+          },
+          {
+            "t": 84.95,
+            "text": "And now I need to know, is this real love?"
+          },
+          {
+            "t": 94.29,
+            "text": "Or is it just madness keeping us afloat? Hmm"
+          },
+          {
+            "t": 106.62,
+            "text": "And when I look back at all the crazy fights we've had"
+          },
+          {
+            "t": 115.98,
+            "text": "Like some kind of madness was taking control, yeah"
+          },
+          {
+            "t": 128.23,
+            "text": "Now, I have finally seen the light"
+          },
+          {
+            "t": 138.58,
+            "text": "And I have finally realized what you need"
+          },
+          {
+            "t": 181.45,
+            "text": "But now I have finally seen the end"
+          },
+          {
+            "t": 189.13,
+            "text": "(Finally seen the end)"
+          },
+          {
+            "t": 192.27,
+            "text": "And I'm not expecting you to care, no"
+          },
+          {
+            "t": 199.87,
+            "text": "(Expecting you to care)"
+          },
+          {
+            "t": 203.05,
+            "text": "That I have finally seen the light"
+          },
+          {
+            "t": 210.36,
+            "text": "(Finally seen the light)"
+          },
+          {
+            "t": 213.46,
+            "text": "And I have finally realized"
+          },
+          {
+            "t": 221.65,
+            "text": "(Realized)"
+          },
+          {
+            "t": 223.26,
+            "text": "I need your love"
+          },
+          {
+            "t": 234.02,
+            "text": "I need your love"
+          },
+          {
+            "t": 245.29,
+            "text": "Come to me, just in a dream"
+          },
+          {
+            "t": 249.83,
+            "text": "Come on and rescue me"
+          },
+          {
+            "t": 255.15,
+            "text": "Yes, I know I can be wrong"
+          },
+          {
+            "t": 260.44,
+            "text": "And maybe you're too headstrong"
+          },
+          {
+            "t": 265.18,
+            "text": "Our love is"
+          },
+          {
+            "t": 267.23,
+            "text": "Madness"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "arawato-suplentes",
+      "title": "Suplentes",
+      "artist": "Arawato",
+      "album": "Suplentes",
+      "duration": 230,
+      "cover": "covers/arawato-suplentes.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiekhtT2dGODhBaFdKNnVYTXJ6RmllVyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.bSttrW_k_RrQdk5ycMy5V2gEFUV4HA2w846Sdf79_eg",
+      "colors": {
+        "bg": "#1e1d15",
+        "bgAlt": "#5e561d",
+        "accent": "#c6b539",
+        "text": "#f4f4f0",
+        "muted": "#969590"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 18.44,
+            "text": "Te puedo revelar"
+          },
+          {
+            "t": 21.41,
+            "text": "Que soy un alma usada"
+          },
+          {
+            "t": 24.37,
+            "text": "Que igual te puede acompañar"
+          },
+          {
+            "t": 29.51,
+            "text": "No quiero distracciones"
+          },
+          {
+            "t": 32.52,
+            "text": "Lo que tú me propones"
+          },
+          {
+            "t": 35.54,
+            "text": "No es algo que te puedo dar"
+          },
+          {
+            "t": 41.24,
+            "text": "Ven a malgastar tu tiempo"
+          },
+          {
+            "t": 45.21,
+            "text": "Sabes que ya es tarde para repararme"
+          },
+          {
+            "t": 49.15,
+            "text": "Pretendamos un momento"
+          },
+          {
+            "t": 53.38,
+            "text": "Que somos suplentes de algo importante"
+          },
+          {
+            "t": 75.93,
+            "text": "Si quieres soluciones"
+          },
+          {
+            "t": 79.06,
+            "text": "Escucha otras canciones"
+          },
+          {
+            "t": 81.95,
+            "text": "De esas que suelen consolarte"
+          },
+          {
+            "t": 87.09,
+            "text": "No quiero distracciones"
+          },
+          {
+            "t": 90.02,
+            "text": "Lo que tú me propones"
+          },
+          {
+            "t": 92.96,
+            "text": "No es algo que te puedo dar"
+          },
+          {
+            "t": 98.17,
+            "text": "Mmh-mmh"
+          },
+          {
+            "t": 100.45,
+            "text": "Mmh-mmh, mmh-mmh"
+          },
+          {
+            "t": 103.26,
+            "text": "Lamento no ser titular"
+          },
+          {
+            "t": 106.6,
+            "text": "Ven a malgastar tu tiempo"
+          },
+          {
+            "t": 110.77,
+            "text": "Sabes que ya es tarde para repararme"
+          },
+          {
+            "t": 114.73,
+            "text": "Pretendamos un momento"
+          },
+          {
+            "t": 118.9,
+            "text": "Que somos suplentes de algo importante"
+          },
+          {
+            "t": 132.27,
+            "text": "Solo un instante"
+          },
+          {
+            "t": 137.15,
+            "text": "Oh-oh-oh-oh"
+          },
+          {
+            "t": 140.22,
+            "text": "Uoh-oh-oh-oh"
+          },
+          {
+            "t": 147.2,
+            "text": "No me pidas más, no me pidas más"
+          },
+          {
+            "t": 155.35,
+            "text": "No me pidas más, ya no me pidas más"
+          },
+          {
+            "t": 161.72,
+            "text": "De lo que puedo dar"
+          },
+          {
+            "t": 163.37,
+            "text": "No me pidas más de lo que puedo dar"
+          },
+          {
+            "t": 167.31,
+            "text": "No me pidas más de lo que puedo dar"
+          },
+          {
+            "t": 171.36,
+            "text": "No me pidas más, ya no me pidas más"
+          },
+          {
+            "t": 180.98,
+            "text": "Mmh-mmh"
+          },
+          {
+            "t": 183.49,
+            "text": "Mmh-mmh, mmh-mmh"
+          },
+          {
+            "t": 185.97,
+            "text": "Lamento no ser titular"
+          },
+          {
+            "t": 191.3,
+            "text": "Ven a malgastar tu tiempo"
+          },
+          {
+            "t": 195.53,
+            "text": "Sabes que ya es tarde para repararme"
+          },
+          {
+            "t": 199.41,
+            "text": "Pretendamos un momento"
+          },
+          {
+            "t": 203.51,
+            "text": "Que somos suplentes de algo importante"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "elliot-moss-slip",
+      "title": "Slip",
+      "artist": "Elliot Moss",
+      "album": "Highspeeds",
+      "duration": 298,
+      "cover": "covers/elliot-moss-slip.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiVnNsQ1RLZ2N0Z3VWRDJIWThhakQ2RyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.hn4tinTrwoO2HjffmZZU_ZpJY1Grk_OkYjRpzcePT2Y",
+      "colors": {
+        "bg": "#15171e",
+        "bgAlt": "#1f1f5c",
+        "accent": "#3939c6",
+        "text": "#f0f1f4",
+        "muted": "#909196"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 1.09,
+            "text": "Oh oh, oh-oh-oh"
+          },
+          {
+            "t": 4.59,
+            "text": "Oh-oh-oh, oh, oh-oh-oh"
+          },
+          {
+            "t": 8.52,
+            "text": "Oh oh oh oh-oh oh, oh"
+          },
+          {
+            "t": 13.23,
+            "text": "Oh oh oh-oh oh"
+          },
+          {
+            "t": 17.48,
+            "text": "I won't keep watching you"
+          },
+          {
+            "t": 24.95,
+            "text": "Dance around in your smoke and flicker out"
+          },
+          {
+            "t": 34.34,
+            "text": "You're nothing like I used to know"
+          },
+          {
+            "t": 43.8,
+            "text": "I don't believe in safety nets"
+          },
+          {
+            "t": 51.39,
+            "text": "Strung along they make it alright to let go"
+          },
+          {
+            "t": 61.12,
+            "text": "You gotta hold on"
+          },
+          {
+            "t": 68.48,
+            "text": "Or it's gonna slip slip slip through your"
+          },
+          {
+            "t": 73.65,
+            "text": "Slip slip slip through your hands"
+          },
+          {
+            "t": 77.62,
+            "text": "Oh oh oh-oh-oh"
+          },
+          {
+            "t": 80.01,
+            "text": "Oh-oh-oh, oh, oh-oh-oh"
+          },
+          {
+            "t": 83.52,
+            "text": "Or it's gonna slip slip slip through your"
+          },
+          {
+            "t": 88.69,
+            "text": "Slip slip slip through your hands"
+          },
+          {
+            "t": 92.57,
+            "text": "Oh oh oh-oh-oh"
+          },
+          {
+            "t": 95.35,
+            "text": "Oh-oh-oh, oh, oh-oh-oh"
+          },
+          {
+            "t": 98.84,
+            "text": "Or it's gonna slip slip slip through your"
+          },
+          {
+            "t": 103.71,
+            "text": "Slip slip slip through your hands"
+          },
+          {
+            "t": 107.75,
+            "text": "Oh oh oh-oh-oh"
+          },
+          {
+            "t": 110.5,
+            "text": "Oh-oh-oh, oh, oh-oh-oh"
+          },
+          {
+            "t": 115.78,
+            "text": "What's the matter?"
+          },
+          {
+            "t": 120.16,
+            "text": "You don't have enough rain to make up your storm"
+          },
+          {
+            "t": 129.88,
+            "text": "Ooh, what'd you look so sad for?"
+          },
+          {
+            "t": 138.24,
+            "text": "Where's that light I used to know?"
+          },
+          {
+            "t": 143.98,
+            "text": "Or it's gonna slip slip slip through your"
+          },
+          {
+            "t": 148.92,
+            "text": "Slip slip slip through your hands"
+          },
+          {
+            "t": 153.05,
+            "text": "Oh oh oh-oh-oh"
+          },
+          {
+            "t": 155.76,
+            "text": "Oh-oh-oh, oh, oh-oh-oh"
+          },
+          {
+            "t": 159.11,
+            "text": "Or it's gonna slip slip slip through your"
+          },
+          {
+            "t": 164.45,
+            "text": "Slip slip slip through your hands"
+          },
+          {
+            "t": 171.15,
+            "text": "Oh-oh-oh, oh, oh-oh-oh"
+          },
+          {
+            "t": 176.03,
+            "text": "Where's that light I used to know"
+          },
+          {
+            "t": 183.68,
+            "text": "Where's that light I used to know"
+          },
+          {
+            "t": 191.34,
+            "text": "Where's that light I used to know"
+          },
+          {
+            "t": 198.99,
+            "text": "Where's that light I used to know"
+          },
+          {
+            "t": 209.52,
+            "text": "Slip slip slip through your hands"
+          },
+          {
+            "t": 220.04,
+            "text": "Oh-oh-oh, oh"
+          },
+          {
+            "t": 223.38,
+            "text": "Oh-oh-oh, oh, oh"
+          },
+          {
+            "t": 234.75,
+            "text": "Or it's gonna slip slip slip through your"
+          },
+          {
+            "t": 240.03,
+            "text": "Slip slip slip through your hands"
+          },
+          {
+            "t": 243.94,
+            "text": "Oh oh oh-oh-oh"
+          },
+          {
+            "t": 246.28,
+            "text": "Oh-oh-oh, oh, oh-oh-oh"
+          },
+          {
+            "t": 249.95,
+            "text": "Or it's gonna slip slip slip through your"
+          },
+          {
+            "t": 254.65,
+            "text": "Slip slip slip through your hands"
+          },
+          {
+            "t": 259.07,
+            "text": "Oh oh oh-oh-oh"
+          },
+          {
+            "t": 261.32,
+            "text": "Oh-oh-oh, oh, oh-oh-oh"
+          },
+          {
+            "t": 265.01,
+            "text": "Or it's gonna slip slip slip through your"
+          },
+          {
+            "t": 270.01,
+            "text": "Slip slip slip through your hands"
+          },
+          {
+            "t": 281.44,
+            "text": "Oh oh oh-oh-oh"
+          },
+          {
+            "t": 284.17,
+            "text": "Oh-oh-oh, oh, oh-oh-oh"
+          },
+          {
+            "t": 289.13,
+            "text": "Oh oh oh-oh-oh"
+          },
+          {
+            "t": 292.12,
+            "text": "Oh-oh-oh, oh, oh-oh-oh"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "the-taxpayers-i-love-you-like-an-alcoholic",
+      "title": "I Love You Like An Alcoholic",
+      "artist": "The Taxpayers",
+      "album": "\"God, Forgive These Bastards\" Songs From The Forgotten Life of Henry Turner",
+      "duration": 216,
+      "cover": "covers/the-taxpayers-i-love-you-like-an-alcoholic.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiemJ3NXFtNzhvV25ONmlSeHZ3b2YwZyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.ec-ax6X1259RlH7wQqqPUDaq4JyCbXcyg4UTGJccVmQ",
+      "colors": {
+        "bg": "#111122",
+        "bgAlt": "#5f1c33",
+        "accent": "#f20d29",
+        "text": "#f1f0f4",
+        "muted": "#8e8e98"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 36.39,
+            "text": "Heavy humid night, corner of Park and Main"
+          },
+          {
+            "t": 40.58,
+            "text": "Cast that first glance, \"Your smile, my veins\""
+          },
+          {
+            "t": 44.13,
+            "text": "At maximum capacity, blood pumpin' so fast"
+          },
+          {
+            "t": 48.86,
+            "text": "My girl, if looks gave heart attacks"
+          },
+          {
+            "t": 53.5,
+            "text": "The dangerous men in the shadows were like an audience"
+          },
+          {
+            "t": 56.07,
+            "text": "And even the meanest among them had"
+          },
+          {
+            "t": 57.38,
+            "text": "A special little shine in their eyes when they saw us walk by"
+          },
+          {
+            "t": 62.31,
+            "text": "Walked about 20 blocks talkin' about good bars and better towns than this one"
+          },
+          {
+            "t": 66.77,
+            "text": "Kissed that first night, and then the rain opened up the sky to get"
+          },
+          {
+            "t": 71.1,
+            "text": "One last kiss"
+          },
+          {
+            "t": 73.05,
+            "text": "I love you like an alcoholic"
+          },
+          {
+            "t": 75.45,
+            "text": "One last kiss"
+          },
+          {
+            "t": 77.35,
+            "text": "I love you like a statuette"
+          },
+          {
+            "t": 79.97,
+            "text": "One last kiss"
+          },
+          {
+            "t": 81.87,
+            "text": "I need you like I need a broken leg"
+          },
+          {
+            "t": 88.04,
+            "text": "I was getting off the late shift attempting to recover"
+          },
+          {
+            "t": 93.17,
+            "text": "Crumpled up the bus pass, tossed it into the gutter"
+          },
+          {
+            "t": 97.37,
+            "text": "Some handsome dark stranger, you were standing there on the corner"
+          },
+          {
+            "t": 101.48,
+            "text": "You had those compelling magnetized eyes"
+          },
+          {
+            "t": 104.04,
+            "text": "You must have lost when you got older"
+          },
+          {
+            "t": 106.33,
+            "text": "Seven blocks in, my fingers brushed your hand"
+          },
+          {
+            "t": 110.58,
+            "text": "I blushed and you laughed, but you seemed a little sad"
+          },
+          {
+            "t": 115.86,
+            "text": "I ain't one to jump a ship, but I absolutely knew"
+          },
+          {
+            "t": 119.02,
+            "text": "I was six steps in when I fell into you"
+          },
+          {
+            "t": 123.97,
+            "text": "One last kiss"
+          },
+          {
+            "t": 126.12,
+            "text": "I love you like a broken pot"
+          },
+          {
+            "t": 128.47,
+            "text": "One last kiss"
+          },
+          {
+            "t": 130.3,
+            "text": "I love you like a pack of dogs"
+          },
+          {
+            "t": 132.67,
+            "text": "One last kiss"
+          },
+          {
+            "t": 134.83,
+            "text": "I need you like I need a gaping head wound"
+          },
+          {
+            "t": 141.56,
+            "text": "One last kiss"
+          },
+          {
+            "t": 143.66,
+            "text": "I love you like an alcoholic"
+          },
+          {
+            "t": 146.11,
+            "text": "One last kiss"
+          },
+          {
+            "t": 148.09,
+            "text": "I love you like a negligee"
+          },
+          {
+            "t": 150.63,
+            "text": "One last kiss"
+          },
+          {
+            "t": 152.62,
+            "text": "I need you like I need a broken leg"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "muse-endlessly",
+      "title": "Endlessly",
+      "artist": "Muse",
+      "album": "Absolution",
+      "duration": 228,
+      "cover": "covers/muse-endlessly.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiT25ETnM2WXdJTTJ3WEFyZ01LSHhhNiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.N6RrAq-2e0QHmLf865xTqUoxulOUwT7rno_Iwi6YROA",
+      "colors": {
+        "bg": "#121821",
+        "bgAlt": "#223859",
+        "accent": "#3971c6",
+        "text": "#f0f2f4",
+        "muted": "#8e9297"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 20.82,
+            "text": "There's a part of me, you'll never know"
+          },
+          {
+            "t": 29.58,
+            "text": "The only thing I'll never show"
+          },
+          {
+            "t": 38.48,
+            "text": "Hopelessly, I'll love you endlessly"
+          },
+          {
+            "t": 47.16,
+            "text": "Hopelessly, I'll give you everything"
+          },
+          {
+            "t": 54.03,
+            "text": "But I won't give you up"
+          },
+          {
+            "t": 58.53,
+            "text": "I won't let you down"
+          },
+          {
+            "t": 63.94,
+            "text": "And I won't leave you falling"
+          },
+          {
+            "t": 74.57,
+            "text": "If the moment ever comes"
+          },
+          {
+            "t": 99.35,
+            "text": "It's plain to see, it's trying to speak"
+          },
+          {
+            "t": 108.19,
+            "text": "Cherished dreams forever asleep"
+          },
+          {
+            "t": 116.88,
+            "text": "Hopelessly, I'll love you endlessly"
+          },
+          {
+            "t": 125.63,
+            "text": "Hopelessly, I'll give you everything"
+          },
+          {
+            "t": 132.56,
+            "text": "But I won't give you up"
+          },
+          {
+            "t": 136.91,
+            "text": "I won't let you down"
+          },
+          {
+            "t": 142.48,
+            "text": "And I won't leave you falling"
+          },
+          {
+            "t": 153.28,
+            "text": "If the moment ever comes"
+          },
+          {
+            "t": 178.01,
+            "text": "Hopelessly, I'll love you endlessly"
+          },
+          {
+            "t": 186.67,
+            "text": "Hopelessly, I'll give you everything"
+          },
+          {
+            "t": 193.6,
+            "text": "But I won't give you up"
+          },
+          {
+            "t": 198.05,
+            "text": "I won't let you down"
+          },
+          {
+            "t": 203.44,
+            "text": "And I won't leave you falling"
+          },
+          {
+            "t": 214.15,
+            "text": "But the moment never comes"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "b-rns-electric-love",
+      "title": "Electric Love",
+      "artist": "BØRNS",
+      "album": "Dopamine",
+      "duration": 218,
+      "cover": "covers/b-rns-electric-love.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiSkhpdFk5RlBpWFdGYTAydUo5cFVxMyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.wPjmXs94FSmahmw_1lmYvA5f5LfVZv8ARBG-ztJ8dpY",
+      "colors": {
+        "bg": "#211512",
+        "bgAlt": "#5f421c",
+        "accent": "#d78c28",
+        "text": "#f4f1f0",
+        "muted": "#97908e"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 27.97,
+            "text": "Candy, she's sweet like candy in my veins"
+          },
+          {
+            "t": 36.05,
+            "text": "Baby, I'm dying for another taste"
+          },
+          {
+            "t": 44.32,
+            "text": "And every night my mind is running around her"
+          },
+          {
+            "t": 50.2,
+            "text": "Thunder's getting louder and louder"
+          },
+          {
+            "t": 54.05,
+            "text": "Baby, you're like lightning in a bottle"
+          },
+          {
+            "t": 57.91,
+            "text": "I can't let you go now that I got it"
+          },
+          {
+            "t": 61.97,
+            "text": "And all I need is to be struck"
+          },
+          {
+            "t": 67.01,
+            "text": "By your electric love"
+          },
+          {
+            "t": 75.97,
+            "text": "Baby, your electric love (ah)"
+          },
+          {
+            "t": 81.08,
+            "text": "Electric love (ah-ah)"
+          },
+          {
+            "t": 86.19,
+            "text": "Drown me (drown me), you make my heart beat like the rain"
+          },
+          {
+            "t": 93.47,
+            "text": "Surround me (oh), hold me deep beneath your waves"
+          },
+          {
+            "t": 102.3,
+            "text": "And every night my mind is running around her"
+          },
+          {
+            "t": 108.23,
+            "text": "Thunder's getting louder and louder and louder"
+          },
+          {
+            "t": 112.11,
+            "text": "Baby, you're like lightning in a bottle"
+          },
+          {
+            "t": 116.01,
+            "text": "I can't let you go now that I got it"
+          },
+          {
+            "t": 119.98,
+            "text": "And all I need is to be struck"
+          },
+          {
+            "t": 125,
+            "text": "By your electric love"
+          },
+          {
+            "t": 134.15,
+            "text": "Baby, your electric love (ah)"
+          },
+          {
+            "t": 139.05,
+            "text": "Electric love (ah-ah)"
+          },
+          {
+            "t": 159.05,
+            "text": "Rushing through me"
+          },
+          {
+            "t": 164.45,
+            "text": "I feel your energy rushing through me"
+          },
+          {
+            "t": 172.48,
+            "text": "I feel your energy rushing through me"
+          },
+          {
+            "t": 184.02,
+            "text": "Baby, you're like lightning in a bottle"
+          },
+          {
+            "t": 188.02,
+            "text": "I can't let you go now that I got it"
+          },
+          {
+            "t": 191.93,
+            "text": "And all I need is to be struck"
+          },
+          {
+            "t": 196.18,
+            "text": "By your electric love"
+          },
+          {
+            "t": 206.13,
+            "text": "Baby, your electric love (ah)"
+          },
+          {
+            "t": 214,
+            "text": "Baby, your electric"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "reyno-dos-mundos",
+      "title": "Dos Mundos",
+      "artist": "Reyno",
+      "album": "Viaje Por Lo Eterno",
+      "duration": 209,
+      "cover": "covers/reyno-dos-mundos.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiOWNDWDR3TGdMQXZyTllsbW5TWkNYdCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.ICKgjm4bbMM6r_HRxvtJjaaxb9QtyWo_RjfEwjxKU10",
+      "colors": {
+        "bg": "#201813",
+        "bgAlt": "#573e23",
+        "accent": "#c68539",
+        "text": "#f4f2f0",
+        "muted": "#97928f"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 18.74,
+            "text": "Mírame"
+          },
+          {
+            "t": 21.63,
+            "text": "Cambio mi color de piel"
+          },
+          {
+            "t": 27.18,
+            "text": "Miénteme"
+          },
+          {
+            "t": 29.96,
+            "text": "Pero hazme sentir que sigo siendo humano"
+          },
+          {
+            "t": 35.93,
+            "text": "Quiero poner mi mente en blanco y olvidarme de todo"
+          },
+          {
+            "t": 44.67,
+            "text": "Disimular que no me pasa nada"
+          },
+          {
+            "t": 52.32,
+            "text": "Como respirar entre dos mundos"
+          },
+          {
+            "t": 56.66,
+            "text": "En un universo paralelo"
+          },
+          {
+            "t": 60.5,
+            "text": "Donde no haya nada que escondernos"
+          },
+          {
+            "t": 64.97,
+            "text": "Donde todo pueda ser perfecto"
+          },
+          {
+            "t": 77.43,
+            "text": "Mírame"
+          },
+          {
+            "t": 80.07,
+            "text": "Cambio mi forma de ver"
+          },
+          {
+            "t": 85.26,
+            "text": "Miénteme"
+          },
+          {
+            "t": 88.21,
+            "text": "Pero hazme sentir que sigo siendo humano"
+          },
+          {
+            "t": 94.39,
+            "text": "Voy a esconderme entre dos mundos y que nadie me encuentre"
+          },
+          {
+            "t": 102.03,
+            "text": "Que más importa si desaparezco"
+          },
+          {
+            "t": 110.82,
+            "text": "Como respirar entre dos mundos"
+          },
+          {
+            "t": 115.07,
+            "text": "En un universo paralelo"
+          },
+          {
+            "t": 118.72,
+            "text": "Donde no haya nada que escondernos"
+          },
+          {
+            "t": 122.33,
+            "text": "Donde todo pueda ser perfecto"
+          },
+          {
+            "t": 126.74,
+            "text": "Y así"
+          },
+          {
+            "t": 129.34,
+            "text": "Aunque este lejos de ti"
+          },
+          {
+            "t": 133.89,
+            "text": "Voy a regresar con vida"
+          },
+          {
+            "t": 154.69,
+            "text": "Como respirar entre dos mundos"
+          },
+          {
+            "t": 158.89,
+            "text": "En un universo paralelo"
+          },
+          {
+            "t": 162.86,
+            "text": "Donde no haya nada que escondernos"
+          },
+          {
+            "t": 167.16,
+            "text": "Donde todo pueda ser perfecto"
+          },
+          {
+            "t": 171.43,
+            "text": "Como respirar entre dos mundos"
+          },
+          {
+            "t": 179.74,
+            "text": "Como respirar entre dos mundos"
+          },
+          {
+            "t": 187.44,
+            "text": "Y así"
+          },
+          {
+            "t": 189.92,
+            "text": "Aunque este lejos de ti"
+          },
+          {
+            "t": 194.37,
+            "text": "Voy a regresar con vida"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "the-neighbourhood-scary-love",
+      "title": "Scary Love",
+      "artist": "The Neighbourhood",
+      "album": "Hard To Imagine The Neighbourhood Ever Changing",
+      "duration": 222,
+      "cover": "covers/the-neighbourhood-scary-love.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiYnJwZGdBTUdMWHFrdzI2WjRWdERUNiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.idcgwKQgstvYknDvGRyHsE7n9pE8LwFRD35tRbRQxeM",
+      "colors": {
+        "bg": "#231610",
+        "bgAlt": "#5f381c",
+        "accent": "#ed6712",
+        "text": "#f4f2f0",
+        "muted": "#98918d"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 4.42,
+            "text": "Move to the city with me"
+          },
+          {
+            "t": 7.22,
+            "text": "I don't wanna be alone"
+          },
+          {
+            "t": 10.57,
+            "text": "(Don't wanna be alone)"
+          },
+          {
+            "t": 13.06,
+            "text": "You're too pretty for me"
+          },
+          {
+            "t": 16.14,
+            "text": "Baby, I know (it's true), yeah"
+          },
+          {
+            "t": 22.36,
+            "text": "You look better when you first wake up"
+          },
+          {
+            "t": 24.61,
+            "text": "Than anybody else I've fucked"
+          },
+          {
+            "t": 26.96,
+            "text": "Baby, I got good luck with you"
+          },
+          {
+            "t": 31.18,
+            "text": "I didn't know we'd get so far"
+          },
+          {
+            "t": 33.46,
+            "text": "And it's only the start"
+          },
+          {
+            "t": 35.55,
+            "text": "Baby, you got me worried (ayy)"
+          },
+          {
+            "t": 39.33,
+            "text": "Your love is scaring me"
+          },
+          {
+            "t": 42.14,
+            "text": "No one has ever cared for me"
+          },
+          {
+            "t": 46.6,
+            "text": "As much as you do"
+          },
+          {
+            "t": 50.38,
+            "text": "Ooh, yeah, I need you here, oh"
+          },
+          {
+            "t": 56.34,
+            "text": "Your love is scaring me"
+          },
+          {
+            "t": 59.39,
+            "text": "No one has ever cared for me"
+          },
+          {
+            "t": 63.83,
+            "text": "As much as you do"
+          },
+          {
+            "t": 67.58,
+            "text": "Ooh, yeah, I need you here"
+          },
+          {
+            "t": 75.11,
+            "text": "Drivin' through the city with me"
+          },
+          {
+            "t": 78.26,
+            "text": "Just watchin' you glow"
+          },
+          {
+            "t": 83.65,
+            "text": "I'm in the passenger seat, you're in control"
+          },
+          {
+            "t": 89.86,
+            "text": "(It's on you now) Mhm"
+          },
+          {
+            "t": 93.02,
+            "text": "You look better every day, I swear"
+          },
+          {
+            "t": 95.35,
+            "text": "Really, it's a little unfair"
+          },
+          {
+            "t": 97.53,
+            "text": "Baby, I'm star-struck by you"
+          },
+          {
+            "t": 102.02,
+            "text": "Didn't know we'd get so far"
+          },
+          {
+            "t": 104.04,
+            "text": "And it's only the start"
+          },
+          {
+            "t": 106,
+            "text": "Baby, you got me worried (ayy)"
+          },
+          {
+            "t": 109.8,
+            "text": "Your love is scaring me"
+          },
+          {
+            "t": 112.91,
+            "text": "No one has ever cared for me"
+          },
+          {
+            "t": 117.32,
+            "text": "As much as you do"
+          },
+          {
+            "t": 120.93,
+            "text": "Ooh, yeah, I need you here, oh"
+          },
+          {
+            "t": 127.19,
+            "text": "Your love is scaring me"
+          },
+          {
+            "t": 130.08,
+            "text": "No one has ever cared for me"
+          },
+          {
+            "t": 134.57,
+            "text": "As much as you do"
+          },
+          {
+            "t": 138.05,
+            "text": "Ooh, yeah, I need you here"
+          },
+          {
+            "t": 147.2,
+            "text": "If we fall apart, maybe it wasn't meant to be"
+          },
+          {
+            "t": 155.73,
+            "text": "If we fall apart, it was our favourite dream"
+          },
+          {
+            "t": 164.94,
+            "text": "Ooh, ooh, ahh-aaah"
+          },
+          {
+            "t": 170.16,
+            "text": "Your love is therapy"
+          },
+          {
+            "t": 172.99,
+            "text": "No drug can give me clarity"
+          },
+          {
+            "t": 177.38,
+            "text": "As much as you do (as you do, baby)"
+          },
+          {
+            "t": 180.8,
+            "text": "Ooh, yeah, I need you here (I need you here)"
+          },
+          {
+            "t": 187.19,
+            "text": "Your love is scaring me (no one)"
+          },
+          {
+            "t": 190.26,
+            "text": "No one has ever cared for me (ooh, baby)"
+          },
+          {
+            "t": 194.54,
+            "text": "As much as you do"
+          },
+          {
+            "t": 198.09,
+            "text": "Oooh (hey, yeah), yeah, I need you here (oh-oh, oh-oh)"
+          },
+          {
+            "t": 206.09,
+            "text": "(Ooh, I need you, babe)"
+          },
+          {
+            "t": 207.93,
+            "text": "Ooh, ooh, ahh"
+          },
+          {
+            "t": 210.5,
+            "text": "(Yeah, yeah, I need you, baby)"
+          },
+          {
+            "t": 214.46,
+            "text": "Yeah"
+          },
+          {
+            "t": 214.79,
+            "text": "(Ooh ooh, I need you)"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "gorillaz-tame-impala-bootie-brown-new-gold-feat-tame-impala-and-bootie-brown",
+      "title": "New Gold (feat. Tame Impala and Bootie Brown)",
+      "artist": "Gorillaz; Tame Impala; Bootie Brown",
+      "album": "Cracker Island",
+      "duration": 215,
+      "cover": "covers/gorillaz-tame-impala-bootie-brown-new-gold-feat-tame-impala-and-bootie-brown.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiSGtSV1h1bE4wVjdFMkUxaVpuU05qOCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.ATwiZbrbExDJJSX7ZPrTF0iLOjVd-1hvU6DtlI5YLvg",
+      "colors": {
+        "bg": "#221116",
+        "bgAlt": "#5f1c3b",
+        "accent": "#c63978",
+        "text": "#f4f0f1",
+        "muted": "#988e91"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 18.69,
+            "text": "But in the magic cove"
+          },
+          {
+            "t": 20.67,
+            "text": "There's a pretty one"
+          },
+          {
+            "t": 21.9,
+            "text": "I asked her where it goes, 'cause I really want"
+          },
+          {
+            "t": 25.43,
+            "text": "I wonder if she knows that we're underwater"
+          },
+          {
+            "t": 28.91,
+            "text": "That's the way it goes in this silly wonder"
+          },
+          {
+            "t": 33.31,
+            "text": "Moved to a spot, I'm one of a few"
+          },
+          {
+            "t": 35.48,
+            "text": "A whole lot of everything"
+          },
+          {
+            "t": 36.5,
+            "text": "But nothing to do"
+          },
+          {
+            "t": 37.85,
+            "text": "I'm tilted in a Tesla"
+          },
+          {
+            "t": 38.85,
+            "text": "Partna, ex-wrestler"
+          },
+          {
+            "t": 39.95,
+            "text": "He dates Francesca"
+          },
+          {
+            "t": 40.95,
+            "text": "They on them Xanies"
+          },
+          {
+            "t": 42.58,
+            "text": "Liposuction scheduled for Granny"
+          },
+          {
+            "t": 44.52,
+            "text": "She wants to save some, add to her fanny"
+          },
+          {
+            "t": 46.52,
+            "text": "Girls trip, Miami at the end of the year"
+          },
+          {
+            "t": 48.73,
+            "text": "Polluted filled skies, trying to think clear"
+          },
+          {
+            "t": 51.18,
+            "text": "I heard the bad news while I was shedding a beer"
+          },
+          {
+            "t": 53.23,
+            "text": "Watch out for them cults, Paul Revere"
+          },
+          {
+            "t": 55.5,
+            "text": "We all play our part in the devil's cheer"
+          },
+          {
+            "t": 57.62,
+            "text": "Run to the hills cause the end is near"
+          },
+          {
+            "t": 58.93,
+            "text": "But in the magic cove"
+          },
+          {
+            "t": 60.58,
+            "text": "There's a pretty one"
+          },
+          {
+            "t": 62.37,
+            "text": "I asked her where it goes 'cause I really want"
+          },
+          {
+            "t": 65.55,
+            "text": "I wonder if she knows that we're underwater"
+          },
+          {
+            "t": 69.09,
+            "text": "That's the way it goes in this silly wonder"
+          },
+          {
+            "t": 73.53,
+            "text": "A desolate city"
+          },
+          {
+            "t": 74.27,
+            "text": "Where it hurts to smile"
+          },
+          {
+            "t": 75.56,
+            "text": "Ran into the reverend"
+          },
+          {
+            "t": 76.35,
+            "text": "He said, \"It's been a while\""
+          },
+          {
+            "t": 77.74,
+            "text": "I'm raining in a rando"
+          },
+          {
+            "t": 78.75,
+            "text": "She's a social scandal"
+          },
+          {
+            "t": 79.84,
+            "text": "We gave ourselves a handle"
+          },
+          {
+            "t": 80.8,
+            "text": "When it's too much to bare"
+          },
+          {
+            "t": 82.66,
+            "text": "ABC Boys"
+          },
+          {
+            "t": 83.57,
+            "text": "Raided the mayor"
+          },
+          {
+            "t": 84.21,
+            "text": "Like Shawn he's a ryder"
+          },
+          {
+            "t": 85.58,
+            "text": "Took on the dare"
+          },
+          {
+            "t": 86.35,
+            "text": "Now he's singing like a birdie"
+          },
+          {
+            "t": 87.91,
+            "text": "Pulling on his hair"
+          },
+          {
+            "t": 88.93,
+            "text": "Trending on Twitter"
+          },
+          {
+            "t": 89.71,
+            "text": "Is what some of us live for"
+          },
+          {
+            "t": 91.07,
+            "text": "Friendships in and out"
+          },
+          {
+            "t": 92.49,
+            "text": "Fucking revolving door"
+          },
+          {
+            "t": 93.29,
+            "text": "All of this is a joke, Pauly Shore"
+          },
+          {
+            "t": 95.59,
+            "text": "Bullshit keeps coming"
+          },
+          {
+            "t": 96.72,
+            "text": "Maybe I'm a Matador"
+          },
+          {
+            "t": 98.13,
+            "text": "What are we living for?"
+          },
+          {
+            "t": 100.38,
+            "text": "Are we losing our minds"
+          },
+          {
+            "t": 103.45,
+            "text": "Because life got in the way"
+          },
+          {
+            "t": 109.14,
+            "text": "They will be here just in time"
+          },
+          {
+            "t": 112.4,
+            "text": "Your replacement is here to stay"
+          },
+          {
+            "t": 115.19,
+            "text": "(Ahhhhh)"
+          },
+          {
+            "t": 116.62,
+            "text": "New gold"
+          },
+          {
+            "t": 118.18,
+            "text": "Fools gold"
+          },
+          {
+            "t": 120.05,
+            "text": "Everything will disappear"
+          },
+          {
+            "t": 123.42,
+            "text": "Someone"
+          },
+          {
+            "t": 124.71,
+            "text": "Out here"
+          },
+          {
+            "t": 126.52,
+            "text": "I've travelled far too many years"
+          },
+          {
+            "t": 129.79,
+            "text": "To nowhere"
+          },
+          {
+            "t": 131.67,
+            "text": "Nowhere"
+          },
+          {
+            "t": 133.15,
+            "text": "Nothing here is ever real"
+          },
+          {
+            "t": 136.54,
+            "text": "New gold"
+          },
+          {
+            "t": 138.12,
+            "text": "Fools gold"
+          },
+          {
+            "t": 140.15,
+            "text": "Everything will disappear"
+          },
+          {
+            "t": 142.3,
+            "text": "Disappear"
+          },
+          {
+            "t": 143.18,
+            "text": "Disappear"
+          },
+          {
+            "t": 144.46,
+            "text": "Disappear"
+          },
+          {
+            "t": 145.58,
+            "text": "Disappear"
+          },
+          {
+            "t": 146.54,
+            "text": "Disappear"
+          },
+          {
+            "t": 147.68,
+            "text": "Disappear"
+          },
+          {
+            "t": 148.62,
+            "text": "Disappear"
+          },
+          {
+            "t": 150.05,
+            "text": "Disappear"
+          },
+          {
+            "t": 151.06,
+            "text": "Disappear"
+          },
+          {
+            "t": 152.01,
+            "text": "Disappear"
+          },
+          {
+            "t": 153.15,
+            "text": "Disappear"
+          },
+          {
+            "t": 154.45,
+            "text": "Disappear"
+          },
+          {
+            "t": 156.53,
+            "text": "But in the magic cove"
+          },
+          {
+            "t": 158.68,
+            "text": "There's a pretty one"
+          },
+          {
+            "t": 159.95,
+            "text": "I asked her where it goes 'cause I really want"
+          },
+          {
+            "t": 163.2,
+            "text": "I wonder if she knows that we're underwater"
+          },
+          {
+            "t": 166.62,
+            "text": "That's the way it goes in this silly wonder (new gold)"
+          },
+          {
+            "t": 170.04,
+            "text": "But in the magic cove"
+          },
+          {
+            "t": 171.58,
+            "text": "There's a pretty one"
+          },
+          {
+            "t": 172.95,
+            "text": "I asked her where it goes, 'cause I really want"
+          },
+          {
+            "t": 176.63,
+            "text": "I wonder if she knows that we're underwater"
+          },
+          {
+            "t": 179.83,
+            "text": "That's the way it goes in this silly wonder (new gold)"
+          },
+          {
+            "t": 184.98,
+            "text": "But in the magic cove (Ahhh)"
+          },
+          {
+            "t": 185.35,
+            "text": "There's a pretty one"
+          },
+          {
+            "t": 186.35,
+            "text": "I asked her where it goes, 'cause I really want"
+          },
+          {
+            "t": 189.87,
+            "text": "I wonder if she knows that we're underwater"
+          },
+          {
+            "t": 193.42,
+            "text": "That's the way it goes in this silly wonder (new gold)"
+          },
+          {
+            "t": 196.81,
+            "text": "But in the magic cove"
+          },
+          {
+            "t": 198.31,
+            "text": "There's a pretty one (new gold)"
+          },
+          {
+            "t": 199.94,
+            "text": "I asked her where it goes, 'cause I really want"
+          },
+          {
+            "t": 203.16,
+            "text": "I wonder if she knows that we're underwater (new gold, fool's gold)"
+          },
+          {
+            "t": 206.62,
+            "text": "That's the way it goes in this silly wonder (everything will disappear)"
           }
         ],
         "source": "lrclib",

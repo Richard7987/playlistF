@@ -1,5 +1,16 @@
 /* Mundo oscuro único, deliberado: no hay tema claro; todo color sale de tokens. */
 
+@import '@fontsource/hanken-grotesk/latin-400.css';
+@import '@fontsource/hanken-grotesk/latin-500.css';
+@import '@fontsource/hanken-grotesk/latin-600.css';
+@import '@fontsource/hanken-grotesk/latin-700.css';
+@import '@fontsource/hanken-grotesk/latin-ext-400.css';
+@import '@fontsource/hanken-grotesk/latin-ext-700.css';
+@import '@fontsource/fraunces/latin-400-italic.css';
+@import '@fontsource/fraunces/latin-ext-400-italic.css';
+@import '@fontsource/ibm-plex-mono/latin-400.css';
+@import '@fontsource/ibm-plex-mono/latin-500.css';
+
 :root {
   --ground: #08070b;
   --ground-2: #100e15;
@@ -160,6 +171,8 @@ body {
 }
 
 .art-wrap .cover {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   display: block;
@@ -169,6 +182,11 @@ body {
     0 34px 90px -34px color-mix(in srgb, var(--accent) 55%, transparent),
     0 0 0 1px rgba(255, 255, 255, 0.07) inset;
   transition: box-shadow 0.9s var(--ease);
+  will-change: opacity;
+}
+
+.art-wrap #cover-b {
+  opacity: 0;
 }
 
 .queue-btn {
@@ -725,19 +743,6 @@ body {
   font-style: italic;
   font-size: 0.95rem;
   color: var(--chrome-muted);
-}
-
-html.lenis,
-html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
 }
 
 @media (prefers-reduced-motion: reduce) {
