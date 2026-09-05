@@ -1,0 +1,76 @@
+---
+import playlist from '../data/playlist.json';
+
+const hasSnapshot = Array.isArray(playlist.tracks) && playlist.tracks.length > 0;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fa</title>
+    <meta name="description" content="Una playlist, hecha web." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,400&family=Hanken+Grotesk:wght@400;600;700&family=IBM+Plex+Mono:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">playlist</p>
+      <h1>Fa</h1>
+      {
+        hasSnapshot ? (
+          <p class="note">{playlist.tracks.length} canciones · la interfaz llega en la siguiente fase.</p>
+        ) : (
+          <p class="note">Aún no hay snapshot. Corre <code>npm run pull</code> y commitea.</p>
+        )
+      }
+      <p class="sign">hecho con cariño y mucho tiempo libre</p>
+    </main>
+
+    <style>
+      :root {
+        --ground: #08070b;
+        --text: #f2eef4;
+        --muted: #9a93a6;
+        --accent: #f4a24c;
+      }
+      * { box-sizing: border-box; margin: 0; }
+      body {
+        background: var(--ground);
+        color: var(--text);
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        min-height: 100dvh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+      }
+      main { text-align: center; display: flex; flex-direction: column; gap: 0.8rem; }
+      .eyebrow {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      h1 {
+        font-size: clamp(3rem, 14vw, 7rem);
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        line-height: 1;
+      }
+      .note { color: var(--muted); font-size: 0.95rem; }
+      code { font-family: 'IBM Plex Mono', monospace; color: var(--accent); }
+      .sign {
+        font-family: 'Fraunces', Georgia, serif;
+        font-style: italic;
+        color: var(--muted);
+        margin-top: 1.5rem;
+      }
+    </style>
+  </body>
+</html>
