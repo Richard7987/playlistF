@@ -1,5 +1,5 @@
-// Malla de gradiente en WebGL (ruido fBm animado, estilo Stripe/whatamesh).
-// Los 4 colores se toman de la portada de la canción activa y se interpolan al cambiar.
+// Malla de gradiente WebGL (ruido fBm animado). Los 4 colores vienen de la portada
+// de la canción activa y se interpolan al cambiar. Fallback: el gradiente CSS del <canvas>.
 
 export type RGB = [number, number, number];
 
@@ -10,7 +10,12 @@ export const hexToRgb01 = (hex: string): RGB => {
 
 const VERT = 'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
 
-const FRAG = `precision highp float;
+const FRAG = `
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
 uniform vec2 R; uniform float T;
 uniform vec3 C0, C1, C2, C3;
 float h(vec2 x){ return fract(sin(dot(x, vec2(41.3, 289.1))) * 43758.5453); }
@@ -38,20 +43,45 @@ void main(){
   gl_FragColor = vec4(col, 1.0);
 }`;
 
+const FALLBACK: RGB[] = [
+  [0.1, 0.1, 0.12],
+  [0.2, 0.15, 0.25],
+  [0.9, 0.6, 0.3],
+  [0.02, 0.02, 0.03],
+];
+
 export class MeshGradient {
   private gl: WebGLRenderingContext | null = null;
   private uni: Record<string, WebGLUniformLocation | null> = {};
   private raf = 0;
-  private reduced: boolean;
-  /** color actual (interpolado) y objetivo; los tween externos (GSAP) escriben en tgt */
+  private resizeRaf = 0;
+  private running = false;
+  private drawn = false;
+  private readonly reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   cur: RGB[] = [];
   tgt: RGB[] = [];
 
   constructor(private canvas: HTMLCanvasElement) {
-    this.reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const gl = canvas.getContext('webgl', { antialias: false, alpha: false });
+    this.init();
+    addEventListener('resize', this.onResize, { passive: true });
+    canvas.addEventListener('webglcontextlost', (e) => {
+      e.preventDefault();
+      this.stop();
+      this.gl = null;
+    });
+    canvas.addEventListener('webglcontextrestored', () => {
+      this.init();
+      if (this.gl) this.start();
+    });
+  }
+
+  get ok() {
+    return !!this.gl;
+  }
+
+  private init() {
+    const gl = this.canvas.getContext('webgl', { antialias: false, alpha: false, powerPreference: 'low-power' });
     if (!gl) return;
-    this.gl = gl;
 
     const compile = (type: number, src: string) => {
       const sh = gl.createShader(type)!;
@@ -63,67 +93,86 @@ export class MeshGradient {
     gl.attachShader(prog, compile(gl.VERTEX_SHADER, VERT));
     gl.attachShader(prog, compile(gl.FRAGMENT_SHADER, FRAG));
     gl.linkProgram(prog);
-    if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) {
-      this.gl = null;
-      return;
-    }
-    gl.useProgram(prog);
+    if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) return;
 
+    gl.useProgram(prog);
     const buf = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, buf);
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
     const loc = gl.getAttribLocation(prog, 'p');
     gl.enableVertexAttribArray(loc);
     gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+    for (const k of ['R', 'T', 'C0', 'C1', 'C2', 'C3']) this.uni[k] = gl.getUniformLocation(prog, k);
 
-    for (const k of ['R', 'T', 'C0', 'C1', 'C2', 'C3']) {
-      this.uni[k] = gl.getUniformLocation(prog, k);
-    }
+    this.gl = gl;
+    this.drawn = false;
     this.resize();
-    addEventListener('resize', () => this.resize());
-  }
-
-  get ok() {
-    return !!this.gl;
   }
 
   setColors(cols: RGB[], instant = false) {
     this.tgt = cols.map((c) => [...c] as RGB);
     if (instant || !this.cur.length) this.cur = cols.map((c) => [...c] as RGB);
+    this.drawn = false;
   }
+
+  private onResize = () => {
+    cancelAnimationFrame(this.resizeRaf);
+    this.resizeRaf = requestAnimationFrame(() => this.resize());
+  };
 
   private resize() {
     if (!this.gl) return;
     const dpr = Math.min(devicePixelRatio || 1, 1.75);
-    this.canvas.width = Math.floor(innerWidth * dpr);
-    this.canvas.height = Math.floor(innerHeight * dpr);
-    this.gl.viewport(0, 0, this.canvas.width, this.canvas.height);
-    this.gl.uniform2f(this.uni.R, this.canvas.width, this.canvas.height);
+    const w = Math.max(1, Math.floor(innerWidth * dpr));
+    const h = Math.max(1, Math.floor(innerHeight * dpr));
+    if (w === this.canvas.width && h === this.canvas.height) return;
+    this.canvas.width = w;
+    this.canvas.height = h;
+    this.gl.viewport(0, 0, w, h);
+    this.gl.uniform2f(this.uni.R, w, h);
+    this.drawn = false;
   }
 
   start() {
-    if (!this.gl) return;
+    if (!this.gl || this.running) return;
+    this.running = true;
     let t0 = performance.now();
     const loop = (now: number) => {
+      if (!this.running) return;
+      this.raf = requestAnimationFrame(loop);
+      const gl = this.gl;
+      if (!gl) return;
+
       const dt = Math.min(0.05, (now - t0) / 1000);
       t0 = now;
+      let moving = false;
       for (let i = 0; i < this.tgt.length; i++) {
         const c = (this.cur[i] ??= [...this.tgt[i]] as RGB);
-        for (let j = 0; j < 3; j++) c[j] += (this.tgt[i][j] - c[j]) * Math.min(1, dt * 1.8);
+        for (let j = 0; j < 3; j++) {
+          const d = this.tgt[i][j] - c[j];
+          if (Math.abs(d) > 0.0015) {
+            c[j] += d * Math.min(1, dt * 1.8);
+            moving = true;
+          } else {
+            c[j] = this.tgt[i][j];
+          }
+        }
       }
-      const gl = this.gl!;
+
+      if (this.reduced && this.drawn && !moving) return;
+      this.drawn = true;
       gl.uniform1f(this.uni.T, this.reduced ? 0 : now / 1000);
-      gl.uniform3fv(this.uni.C0, this.cur[0] ?? [0.1, 0.1, 0.12]);
-      gl.uniform3fv(this.uni.C1, this.cur[1] ?? [0.2, 0.15, 0.25]);
-      gl.uniform3fv(this.uni.C2, this.cur[2] ?? [0.9, 0.6, 0.3]);
-      gl.uniform3fv(this.uni.C3, this.cur[3] ?? [0.02, 0.02, 0.03]);
+      gl.uniform3fv(this.uni.C0, this.cur[0] ?? FALLBACK[0]);
+      gl.uniform3fv(this.uni.C1, this.cur[1] ?? FALLBACK[1]);
+      gl.uniform3fv(this.uni.C2, this.cur[2] ?? FALLBACK[2]);
+      gl.uniform3fv(this.uni.C3, this.cur[3] ?? FALLBACK[3]);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
-      this.raf = requestAnimationFrame(loop);
     };
     this.raf = requestAnimationFrame(loop);
   }
 
   stop() {
+    this.running = false;
     cancelAnimationFrame(this.raf);
   }
 }

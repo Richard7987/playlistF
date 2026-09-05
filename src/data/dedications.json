@@ -1,12 +1,19 @@
 {
   "zoe-via-lactea-en-vivo": {
     "dedication": "La primera de la lista y no por azar. Cuando llegue el verso de las 2:41 subí el volumen: esa línea es para vos.",
-    "highlightAt": "2:41"
+    "highlightAt": "2:41",
+    "lyricsOffset": 0
   },
   "daft-punk-something-about-us": {
     "dedication": "Sin letra durante minuto y medio y aun así ya lo había dicho todo.",
     "highlightFrom": "1:45",
     "highlightTo": "2:00",
     "fragmentNote": "este tramo"
+  },
+  "peter-gundry-the-vampire-masquerade": {
+    "lyricsSource": "none"
+  },
+  "isabella-fontaine-symphony-of-a-golden-age": {
+    "lyricsSource": "none"
   }
 }

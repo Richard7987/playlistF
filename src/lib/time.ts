@@ -11,6 +11,16 @@ export interface Dedication {
   highlightFrom?: string | number;
   highlightTo?: string | number;
   fragmentNote?: string;
+  // segundos sumados a cada tiempo de la letra; + si va adelantada, - si va atrasada
+  lyricsOffset?: number;
+}
+
+export function shiftLines(lines: Line[], offset: number): Line[] {
+  if (!offset) return lines;
+  return lines.map((l) => ({
+    text: l.text,
+    t: l.t == null ? null : Math.max(0, Math.round((l.t + offset) * 100) / 100),
+  }));
 }
 
 export function parseTime(v: string | number | null | undefined): number | null {

@@ -1,27 +1,108 @@
 {
-  "_como_usar": "Copia a src/data/dedications.json las canciones que quieras. Claves opcionales: dedication, highlightAt (\"m:ss\"), highlightFrom, highlightTo, fragmentNote.",
+  "_como_usar": "Copia a src/data/dedications.json las canciones que quieras. Claves opcionales: dedication, highlightAt (\"m:ss\"), highlightFrom, highlightTo, fragmentNote, lyricsOffset (segundos: + si la letra va adelantada, - si atrasada), lyricsSource (\"lrclib\" | \"embedded\" | \"none\" para forzar / omitir la letra en el próximo pull).",
   "zoe-via-lactea-en-vivo": {
     "dedication": "",
-    "highlightAt": ""
+    "highlightAt": "",
+    "lyricsOffset": 0
   },
   "daft-punk-something-about-us": {
     "dedication": "",
-    "highlightAt": ""
+    "highlightAt": "",
+    "lyricsOffset": 0
   },
   "la-gusana-ciega-californica": {
     "dedication": "",
-    "highlightAt": ""
+    "highlightAt": "",
+    "lyricsOffset": 0
   },
   "dead-poet-society-georgia": {
     "dedication": "",
-    "highlightAt": ""
-  },
-  "jnathyn-dioma-demo": {
-    "dedication": "",
-    "highlightAt": ""
+    "highlightAt": "",
+    "lyricsOffset": 0
   },
   "joan-jett-the-blackhearts-i-hate-myself-for-loving-you": {
     "dedication": "",
-    "highlightAt": ""
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "peter-gundry-the-vampire-masquerade": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "vanessa-paradis-m-la-seine-extrait-de-la-bande-originale-un-monstre-a-paris": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "will-paquin-chandelier": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "secos-molhados-sangue-latino": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "glimmer-of-blooms-can-t-get-you-out-of-my-head": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "el-cuarteto-de-nos-enamorado-tuyo": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "zcar-jpg-gustarme-tanto": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "nico-play-la-ciruela": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "michael-buble-cry-me-a-river": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "porter-respuesta-sensorial": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "will-smith-prince-ali": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "isabella-fontaine-symphony-of-a-golden-age": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "julio-jaramillo-odiame": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "la-garfield-paraiso": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "sandro-porque-yo-te-amo": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "alt-j-pusher": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
   }
 }

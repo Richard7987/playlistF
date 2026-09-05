@@ -42,6 +42,14 @@ Todas las claves son opcionales.
 `highlightAt` resalta la línea que suena en ese minuto. `highlightFrom`/`highlightTo`
 resaltan un rango. Formato `m:ss`.
 
+`lyricsOffset` corrige una letra desfasada: segundos sumados a cada tiempo.
+Positivo si la letra va adelantada, negativo si va atrasada. Se ajusta a ojo con
+`npm run dev` hasta que cuadre.
+
+`lyricsSource` (`"lrclib"` | `"embedded"` | `"none"`) fuerza de dónde sale la letra
+en el próximo `npm run pull`, o la omite (`"none"`) para pistas instrumentales.
+Por defecto se prefiere la versión sincronizada mejor puntuada.
+
 ## Desarrollo
 
 ```sh

@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import playlistData from '../data/playlist.json';
 import dedicationsRaw from '../data/dedications.json';
-import { markedIndices, type Dedication, type Line } from '../lib/time';
+import { markedIndices, shiftLines, type Dedication, type Line } from '../lib/time';
 
 interface Track {
   slug: string;
@@ -23,6 +23,7 @@ const raw = playlistData.tracks as Track[];
 
 const tracks = raw.map((t) => {
   const d = dedications[t.slug] ?? {};
+  const lines = shiftLines(t.lyrics.lines, Number(d.lyricsOffset) || 0);
   return {
     slug: t.slug,
     title: t.title,
@@ -33,8 +34,8 @@ const tracks = raw.map((t) => {
     colors: t.colors,
     synced: t.lyrics.synced,
     coverUrl: t.cover ? withBase(t.cover) : null,
-    lines: t.lyrics.lines,
-    marked: markedIndices(d, t.lyrics.lines),
+    lines,
+    marked: markedIndices(d, lines),
     dedication: d.dedication?.trim() || null,
     fragmentNote: d.fragmentNote?.trim() || null,
   };
@@ -77,28 +78,40 @@ const first = tracks[0];
           </main>
         </div>
       ) : (
-        <div class="wrap">
+        <div class:list={['wrap', { 'no-lyrics': first.lines.length === 0, 'no-dedication': !first.dedication }]}>
           <div class="frame">
             <div class="stage">
               <div class="left">
-                <div class="counter"><b id="c-cur">01</b> / <span>{String(tracks.length).padStart(2, '0')}</span></div>
                 <div class="art-wrap">
-                  <button class="nav-btn prev" id="prev" aria-label="Canción anterior">&#8249;</button>
-                  <img class="cover" id="cover" alt="" src={first.coverUrl ?? ''} width="640" height="640" />
-                  <button class="nav-btn next" id="next" aria-label="Canción siguiente">&#8250;</button>
+                  <img
+                    class="cover"
+                    id="cover"
+                    alt=""
+                    src={first.coverUrl ?? undefined}
+                    style={first.coverUrl ? undefined : 'background:linear-gradient(160deg,var(--bg-alt),var(--bg))'}
+                    width="640"
+                    height="640"
+                  />
                 </div>
-                <div class="dots" id="dots" role="tablist" aria-label="Canciones">
-                  {tracks.map((_, i) => (
-                    <button role="tab" aria-label={`Canción ${i + 1}`} aria-current={i === 0 ? 'true' : undefined} data-i={i} />
-                  ))}
-                </div>
+                <button class="queue-btn" id="queue-toggle" aria-expanded="false" aria-controls="queue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <path d="M4 7h11M4 12h11M4 17h7" /><circle cx="19" cy="16" r="2.4" /><path d="M21.4 16V8l-2.4.8" />
+                  </svg>
+                  <span><span id="queue-count">{tracks.length}</span> canciones</span>
+                </button>
                 <div class="meta">
                   <div class="title" id="title">{first.title}</div>
                   <div class="artist" id="artist">{first.album ? `${first.artist} — ${first.album}` : first.artist}</div>
                 </div>
                 <div class="transport">
+                  <button class="tnav" id="prev" aria-label="Canción anterior">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 6v12h2V6zm3 6l9 6V6z" /></svg>
+                  </button>
                   <button class="play" id="play" aria-label="Reproducir">
                     <svg id="play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+                  </button>
+                  <button class="tnav" id="next" aria-label="Canción siguiente">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15 6v12h2V6zm-1 6L5 6v12z" /></svg>
                   </button>
                   <div class="scrub-area">
                     <div class="scrub" id="scrub">
@@ -118,10 +131,10 @@ const first = tracks[0];
             </div>
           </div>
 
-          <div class="dedication">
-            <div class="ded-card" id="ded-card" hidden>
+          <div class="dedication" id="dedication" hidden={!first.dedication}>
+            <div class="ded-card">
               <div class="label">dedicatoria</div>
-              <p class="ded-text" id="ded-text" />
+              <p class="ded-text" id="ded-text">{first.dedication}</p>
             </div>
           </div>
 
@@ -134,9 +147,32 @@ const first = tracks[0];
             </a>
             <div class="sign">hecho con cariño y mucho tiempo libre</div>
           </div>
+
+          <div class="queue" id="queue" hidden>
+            <div class="queue-backdrop" id="queue-backdrop" />
+            <div class="queue-panel" role="dialog" aria-label="Playlist Fa">
+              <div class="queue-head">
+                <span class="label">la playlist</span>
+                <button class="queue-close" id="queue-close" aria-label="Cerrar">&#10005;</button>
+              </div>
+              <ol class="queue-list" id="queue-list">
+                {tracks.map((t, i) => (
+                  <li>
+                    <button class="queue-item" data-i={i} aria-current={i === 0 ? 'true' : undefined}>
+                      <span class="queue-cover" style={t.coverUrl ? `background-image:url(${t.coverUrl})` : ''}>
+                        <span class="queue-num">{i + 1}</span>
+                      </span>
+                      <span class="queue-title">{t.title}</span>
+                      <span class="queue-artist">{t.artist}</span>
+                    </button>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
         </div>
 
-        <script type="application/json" id="tracks" set:html={JSON.stringify(tracks)} />
+        <script type="application/json" id="tracks" set:html={JSON.stringify(tracks).replace(/</g, '\\u003c')} />
       )
     }
 

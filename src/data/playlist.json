@@ -1,6 +1,6 @@
 {
   "name": "Fa",
-  "generatedAt": "2026-09-05T20:35:02.192Z",
+  "generatedAt": "2026-09-05T22:17:05.161Z",
   "navidromeUrl": "https://mu.richard69.lat",
   "shareUrl": "https://mu.richard69.lat/share/zXqxDyzOAP",
   "tracks": [
@@ -13,14 +13,15 @@
       "cover": "covers/zoe-via-lactea-en-vivo.jpg",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiZFVIZzlhSk9pUnZsZ3JPWGozdDlXVSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.FoinqDxefl6DeH5P4pcoCBkyphrC2VJ3IHCSAUdMP8Q",
       "colors": {
-        "bg": "#2a281b",
-        "bgAlt": "#184554",
-        "accent": "#d1a6a2",
-        "text": "#ede5e3",
-        "muted": "#9b968f"
+        "bg": "#1f1e14",
+        "bgAlt": "#1c4e5f",
+        "accent": "#c64539",
+        "text": "#f4f4f0",
+        "muted": "#96968f"
       },
       "lyrics": {
         "synced": true,
+        "source": "embedded",
         "lines": [
           {
             "t": 12.66,
@@ -166,11 +167,11 @@
       "cover": "covers/daft-punk-something-about-us.jpg",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoianlVRk1wOWtKTnV1TlVMY2taQ3ZPcyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.FHbN8r2R4aJ9xFVLfUPegELOTcRqVfP6E3Y0gvzQVBs",
       "colors": {
-        "bg": "#2a5049",
-        "bgAlt": "#0c3659",
-        "accent": "#b8b187",
-        "text": "#dfe2e7",
-        "muted": "#93a5a5"
+        "bg": "#12211f",
+        "bgAlt": "#1c405f",
+        "accent": "#f3d723",
+        "text": "#f0f4f3",
+        "muted": "#8e9796"
       },
       "lyrics": {
         "synced": true,
@@ -223,7 +224,9 @@
             "t": 130,
             "text": "I love you more than anyone in my life."
           }
-        ]
+        ],
+        "source": "lrclib",
+        "durOk": true
       }
     },
     {
@@ -235,21 +238,21 @@
       "cover": "covers/la-gusana-ciega-californica.jpg",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiVnNCR3hyTVR4R0FiU1ZIbEFKNktGdSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.62iwQ9XAG_J-LhFKniS72AVW2ll44OJScaX6E0GF9Fw",
       "colors": {
-        "bg": "#4d4438",
-        "bgAlt": "#442c1c",
+        "bg": "#1e1a15",
+        "bgAlt": "#573824",
         "accent": "#d4a555",
-        "text": "#eeebde",
-        "muted": "#aaa598"
+        "text": "#f4f3f0",
+        "muted": "#969490"
       },
       "lyrics": {
         "synced": true,
         "lines": [
           {
-            "t": 28.69,
+            "t": 28.63,
             "text": "Le suben al volumen cuando sales a bailar"
           },
           {
-            "t": 35.57,
+            "t": 35.53,
             "text": "Enseñas tu cintura y luego vuelves a ocultar"
           },
           {
@@ -257,19 +260,19 @@
             "text": "Sientes mi presencia pero no vas a voltear"
           },
           {
-            "t": 56.98,
+            "t": 56.96,
             "text": "Y yo me entrego al sueño"
           },
           {
-            "t": 63.6,
+            "t": 63.62,
             "text": "Quiero clavar mis colmillos en tu carne, morena"
           },
           {
-            "t": 67.43,
+            "t": 67.47,
             "text": "Quiero verte bailar en una sala de espera"
           },
           {
-            "t": 71.08,
+            "t": 71.03,
             "text": "Quiero ser tu condena"
           },
           {
@@ -277,23 +280,23 @@
             "text": "Quiero verte en escena"
           },
           {
-            "t": 74.56,
+            "t": 74.5,
             "text": "Pero dicen, que nadie te puede tocar"
           },
           {
-            "t": 82.01,
+            "t": 82.07,
             "text": "Dicen, que nadie te puede cambiar"
           },
           {
-            "t": 89.14,
+            "t": 89.13,
             "text": "Tu piel de California no se puede comparar"
           },
           {
-            "t": 96.12,
+            "t": 96.16,
             "text": "Enciendes un cigarro y luego vuelves a bailar"
           },
           {
-            "t": 103.37,
+            "t": 103.36,
             "text": "Ignoras mis señales no me puedo controlar"
           },
           {
@@ -301,39 +304,39 @@
             "text": "Y yo me entrego al sueño"
           },
           {
-            "t": 116.95,
+            "t": 116.99,
             "text": "Quiero clavar mis colmillos en tu carne, morena"
           },
           {
-            "t": 120.58,
+            "t": 120.53,
             "text": "Quiero hacerte el amor en una sala de espera"
           },
           {
-            "t": 124.23,
+            "t": 124.22,
             "text": "Quiero ser tu condena"
           },
           {
-            "t": 126.19,
+            "t": 126.17,
             "text": "Quiero verte en escena"
           },
           {
-            "t": 127.95,
+            "t": 127.92,
             "text": "Pero dicen, que nadie te puede tocar"
           },
           {
-            "t": 135.47,
+            "t": 135.44,
             "text": "Dicen, que nadie te puede cambiar"
           },
           {
-            "t": 163.91,
+            "t": 163.94,
             "text": "Dicen, que nadie te puede tocar"
           },
           {
-            "t": 171.07,
+            "t": 171.03,
             "text": "Dicen, que nadie te puede cambiar"
           },
           {
-            "t": 178.17,
+            "t": 178.19,
             "text": "Dicen, que nadie te puede cambiar"
           },
           {
@@ -341,14 +344,16 @@
             "text": "Dicen, que nadie te puede cambiar"
           },
           {
-            "t": 192.21,
+            "t": 192.29,
             "text": "Dicen, que nadie te puede tocar"
           },
           {
-            "t": 199.3,
+            "t": 199.36,
             "text": "Dicen, que nadie te puede cambiar"
           }
-        ]
+        ],
+        "source": "lrclib",
+        "durOk": true
       }
     },
     {
@@ -360,11 +365,11 @@
       "cover": "covers/dead-poet-society-georgia.jpg",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiSDdmNTRzSUJUQXFoN0psM3JDM05ibCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.9u2VRE-cmtJ-YiF-0eGvcrLV6ESIBLEueInaLzQE6U4",
       "colors": {
-        "bg": "#57412f",
-        "bgAlt": "#7a4f38",
-        "accent": "#b99d49",
-        "text": "#ede9d9",
-        "muted": "#aea292"
+        "bg": "#211912",
+        "bgAlt": "#543627",
+        "accent": "#c6a43c",
+        "text": "#f4f2f0",
+        "muted": "#97938e"
       },
       "lyrics": {
         "synced": true,
@@ -394,7 +399,7 @@
             "text": "I need you, Georgia, I know that"
           },
           {
-            "t": 70.03,
+            "t": 70.04,
             "text": "You'll never understand, yeah, you never will"
           },
           {
@@ -438,7 +443,7 @@
             "text": "Oh, I swear I'll be more"
           },
           {
-            "t": 139.82,
+            "t": 139.83,
             "text": "I don't know, I don't know"
           },
           {
@@ -446,7 +451,7 @@
             "text": "Have you been here beforе?"
           },
           {
-            "t": 146.32,
+            "t": 146.33,
             "text": "I don't know, I don't know"
           },
           {
@@ -458,7 +463,7 @@
             "text": "I love you, oh, girl, I lovе you"
           },
           {
-            "t": 157.82,
+            "t": 157.83,
             "text": "I need you, Georgia, I know that"
           },
           {
@@ -477,27 +482,9 @@
             "t": 178.66,
             "text": "I love you, girl"
           }
-        ]
-      }
-    },
-    {
-      "slug": "jnathyn-dioma-demo",
-      "title": "Dioma - Demo",
-      "artist": "Jnathyn",
-      "album": "Dioma (Demo)",
-      "duration": 137,
-      "cover": "covers/jnathyn-dioma-demo.jpg",
-      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiRWUwYUdEUkx2TXNRMmdTbXpoc3F5NiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.YMS0jTgRt_Jxml9DQPxSDaWrJGqz8qdNguONjiFtboQ",
-      "colors": {
-        "bg": "#444444",
-        "bgAlt": "#424242",
-        "accent": "#bfbfbf",
-        "text": "#e4e4e4",
-        "muted": "#a1a1a1"
-      },
-      "lyrics": {
-        "synced": false,
-        "lines": []
+        ],
+        "source": "lrclib",
+        "durOk": true
       }
     },
     {
@@ -509,11 +496,11 @@
       "cover": "covers/joan-jett-the-blackhearts-i-hate-myself-for-loving-you.jpg",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoia09BSUlUSmtyZVdRUUcyMkpxUEdCMyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.-wFO0ibSRqMcbfnnb57G9alEptrDa0iLXSn_nAT2S_A",
       "colors": {
-        "bg": "#513630",
-        "bgAlt": "#24040e",
+        "bg": "#201513",
+        "bgAlt": "#5f1c31",
         "accent": "#d79140",
-        "text": "#ddd9da",
-        "muted": "#a29593"
+        "text": "#f4f1f0",
+        "muted": "#97908f"
       },
       "lyrics": {
         "synced": true,
@@ -690,7 +677,2220 @@
             "t": 237.77,
             "text": "For loving you"
           }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "peter-gundry-the-vampire-masquerade",
+      "title": "The Vampire Masquerade",
+      "artist": "Peter Gundry",
+      "album": "The Edge of Darkness",
+      "duration": 191,
+      "cover": "covers/peter-gundry-the-vampire-masquerade.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoieXJsd0MydExtY2k5TVB0N1hYMnBQayIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.Sgn0ViYep3Vx8I9m_7n7Bgc3_nRDpj4P2Tf3T_bHm1E",
+      "colors": {
+        "bg": "#1e1515",
+        "bgAlt": "#4b3030",
+        "accent": "#c63939",
+        "text": "#f4f0f0",
+        "muted": "#969090"
+      },
+      "lyrics": {
+        "synced": false,
+        "lines": [],
+        "source": "omitida"
+      }
+    },
+    {
+      "slug": "vanessa-paradis-m-la-seine-extrait-de-la-bande-originale-un-monstre-a-paris",
+      "title": "La Seine - Extrait de la bande originale un monstre à Paris",
+      "artist": "Vanessa Paradis • -M-",
+      "album": "Best Of & Variations",
+      "duration": 167,
+      "cover": "covers/vanessa-paradis-m-la-seine-extrait-de-la-bande-originale-un-monstre-a-paris.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiU1dPU1JVMzJQd3NROVBYanpVSXdEQyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.uH9Lao1MdAX6ZZmcF5oBinxUHJHuz3w3rF7HA17lfw8",
+      "colors": {
+        "bg": "#151e1a",
+        "bgAlt": "#575f1c",
+        "accent": "#b6c738",
+        "text": "#f0f4f2",
+        "muted": "#909693"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 10.07,
+            "text": "Elle sort de son lit, tellement sûre d'elle"
+          },
+          {
+            "t": 13.93,
+            "text": "La Seine, la Seine, la Seine"
+          },
+          {
+            "t": 18.4,
+            "text": "Tellement jolie, elle m'ensorcelle"
+          },
+          {
+            "t": 22.27,
+            "text": "La Seine, la Seine, la Seine"
+          },
+          {
+            "t": 27.15,
+            "text": "Extralucide, la Lune est sur"
+          },
+          {
+            "t": 30.92,
+            "text": "La Seine, la Seine, la Seine"
+          },
+          {
+            "t": 35.5,
+            "text": "Tu n'es pas saoul, Paris est sous"
+          },
+          {
+            "t": 39.35,
+            "text": "La Seine, la Seine, la Seine"
+          },
+          {
+            "t": 43.11,
+            "text": "Je ne sais, ne sais, ne sais pas pourquoi"
+          },
+          {
+            "t": 47.27,
+            "text": "On s'aime comme ça, la Seine et moi"
+          },
+          {
+            "t": 51.51,
+            "text": "Je ne sais, ne sais, ne sais pas pourquoi"
+          },
+          {
+            "t": 55.76,
+            "text": "On s'aime comme ça, la Seine et moi"
+          },
+          {
+            "t": 61.48,
+            "text": "Extra Lucille quand tu es sur"
+          },
+          {
+            "t": 66.9,
+            "text": "La scène, la scène, la scène"
+          },
+          {
+            "t": 71.37,
+            "text": "Extravagante quand l'ange est sur"
+          },
+          {
+            "t": 75.5,
+            "text": "La scène, la scène, la scène"
+          },
+          {
+            "t": 79.13,
+            "text": "Je ne sais, ne sais, ne sais pas pourquoi"
+          },
+          {
+            "t": 83.11,
+            "text": "On s'aime comme ça, la Seine et moi"
+          },
+          {
+            "t": 87.61,
+            "text": "Je ne sais, ne sais, ne sais pas pourquoi"
+          },
+          {
+            "t": 91.68,
+            "text": "On s'aime comme ça, la Seine et moi"
+          },
+          {
+            "t": 98.8,
+            "text": "Sur le Pont des Arts (mon cœur vacille)"
+          },
+          {
+            "t": 103.15,
+            "text": "Entre deux eaux (l'air est si bon)"
+          },
+          {
+            "t": 107.65,
+            "text": "Cet air si pur (je le respire)"
+          },
+          {
+            "t": 111.85,
+            "text": "Nos reflets perchés (sur ce pont)"
+          },
+          {
+            "t": 117.15,
+            "text": "Tu lu, ti, luti"
+          },
+          {
+            "t": 119.58,
+            "text": "Tu lu, ti, luti"
+          },
+          {
+            "t": 121.52,
+            "text": "On s'aime comme ça, la Seine et moi"
+          },
+          {
+            "t": 125.82,
+            "text": "Tu lu, ti, luti"
+          },
+          {
+            "t": 127.83,
+            "text": "Tu lu, ti, luti"
+          },
+          {
+            "t": 129.98,
+            "text": "On s'aime comme ça, la Seine et moi"
+          },
+          {
+            "t": 134.33,
+            "text": "Tu lu, ti, luti"
+          },
+          {
+            "t": 136.4,
+            "text": "Tu lu, ti, luti"
+          },
+          {
+            "t": 138.42,
+            "text": "On s'aime comme ça, la Seine et moi"
+          },
+          {
+            "t": 142.44,
+            "text": "Tu lu, ti, luti"
+          },
+          {
+            "t": 145.18,
+            "text": "Tu lu, ti, luti"
+          },
+          {
+            "t": 146.98,
+            "text": "On s'aime comme ça, la Seine et moi"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "will-paquin-chandelier",
+      "title": "Chandelier",
+      "artist": "Will Paquin",
+      "album": "Chandelier",
+      "duration": 127,
+      "cover": "covers/will-paquin-chandelier.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiNjlyaUluTlRjUWVPZXhRS0N1YVNqOSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.9miPWBnsQTZ3JT4GpRaiAHrF1aNv1O8k7S56RHbqO7c",
+      "colors": {
+        "bg": "#211218",
+        "bgAlt": "#2f2655",
+        "accent": "#5539c6",
+        "text": "#f4f0f2",
+        "muted": "#978e92"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 11.73,
+            "text": "Catch my breath and hold it for me"
+          },
+          {
+            "t": 15.31,
+            "text": "I'm wasting my time, tryna make up my mind"
+          },
+          {
+            "t": 21.12,
+            "text": "Oh, I'm sitting here as the chandelier is whispering in my ear"
+          },
+          {
+            "t": 26.84,
+            "text": "Saying, \"Can I get a cigarette?\""
+          },
+          {
+            "t": 29.19,
+            "text": "I know you'll never be mine"
+          },
+          {
+            "t": 32.08,
+            "text": "Can you come around tonight"
+          },
+          {
+            "t": 35.56,
+            "text": "And sing me a lullaby?"
+          },
+          {
+            "t": 38.29,
+            "text": "Just take my heart and break it"
+          },
+          {
+            "t": 43.04,
+            "text": "Can you come around tonight?"
+          },
+          {
+            "t": 46.37,
+            "text": "I might be the enemy"
+          },
+          {
+            "t": 49.27,
+            "text": "But nothing quite hits like you"
+          },
+          {
+            "t": 58.55,
+            "text": "Come on, take this pen and write for me"
+          },
+          {
+            "t": 63,
+            "text": "Oh, write me a song and I'll try to forget it"
+          },
+          {
+            "t": 69.34,
+            "text": "Oh, I'm standing there as the man upstairs"
+          },
+          {
+            "t": 72.14,
+            "text": "Comes crashing through the ceiling"
+          },
+          {
+            "t": 74.06,
+            "text": "Saying, \"Where's my fucking cigarette?\""
+          },
+          {
+            "t": 76.62,
+            "text": "With fire in his eyes"
+          },
+          {
+            "t": 79.02,
+            "text": "Can you come around tonight"
+          },
+          {
+            "t": 82.62,
+            "text": "And sing me a lullaby?"
+          },
+          {
+            "t": 86.15,
+            "text": "Just take my heart and break it"
+          },
+          {
+            "t": 90.1,
+            "text": "Can you come around tonight?"
+          },
+          {
+            "t": 93.62,
+            "text": "I might be the enemy"
+          },
+          {
+            "t": 96.26,
+            "text": "But nothing quite hits like you"
+          },
+          {
+            "t": 101.38,
+            "text": "And as on my patience, starts to dry"
+          },
+          {
+            "t": 107.7,
+            "text": "And my feeling skids across the sand"
+          },
+          {
+            "t": 112.82,
+            "text": "They'll know that you've won"
+          },
+          {
+            "t": 118.79,
+            "text": "And I run back to where I came from"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "secos-molhados-sangue-latino",
+      "title": "Sangue latino",
+      "artist": "Secos & Molhados",
+      "album": "A volta de Secos & Molhados",
+      "duration": 128,
+      "cover": "covers/secos-molhados-sangue-latino.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiYkdJZ1BsNjBSZ25IN2s1NWhGNFFHbSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.8WYQrPxhzo5dFsCI019Y63GY5dbppSJ8nTmzU2pXzSs",
+      "colors": {
+        "bg": "#211512",
+        "bgAlt": "#5f3a1c",
+        "accent": "#da8125",
+        "text": "#f4f1f0",
+        "muted": "#97908e"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 23.38,
+            "text": "Jurei mentiras e sigo sozinho"
+          },
+          {
+            "t": 30.26,
+            "text": "Assumo os pecados"
+          },
+          {
+            "t": 37.38,
+            "text": "Os ventos do norte não movem moinhos"
+          },
+          {
+            "t": 44.65,
+            "text": "E o que me resta é só um gemido"
+          },
+          {
+            "t": 51.33,
+            "text": "Minha vida, meus mortos, meus caminhos tortos"
+          },
+          {
+            "t": 58.72,
+            "text": "Meu sangue latino"
+          },
+          {
+            "t": 65.98,
+            "text": "Minh'alma cativa"
+          },
+          {
+            "t": 73.47,
+            "text": "Rompi tratados, traí os ritos"
+          },
+          {
+            "t": 80.44,
+            "text": "Quebrei a lança, lancei no espaço"
+          },
+          {
+            "t": 87.86,
+            "text": "Um grito, um desabafo"
+          },
+          {
+            "t": 95.16,
+            "text": "E o que me importa é não estar vencido"
+          },
+          {
+            "t": 102.05,
+            "text": "Minha vida, meus mortos, meus caminhos tortos"
+          },
+          {
+            "t": 109.31,
+            "text": "Meu sangue latino"
+          },
+          {
+            "t": 116.56,
+            "text": "Minh'alma cativa"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "glimmer-of-blooms-can-t-get-you-out-of-my-head",
+      "title": "Can't Get You out Of My Head",
+      "artist": "Glimmer of Blooms",
+      "album": "Can't Get You out Of My Head",
+      "duration": 200,
+      "cover": "covers/glimmer-of-blooms-can-t-get-you-out-of-my-head.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiN1NhTXFMdXRsVkNaTm11c0xGb1luayIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.ALL6naJagUaK0B15LoZ-1A2ZPYc7DKcPjDtScNJZJ9A",
+      "colors": {
+        "bg": "#231b10",
+        "bgAlt": "#5f4c1c",
+        "accent": "#c66c39",
+        "text": "#f4f3f0",
+        "muted": "#98948d"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 16.61,
+            "text": "I just can't get you out of my head"
+          },
+          {
+            "t": 20.97,
+            "text": "Girl, your loving is all i think about"
+          },
+          {
+            "t": 25.32,
+            "text": "I just can't get you out of my head"
+          },
+          {
+            "t": 29.73,
+            "text": "Girl, it's more than I dare to think about"
+          },
+          {
+            "t": 35.13,
+            "text": "La la la la la la la la la la la la la la la"
+          },
+          {
+            "t": 44.68,
+            "text": "La la la la la la la la la la la la la la la la"
+          },
+          {
+            "t": 51.85,
+            "text": "I just can't get you out of my head"
+          },
+          {
+            "t": 56.19,
+            "text": "Girl, your loving is all I think"
+          },
+          {
+            "t": 60.04,
+            "text": "I just can't get you out of my head"
+          },
+          {
+            "t": 64.99,
+            "text": "Girl, it's more than I dare to think about"
+          },
+          {
+            "t": 70.47,
+            "text": "Every night and every day"
+          },
+          {
+            "t": 79.18,
+            "text": "Just to be there in your arms"
+          },
+          {
+            "t": 87.08,
+            "text": "Won't you stay"
+          },
+          {
+            "t": 91.6,
+            "text": "Won't you stay"
+          },
+          {
+            "t": 96.03,
+            "text": "Won't you lay"
+          },
+          {
+            "t": 100.47,
+            "text": "Won't you lay"
+          },
+          {
+            "t": 106.26,
+            "text": "La la la la la la la la la la la la la la la"
+          },
+          {
+            "t": 114.36,
+            "text": "La la la la la la la la la la la la la la la la"
+          },
+          {
+            "t": 121.91,
+            "text": "I just can't get you out of my head"
+          },
+          {
+            "t": 126.64,
+            "text": "Girl, your loving is all I think about"
+          },
+          {
+            "t": 131.02,
+            "text": "I just can't get you out of my head"
+          },
+          {
+            "t": 135.48,
+            "text": "Girl, it's more than I dare to think about"
+          },
+          {
+            "t": 140.91,
+            "text": "There's a dark secret in me"
+          },
+          {
+            "t": 149.76,
+            "text": "Don't leave me locked in your heart"
+          },
+          {
+            "t": 157.38,
+            "text": "Set me free"
+          },
+          {
+            "t": 161.93,
+            "text": "Set me free"
+          },
+          {
+            "t": 166.39,
+            "text": "Feel the need in me"
+          },
+          {
+            "t": 170.15,
+            "text": "Feel the need in me"
+          },
+          {
+            "t": 175.19,
+            "text": "♪"
+          },
+          {
+            "t": 178.26,
+            "text": "La la la la la la la la la la la la la la la"
+          },
+          {
+            "t": 186.81,
+            "text": "La la la la la la la la la la la la la la la la"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "el-cuarteto-de-nos-enamorado-tuyo",
+      "title": "Enamorado tuyo",
+      "artist": "El Cuarteto De Nos",
+      "album": "Porfiado",
+      "duration": 259,
+      "cover": "covers/el-cuarteto-de-nos-enamorado-tuyo.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiYVNXOElHb011WEhYVVZ3cU5FVm1tVyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.XKOhYBSOk6TMD8eZN_3t5gR7r_4MP0ys0Tk4J2IRNsY",
+      "colors": {
+        "bg": "#211e12",
+        "bgAlt": "#1c465f",
+        "accent": "#4cc4f4",
+        "text": "#f4f3f0",
+        "muted": "#97958e"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 15.28,
+            "text": "Y si te parece que yo estoy enamorado tuyo"
+          },
+          {
+            "t": 20.25,
+            "text": "Eso es un invento, intuyo, no des crédito a murmullos"
+          },
+          {
+            "t": 25.09,
+            "text": "Porque casi nunca llamo para decir que te amo"
+          },
+          {
+            "t": 30.22,
+            "text": "Y más de una vez lo hice a un número equivocado"
+          },
+          {
+            "t": 35.18,
+            "text": "Casi nunca nadie dice que yo estoy enamorado tuyo"
+          },
+          {
+            "t": 44.93,
+            "text": "Raramente desespero por tenerte aquí a mi lado"
+          },
+          {
+            "t": 50.38,
+            "text": "Y eso no significa que tenga un significado"
+          },
+          {
+            "t": 55.15,
+            "text": "Si pensás que amor yo siento, por favor, no hagas pamento"
+          },
+          {
+            "t": 60.13,
+            "text": "No comentes con tu gente sobre nuestro asunto"
+          },
+          {
+            "t": 65.07,
+            "text": "Casi nunca nadie dice que yo estoy enamorado tuyo"
+          },
+          {
+            "t": 74.78,
+            "text": "No te vistas, no te hagás la nunca vista"
+          },
+          {
+            "t": 79.75,
+            "text": "Tengo en vista cantarte un \"hasta la vista\""
+          },
+          {
+            "t": 84.76,
+            "text": "No te vistas, no te hagás la nunca vista"
+          },
+          {
+            "t": 89.76,
+            "text": "Tengo lista una canción que dice: \"hasta la vista, señorita\""
+          },
+          {
+            "t": 107.65,
+            "text": "Casi nunca veo la foto tuya en mi celular"
+          },
+          {
+            "t": 112.76,
+            "text": "Sigue ahí por la pereza que me da apretar \"borrar\""
+          },
+          {
+            "t": 117.72,
+            "text": "No estoy tan obsesionado, vale como aclaración"
+          },
+          {
+            "t": 122.59,
+            "text": "Si pensás que es por eso que yo canto esta canción"
+          },
+          {
+            "t": 127.73,
+            "text": "Casi nunca nadie dice que yo estoy enamorado tuyo"
+          },
+          {
+            "t": 137.15,
+            "text": "No te vistas, no te hagás la nunca vista"
+          },
+          {
+            "t": 142.24,
+            "text": "Tengo en vista cantarte un \"hasta la vista\""
+          },
+          {
+            "t": 147.18,
+            "text": "No te vistas, no te hagás la nunca vista"
+          },
+          {
+            "t": 152.13,
+            "text": "Tengo lista una canción que dice: \"hasta la vista, señorita\""
+          },
+          {
+            "t": 160.22,
+            "text": "Y si te parece que yo estoy enamorado tuyo"
+          },
+          {
+            "t": 165.04,
+            "text": "Eso es un invento, intuyo, no des crédito a murmullos"
+          },
+          {
+            "t": 170.1,
+            "text": "Porque casi nunca llamo para decir que te amo"
+          },
+          {
+            "t": 175.18,
+            "text": "Y más de una vez lo hice a un número equivocado"
+          },
+          {
+            "t": 180.28,
+            "text": "Casi nunca nadie dice que yo estoy enamorado tuyo"
+          },
+          {
+            "t": 189.72,
+            "text": "No te vistas, no te hagás la nunca vista"
+          },
+          {
+            "t": 194.83,
+            "text": "Tengo en vista cantarte un \"hasta la vista\""
+          },
+          {
+            "t": 199.62,
+            "text": "No te vistas, no te hagás la nunca vista"
+          },
+          {
+            "t": 204.51,
+            "text": "Tengo lista una canción que dice: \"hasta la vista, señorita\""
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "zcar-jpg-gustarme-tanto",
+      "title": "Gustarme Tanto",
+      "artist": "Zcar JPG",
+      "album": "Gustarme Tanto",
+      "duration": 114,
+      "cover": "covers/zcar-jpg-gustarme-tanto.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiejZaN3N0UGtHOWdZQnhvYWdhT3lFayIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.QSafKzLc17Y92FSSQrfqBua3gcEtxTb-T48J15VCURI",
+      "colors": {
+        "bg": "#201713",
+        "bgAlt": "#5f301c",
+        "accent": "#f2610d",
+        "text": "#f4f2f0",
+        "muted": "#97928f"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 9.02,
+            "text": "Yeh-eh, eh-eh, eh-eh-eh"
+          },
+          {
+            "t": 12.88,
+            "text": "Odio que tengas que gustarme tanto"
+          },
+          {
+            "t": 16.93,
+            "text": "Y que nada saliera como esperabas"
+          },
+          {
+            "t": 19.78,
+            "text": "Y ya no puedo ni mirarte cuando"
+          },
+          {
+            "t": 23.55,
+            "text": "Mi corazón hace que revivan las ganas"
+          },
+          {
+            "t": 26.53,
+            "text": "Odio que tengas que gustarme tanto"
+          },
+          {
+            "t": 30.87,
+            "text": "Y que nada saliera como esperabas"
+          },
+          {
+            "t": 33.57,
+            "text": "Y ya no puedo ni mirarte cuando"
+          },
+          {
+            "t": 37.65,
+            "text": "Mi corazón hace que revivan las ganas"
+          },
+          {
+            "t": 41.36,
+            "text": "De besarte hasta que se me olvide cómo"
+          },
+          {
+            "t": 44.36,
+            "text": "Empezamos todo y"
+          },
+          {
+            "t": 45.85,
+            "text": "Que tú no quieres una relación de verdad"
+          },
+          {
+            "t": 49.06,
+            "text": "Por eso me siento un bobo"
+          },
+          {
+            "t": 51.12,
+            "text": "Porque yo haría todo"
+          },
+          {
+            "t": 52.99,
+            "text": "Por el simple hecho de tenerte cerca"
+          },
+          {
+            "t": 56.13,
+            "text": "Y vos solo me ves como otra persona"
+          },
+          {
+            "t": 59.85,
+            "text": "De parta el vidrio solo en caso de emergencia"
+          },
+          {
+            "t": 63.14,
+            "text": "Y yo ya no encuentro modo de cómo decirte que no"
+          },
+          {
+            "t": 67.78,
+            "text": "Y por eso odio que tengas que gustarme tanto"
+          },
+          {
+            "t": 72.43,
+            "text": "Y que nada saliera como esperabas"
+          },
+          {
+            "t": 75.32,
+            "text": "Y ya no puedo ni mirarte cuando"
+          },
+          {
+            "t": 79.24,
+            "text": "Mi corazón hace que revivan las ganas"
+          },
+          {
+            "t": 82.1,
+            "text": "Odio que tengas que gustarme tanto"
+          },
+          {
+            "t": 86.48,
+            "text": "Y que nada saliera como esperabas"
+          },
+          {
+            "t": 89.17,
+            "text": "Y ya no puedo ni mirarte cuando"
+          },
+          {
+            "t": 93.12,
+            "text": "Mi corazón hace que revivan las ganas"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "nico-play-la-ciruela",
+      "title": "La Ciruela",
+      "artist": "Nico Play",
+      "album": "Desilusión",
+      "duration": 197,
+      "cover": "covers/nico-play-la-ciruela.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiZ3lhc3ZVQjVxRmk1bXoyckFPb0FiVSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.Eb4nlvl4kDTc-NmjOKJ8reJuvRJXuikh40YzFNguPN0",
+      "colors": {
+        "bg": "#151d1e",
+        "bgAlt": "#30444b",
+        "accent": "#39a0c6",
+        "text": "#f0f4f4",
+        "muted": "#909596"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 11.09,
+            "text": "Mírame"
+          },
+          {
+            "t": 15.15,
+            "text": "Nunca te lo confesaré"
+          },
+          {
+            "t": 20.54,
+            "text": "Pero si soy sincero"
+          },
+          {
+            "t": 24.4,
+            "text": "No hay nada más en este mundo"
+          },
+          {
+            "t": 28.54,
+            "text": "Que yo quiero"
+          },
+          {
+            "t": 32.81,
+            "text": "Solo una"
+          },
+          {
+            "t": 36.7,
+            "text": "Mordida de la ciruela"
+          },
+          {
+            "t": 42.05,
+            "text": "Tan dulce que rompe la"
+          },
+          {
+            "t": 46.63,
+            "text": "Desilusión de mi vida"
+          },
+          {
+            "t": 55.02,
+            "text": "Me muero por ella"
+          },
+          {
+            "t": 66.05,
+            "text": "Aunque no sepa"
+          },
+          {
+            "t": 96.79,
+            "text": "Delicia"
+          },
+          {
+            "t": 100.54,
+            "text": "Helado de coco que enfría"
+          },
+          {
+            "t": 106.18,
+            "text": "Tu boca que llora por"
+          },
+          {
+            "t": 110.25,
+            "text": "Un alivio de tanto calor"
+          },
+          {
+            "t": 118.65,
+            "text": "Envidia"
+          },
+          {
+            "t": 122.49,
+            "text": "Se esconde debajo de la tierra"
+          },
+          {
+            "t": 128.09,
+            "text": "Donde ni tu la veas"
+          },
+          {
+            "t": 131.96,
+            "text": "Por que te da vergüenza verdad?"
+          },
+          {
+            "t": 140.35,
+            "text": "Me muero por ella"
+          },
+          {
+            "t": 151.21,
+            "text": "Aunque no sepa"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "michael-buble-cry-me-a-river",
+      "title": "Cry Me a River",
+      "artist": "Michael Bublé",
+      "album": "The Essential Michael Bublé",
+      "duration": 254,
+      "cover": "covers/michael-buble-cry-me-a-river.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoidVFpMFBQY1phdU4zVXNPWWdCSEVucyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.CTklDXOyzfns2eoVnaUybzJTem5HCdavJ914eSWOgUI",
+      "colors": {
+        "bg": "#1e1a15",
+        "bgAlt": "#5f441c",
+        "accent": "#d2862d",
+        "text": "#f4f3f0",
+        "muted": "#969490"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 30.61,
+            "text": "Now, you say you're lonely"
+          },
+          {
+            "t": 37.22,
+            "text": "You cried the whole night through"
+          },
+          {
+            "t": 42.89,
+            "text": "Well, you can cry me a river"
+          },
+          {
+            "t": 47.67,
+            "text": "Cry me a river"
+          },
+          {
+            "t": 51.25,
+            "text": "I cried a river over you"
+          },
+          {
+            "t": 67.95,
+            "text": "And, now, you say you're sorry"
+          },
+          {
+            "t": 74.91,
+            "text": "For being so untrue"
+          },
+          {
+            "t": 80.35,
+            "text": "Well, you can cry me a river"
+          },
+          {
+            "t": 85.1,
+            "text": "Cry me a river"
+          },
+          {
+            "t": 89.18,
+            "text": "I cried a river over you"
+          },
+          {
+            "t": 95.66,
+            "text": "You drove me"
+          },
+          {
+            "t": 98.98,
+            "text": "Nearly out of my head"
+          },
+          {
+            "t": 102.74,
+            "text": "While you never shed a tear, babe"
+          },
+          {
+            "t": 109.18,
+            "text": "Remember?"
+          },
+          {
+            "t": 111.82,
+            "text": "I remember all that you said"
+          },
+          {
+            "t": 115.85,
+            "text": "You told me love was too plebeian"
+          },
+          {
+            "t": 119.16,
+            "text": "Told me you were through with me"
+          },
+          {
+            "t": 122.31,
+            "text": "And now you say you love me"
+          },
+          {
+            "t": 129.96,
+            "text": "Well, just to prove that you do"
+          },
+          {
+            "t": 135.25,
+            "text": "Why don't you cry me a river?"
+          },
+          {
+            "t": 140.03,
+            "text": "Cry me a river"
+          },
+          {
+            "t": 143.58,
+            "text": "'Cause I cried a river over you"
+          },
+          {
+            "t": 148.65,
+            "text": "Over you"
+          },
+          {
+            "t": 160.59,
+            "text": "You say you love me, but you lie"
+          },
+          {
+            "t": 176.72,
+            "text": "Now, you say you love me"
+          },
+          {
+            "t": 184.84,
+            "text": "Well, just to prove that you do"
+          },
+          {
+            "t": 190.38,
+            "text": "Come on and cry me a river"
+          },
+          {
+            "t": 194.95,
+            "text": "Oh, cry me a river"
+          },
+          {
+            "t": 198.23,
+            "text": "I cried a river over you"
+          },
+          {
+            "t": 205.43,
+            "text": "I cried a river"
+          },
+          {
+            "t": 211.98,
+            "text": "Over you"
+          },
+          {
+            "t": 224.35,
+            "text": "I cried a river"
+          },
+          {
+            "t": 229.75,
+            "text": "Now you can, too"
+          },
+          {
+            "t": 234.87,
+            "text": "Cry me a river"
+          },
+          {
+            "t": 242.92,
+            "text": "Cry me a river"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "porter-respuesta-sensorial",
+      "title": "Respuesta Sensorial",
+      "artist": "Porter",
+      "album": "Respuesta Sensorial",
+      "duration": 220,
+      "cover": "covers/porter-respuesta-sensorial.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiWHlOSUpKYmhVWkdmbHlvSFF2N0prNiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.g_a06qMWj8eNa7C8n4udadz7WngO9Ml_upBunGI6b_E",
+      "colors": {
+        "bg": "#1e1b15",
+        "bgAlt": "#253d56",
+        "accent": "#c69539",
+        "text": "#f4f3f0",
+        "muted": "#969490"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 6.62,
+            "text": "Todo lo que quiero es revelármele a mi sombra"
+          },
+          {
+            "t": 13.16,
+            "text": "Suele traicionarme y boicotearme de mil formas"
+          },
+          {
+            "t": 19.37,
+            "text": "Todo lo que quiero es contigo"
+          },
+          {
+            "t": 25.55,
+            "text": "Yo quisiera ser tu camino"
+          },
+          {
+            "t": 31.96,
+            "text": "Hey, no es novedad"
+          },
+          {
+            "t": 34.9,
+            "text": "Me encantan tus ojitos y cómo me miran"
+          },
+          {
+            "t": 38.27,
+            "text": "Hey, te quiero besar"
+          },
+          {
+            "t": 41.43,
+            "text": "Perderme en lo oscurito contigo a ver que pasa"
+          },
+          {
+            "t": 44.9,
+            "text": "Hey, nadie me gusta más"
+          },
+          {
+            "t": 47.07,
+            "text": "Tú tienes ese algo que me hace suspirar"
+          },
+          {
+            "t": 50.75,
+            "text": "Hey güera ven pa'cá"
+          },
+          {
+            "t": 53.92,
+            "text": "Ayer soñé contigo y lo quiero hacer real"
+          },
+          {
+            "t": 59.1,
+            "text": "Acostúmbrate a mí"
+          },
+          {
+            "t": 64.55,
+            "text": "Si no lo digo hoy, me voy a arrepentir"
+          },
+          {
+            "t": 71.01,
+            "text": "Esta va para ti"
+          },
+          {
+            "t": 77.17,
+            "text": "Si tú sientes igual nunca me dejes ir"
+          },
+          {
+            "t": 97.81,
+            "text": "Una más, una más de tus caricias"
+          },
+          {
+            "t": 101.66,
+            "text": "Que empiece desde cero, me ponga la piel china"
+          },
+          {
+            "t": 104.58,
+            "text": "Uno más uno más de tus besos"
+          },
+          {
+            "t": 107.99,
+            "text": "Puede que me enamore, no creo salir ileso"
+          },
+          {
+            "t": 110.97,
+            "text": "Una más, una más"
+          },
+          {
+            "t": 117.2,
+            "text": "Uno más, uno más"
+          },
+          {
+            "t": 123.53,
+            "text": "Hey, no es novedad"
+          },
+          {
+            "t": 126.41,
+            "text": "Me encantan tus ojitos y cómo me miran"
+          },
+          {
+            "t": 129.81,
+            "text": "Hey, te quiero besar"
+          },
+          {
+            "t": 132.39,
+            "text": "Perderme en lo oscurito contigo a ver que pasa"
+          },
+          {
+            "t": 136.11,
+            "text": "Hey, nadie me gusta más"
+          },
+          {
+            "t": 138.65,
+            "text": "Tú tienes ese algo que me hace suspirar"
+          },
+          {
+            "t": 142.75,
+            "text": "Hey güera, ven pa'cá"
+          },
+          {
+            "t": 145.85,
+            "text": "Ayer soñé contigo y lo quiero hacer real"
+          },
+          {
+            "t": 150.55,
+            "text": "Acostúmbrate a mí"
+          },
+          {
+            "t": 156.18,
+            "text": "Si no lo digo hoy, me voy a arrepentir"
+          },
+          {
+            "t": 162.52,
+            "text": "Esta va para ti"
+          },
+          {
+            "t": 168.72,
+            "text": "Si tú sientes igual nunca me dejes ir"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "will-smith-prince-ali",
+      "title": "Prince Ali",
+      "artist": "Will Smith",
+      "album": "Aladdin (Original Motion Picture Soundtrack)",
+      "duration": 209,
+      "cover": "covers/will-smith-prince-ali.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiRDBJa1RLbjhBSGRCNktGaWFMUjBDcSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.FVwCCzoBHTod2vQrJfQ5P02JqpFreOJnFXomTlB2B8E",
+      "colors": {
+        "bg": "#171122",
+        "bgAlt": "#251c5f",
+        "accent": "#f3b951",
+        "text": "#f2f0f4",
+        "muted": "#928e98"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 32.67,
+            "text": "Make way for Prince Ali"
+          },
+          {
+            "t": 37.72,
+            "text": "Say hey, it's Prince Ali"
+          },
+          {
+            "t": 43.06,
+            "text": "Hey! Clear the way in the old Bazaar"
+          },
+          {
+            "t": 45.2,
+            "text": "Hey you, let us through it's a brand-new star"
+          },
+          {
+            "t": 48.07,
+            "text": "Oh, come be the first on your block to meet his eye"
+          },
+          {
+            "t": 53.13,
+            "text": "Make way, here he comes"
+          },
+          {
+            "t": 54.47,
+            "text": "Ring bells, bang the drums"
+          },
+          {
+            "t": 56.06,
+            "text": "You're gonna love this guy"
+          },
+          {
+            "t": 58.21,
+            "text": "Prince Ali, fabulous he, Ali Ababwa"
+          },
+          {
+            "t": 62.89,
+            "text": "Show some respect, boy, genuflect, down on one knee"
+          },
+          {
+            "t": 68.23,
+            "text": "Now, try your best to stay calm"
+          },
+          {
+            "t": 70.92,
+            "text": "Brush up your Friday salaam"
+          },
+          {
+            "t": 73.38,
+            "text": "Then come and meet his spectacular coterie"
+          },
+          {
+            "t": 78.12,
+            "text": "Prince Ali, mighty is he, Ali Ababwa"
+          },
+          {
+            "t": 83.03,
+            "text": "Strong as ten regular men, definitely"
+          },
+          {
+            "t": 88.04,
+            "text": "He's faced the galloping hordes"
+          },
+          {
+            "t": 90.73,
+            "text": "A hundred bad guys with swords"
+          },
+          {
+            "t": 92.99,
+            "text": "Who sent those goons to their lords? Why, Prince Ali"
+          },
+          {
+            "t": 96.89,
+            "text": "Fellas, he's got"
+          },
+          {
+            "t": 97.2,
+            "text": "(He's got 75 golden camels)"
+          },
+          {
+            "t": 100.56,
+            "text": "Uh-huh, now the ladies, what he got?"
+          },
+          {
+            "t": 102.26,
+            "text": "(Purple peacocks, he's got 53)"
+          },
+          {
+            "t": 104.73,
+            "text": "Uh-huh, uh-huh, uh-huh"
+          },
+          {
+            "t": 106.54,
+            "text": "When it comes to exotic-type mammals"
+          },
+          {
+            "t": 110.54,
+            "text": "Everybody help me out"
+          },
+          {
+            "t": 111.62,
+            "text": "He's got a zoo? I'm telling you,"
+          },
+          {
+            "t": 113.27,
+            "text": "It's a world-class menagerie"
+          },
+          {
+            "t": 115.78,
+            "text": "Prince Ali, handsome is he, Ali Ababwa"
+          },
+          {
+            "t": 120.1,
+            "text": "That physique! How can I speak?"
+          },
+          {
+            "t": 122.54,
+            "text": "Weak at my knees! You yummy boy"
+          },
+          {
+            "t": 125.2,
+            "text": "So get on out in that square"
+          },
+          {
+            "t": 127.77,
+            "text": "Adjust your veil and prepare"
+          },
+          {
+            "t": 129.86,
+            "text": "To gawk and grovel and stare at Prince Ali, oops"
+          },
+          {
+            "t": 134.17,
+            "text": "He's got 95 white Persian monkeys"
+          },
+          {
+            "t": 137.07,
+            "text": "(He's got the monkeys, a bunch of monkeys)"
+          },
+          {
+            "t": 139.03,
+            "text": "And to view them he charges no fee"
+          },
+          {
+            "t": 141.6,
+            "text": "(He's generous, so generous)"
+          },
+          {
+            "t": 143.84,
+            "text": "He's got ten thousand servants and flunkies"
+          },
+          {
+            "t": 146.8,
+            "text": "(Proud to work for him)"
+          },
+          {
+            "t": 147.62,
+            "text": "They bow to his whim, love serving him"
+          },
+          {
+            "t": 149.44,
+            "text": "They're just lousy with loyalty to Ali"
+          },
+          {
+            "t": 154.24,
+            "text": "Prince Ali"
+          },
+          {
+            "t": 156.64,
+            "text": "Prince A..."
+          },
+          {
+            "t": 160.92,
+            "text": "We're waiting for you!"
+          },
+          {
+            "t": 162.87,
+            "text": "We're not going until you go"
+          },
+          {
+            "t": 164.78,
+            "text": "You can do it"
+          },
+          {
+            "t": 166.36,
+            "text": "There it is"
+          },
+          {
+            "t": 168.09,
+            "text": "Prince Ali, amorous he, Ali Ababwa"
+          },
+          {
+            "t": 177.57,
+            "text": "Heard your princess was hot! Where is she?"
+          },
+          {
+            "t": 182.85,
+            "text": "And that, good people, is why"
+          },
+          {
+            "t": 185.28,
+            "text": "He got all cute and dropped by"
+          },
+          {
+            "t": 187.64,
+            "text": "With 60 elephants, llamas galore (for real?)"
+          },
+          {
+            "t": 189.52,
+            "text": "With his bears and lions, a brass band and more (what?)"
+          },
+          {
+            "t": 191.12,
+            "text": "With his 40 fakirs, his cooks, his bakers"
+          },
+          {
+            "t": 193.18,
+            "text": "His birds that warble on key"
+          },
+          {
+            "t": 194.97,
+            "text": "Make way for Prince Ali"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "isabella-fontaine-symphony-of-a-golden-age",
+      "title": "Symphony of a Golden Age",
+      "artist": "Isabella Fontaine",
+      "album": "Inspired by Mozart",
+      "duration": 227,
+      "cover": "covers/isabella-fontaine-symphony-of-a-golden-age.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiTklQN29vYXdQNFE3Z0F4enpLeGpNOCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.qubNBqqqIRRoHcmUb8UM0Zcyfc5E3L6edIJZczaGRxg",
+      "colors": {
+        "bg": "#241b0f",
+        "bgAlt": "#5f381c",
+        "accent": "#d59d3f",
+        "text": "#f4f3f0",
+        "muted": "#98948d"
+      },
+      "lyrics": {
+        "synced": false,
+        "lines": [],
+        "source": "omitida"
+      }
+    },
+    {
+      "slug": "julio-jaramillo-odiame",
+      "title": "Ódiame",
+      "artist": "Julio Jaramillo",
+      "album": "30 Mejores",
+      "duration": 171,
+      "cover": "covers/julio-jaramillo-odiame.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiNERiWXNqeVZ0S25MSXFFM1RqQVpVYSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.DdC0S0RYWXYEUBTeig81MGSmJGROgFcWaUwMkDkdmAg",
+      "colors": {
+        "bg": "#211c12",
+        "bgAlt": "#5b4c1f",
+        "accent": "#e4ac43",
+        "text": "#f4f3f0",
+        "muted": "#97948e"
+      },
+      "lyrics": {
+        "synced": true,
+        "source": "embedded",
+        "lines": [
+          {
+            "t": 18.04,
+            "text": "Ódiame por piedad yo te lo pido"
+          },
+          {
+            "t": 22.08,
+            "text": "Ódiame sin medida ni clemencia"
+          },
+          {
+            "t": 25.84,
+            "text": "Odio quiero más que indiferencia"
+          },
+          {
+            "t": 30.44,
+            "text": "Porque el rencor hiere menos que el olvido"
+          },
+          {
+            "t": 35.49,
+            "text": "Ódiame por piedad yo te lo pido"
+          },
+          {
+            "t": 39.79,
+            "text": "Ódiame sin medida ni clemencia"
+          },
+          {
+            "t": 43.95,
+            "text": "Odio quiero más que indiferencia"
+          },
+          {
+            "t": 47.64,
+            "text": "Porque el rencor hiere menos que el olvido"
+          },
+          {
+            "t": 52.41,
+            "text": "Si tú me odias quedaré yo convencido"
+          },
+          {
+            "t": 56.53,
+            "text": "De que me amaste mujer con insistencia"
+          },
+          {
+            "t": 60.86,
+            "text": "Pero ten presente de acuerdo a la experiencia"
+          },
+          {
+            "t": 64.36,
+            "text": "Que tan solo se odia lo querido"
+          },
+          {
+            "t": 69.85,
+            "text": "Pero ten presente de acuerdo a la experiencia"
+          },
+          {
+            "t": 73.1,
+            "text": "Que tan solo se odia lo querido"
+          },
+          {
+            "t": 95.56,
+            "text": "Que vale más, yo humilde y tú orgullosa"
+          },
+          {
+            "t": 100.1,
+            "text": "O vale más tu débil hermosura"
+          },
+          {
+            "t": 104.28,
+            "text": "Piensa que en el fondo de la fosa"
+          },
+          {
+            "t": 108.06,
+            "text": "Llevaremos la misma vestidura"
+          },
+          {
+            "t": 113.08,
+            "text": "Qué vale más, yo humilde y tú orgullosa"
+          },
+          {
+            "t": 117.17,
+            "text": "O vale más tu débil hermosura"
+          },
+          {
+            "t": 121.42,
+            "text": "Piensa que en el fondo de la fosa"
+          },
+          {
+            "t": 125.22,
+            "text": "Llevaremos la misma vestidura"
+          },
+          {
+            "t": 130.07,
+            "text": "Si tú me odias quedaré yo convencido"
+          },
+          {
+            "t": 134.06,
+            "text": "De que me amaste mujer con insistencia"
+          },
+          {
+            "t": 138.34,
+            "text": "Pero ten presente de acuerdo a la experiencia"
+          },
+          {
+            "t": 141.86,
+            "text": "Que tan solo se odia lo querido"
+          },
+          {
+            "t": 147.31,
+            "text": "Pero ten presente de acuerdo a la experiencia"
+          },
+          {
+            "t": 150.47,
+            "text": "Que tan solo se odia"
+          },
+          {
+            "t": 159.68,
+            "text": "Lo querido"
+          }
         ]
+      }
+    },
+    {
+      "slug": "la-garfield-paraiso",
+      "title": "Paraíso",
+      "artist": "La Garfield",
+      "album": "Love Paraíso",
+      "duration": 212,
+      "cover": "covers/la-garfield-paraiso.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiTW92RFRaN3hFOUZzYlZGSWRncWFaUSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.q5cE2lQvEfvApgdz3vC5dRT2mrdR4mWG-YcO6Oswa7Y",
+      "colors": {
+        "bg": "#122112",
+        "bgAlt": "#5f521c",
+        "accent": "#c63939",
+        "text": "#f0f4f1",
+        "muted": "#8e978f"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 25.05,
+            "text": "Me basta con mirar"
+          },
+          {
+            "t": 27.76,
+            "text": "Sin entenderte hacerte vibrar"
+          },
+          {
+            "t": 30.7,
+            "text": "Bastaba con jugar"
+          },
+          {
+            "t": 33.87,
+            "text": "Otra de mis palabras"
+          },
+          {
+            "t": 36.94,
+            "text": "Nos pesa más la realidad"
+          },
+          {
+            "t": 41.3,
+            "text": "Mmm, ¿cuántos latidos sobran?"
+          },
+          {
+            "t": 45.07,
+            "text": "¿Cuántos motivos para bailar?"
+          },
+          {
+            "t": 48.35,
+            "text": "Ah, tras días y tras noches"
+          },
+          {
+            "t": 53.82,
+            "text": "Me acechan los recuerdos"
+          },
+          {
+            "t": 56.5,
+            "text": "Que intenté olvidar ayer"
+          },
+          {
+            "t": 59.45,
+            "text": "Y me hablan las paredes"
+          },
+          {
+            "t": 62.41,
+            "text": "Que nuncan fueron ausentes"
+          },
+          {
+            "t": 65.57,
+            "text": "Y me dicen que el paraíso estaba en tu piel"
+          },
+          {
+            "t": 95.31,
+            "text": "Solo tú y sola yo, somos dos"
+          },
+          {
+            "t": 98.76,
+            "text": "En sueños despertamos"
+          },
+          {
+            "t": 101.38,
+            "text": "Solo tú y sola yo, somos dos"
+          },
+          {
+            "t": 104.29,
+            "text": "Qué bonito nos miramos"
+          },
+          {
+            "t": 107.37,
+            "text": "Solo tú y sola yo, somos dos"
+          },
+          {
+            "t": 110.3,
+            "text": "En sueños despertamos"
+          },
+          {
+            "t": 113.13,
+            "text": "Solo tú y sola yo, somos dos"
+          },
+          {
+            "t": 116.21,
+            "text": "Qué bonito nos miramos"
+          },
+          {
+            "t": 124.51,
+            "text": "Y me hablan las paredes"
+          },
+          {
+            "t": 127.68,
+            "text": "Que nunca fueron ausentes"
+          },
+          {
+            "t": 130.5,
+            "text": "Y me dicen que el paraíso estaba en tu piel"
+          },
+          {
+            "t": 184.25,
+            "text": "Solo tú y sola yo, somos dos"
+          },
+          {
+            "t": 187.65,
+            "text": "En sueños despertamos"
+          },
+          {
+            "t": 190.25,
+            "text": "Solo tú y sola yo, somos dos"
+          },
+          {
+            "t": 193.05,
+            "text": "Qué bonito nos miramos"
+          },
+          {
+            "t": 196.28,
+            "text": "Solo somos dos"
+          },
+          {
+            "t": 199.12,
+            "text": "Solo tú y sola yo, somos dos"
+          },
+          {
+            "t": 202.12,
+            "text": "Solo tú y sola yo, somos dos"
+          },
+          {
+            "t": 205.03,
+            "text": "Qué bonito nos miramos"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "sandro-porque-yo-te-amo",
+      "title": "Porque Yo Te Amo",
+      "artist": "Sandro",
+      "album": "Sandro Lo Mejor",
+      "duration": 214,
+      "cover": "covers/sandro-porque-yo-te-amo.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiQ2ZFYmVia1M0akpYdkZrWTR2U2RpSCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.zC5qaXuBo_D8vmb6uEa5_h6XXjFW4sR9p8JC2yXzcos",
+      "colors": {
+        "bg": "#221118",
+        "bgAlt": "#5f1c2f",
+        "accent": "#efbf28",
+        "text": "#f4f0f2",
+        "muted": "#988e92"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 20.16,
+            "text": "Por ese palpitar"
+          },
+          {
+            "t": 23.35,
+            "text": "Que tiene tu mirar"
+          },
+          {
+            "t": 26.05,
+            "text": "Yo puedo presentir"
+          },
+          {
+            "t": 28.35,
+            "text": "Que tú debes sufrir"
+          },
+          {
+            "t": 31.88,
+            "text": "Igual que sufro yo"
+          },
+          {
+            "t": 34.72,
+            "text": "Por esta situación"
+          },
+          {
+            "t": 36.52,
+            "text": "Que nubla la razón"
+          },
+          {
+            "t": 39.73,
+            "text": "Sin permitir pensar"
+          },
+          {
+            "t": 43.18,
+            "text": "En qué ha de concluir"
+          },
+          {
+            "t": 46.83,
+            "text": "El drama singular"
+          },
+          {
+            "t": 49.7,
+            "text": "Que existe entre los dos"
+          },
+          {
+            "t": 51.82,
+            "text": "Tratando simular"
+          },
+          {
+            "t": 55.53,
+            "text": "Tan solo una amistad mientras en realidad"
+          },
+          {
+            "t": 61.38,
+            "text": "Se agita la pasión"
+          },
+          {
+            "t": 63.67,
+            "text": "Que envuelve el corazón"
+          },
+          {
+            "t": 66.85,
+            "text": "Y que lo obliga a callar"
+          },
+          {
+            "t": 71.19,
+            "text": "Yo te amo"
+          },
+          {
+            "t": 73.84,
+            "text": "Yo te amo"
+          },
+          {
+            "t": 76.07,
+            "text": "Tus labios de rubí"
+          },
+          {
+            "t": 78.66,
+            "text": "De rojo carmesí"
+          },
+          {
+            "t": 82.35,
+            "text": "Parecen murmurar"
+          },
+          {
+            "t": 84.13,
+            "text": "Mil cosas sin hablar"
+          },
+          {
+            "t": 87.85,
+            "text": "Y yo que estoy aquí"
+          },
+          {
+            "t": 90.74,
+            "text": "Sentado frente a ti"
+          },
+          {
+            "t": 93.2,
+            "text": "Me siento desangrar"
+          },
+          {
+            "t": 95.06,
+            "text": "Sin poder conversar"
+          },
+          {
+            "t": 99.07,
+            "text": "Tratando de decir"
+          },
+          {
+            "t": 102.11,
+            "text": "Tal vez será mejor"
+          },
+          {
+            "t": 104.98,
+            "text": "Me marche, yo, de aquí"
+          },
+          {
+            "t": 107.05,
+            "text": "Para no vernos más"
+          },
+          {
+            "t": 110.51,
+            "text": "Total, ¿qué más me da?"
+          },
+          {
+            "t": 113.63,
+            "text": "Ya sé que sufriré"
+          },
+          {
+            "t": 115.41,
+            "text": "Pero al final tendré tranquilo el corazón"
+          },
+          {
+            "t": 121.87,
+            "text": "Y al fin podré gritar"
+          },
+          {
+            "t": 126.09,
+            "text": "Yo te amo"
+          },
+          {
+            "t": 128.69,
+            "text": "Yo te amo"
+          },
+          {
+            "t": 135.89,
+            "text": "Yo te amo"
+          },
+          {
+            "t": 137.12,
+            "text": "Por sobre todas las cosas del mundo"
+          },
+          {
+            "t": 142.14,
+            "text": "Tus labios de rubí"
+          },
+          {
+            "t": 145.28,
+            "text": "De rojo carmesí"
+          },
+          {
+            "t": 148.75,
+            "text": "Parecen murmurar"
+          },
+          {
+            "t": 150.64,
+            "text": "Mil cosas sin hablar"
+          },
+          {
+            "t": 154.1,
+            "text": "Y yo que estoy aquí"
+          },
+          {
+            "t": 157.09,
+            "text": "Sentado frente a ti"
+          },
+          {
+            "t": 160.02,
+            "text": "Me siento desangrar"
+          },
+          {
+            "t": 161.58,
+            "text": "Sin poder conversar"
+          },
+          {
+            "t": 165.45,
+            "text": "Tratando de decir"
+          },
+          {
+            "t": 168.62,
+            "text": "Tal vez será mejor"
+          },
+          {
+            "t": 171.31,
+            "text": "Me marche, yo, de aquí"
+          },
+          {
+            "t": 173.12,
+            "text": "Para, para no vernos más"
+          },
+          {
+            "t": 177.19,
+            "text": "Total, ¿qué más me da?"
+          },
+          {
+            "t": 179.27,
+            "text": "Ya sé que sufriré"
+          },
+          {
+            "t": 183.15,
+            "text": "Pero al final tendré tranquilo el corazón"
+          },
+          {
+            "t": 188.14,
+            "text": "Y al fin podré gritar"
+          },
+          {
+            "t": 192.11,
+            "text": "Yo te amo"
+          },
+          {
+            "t": 194.75,
+            "text": "Yo te amo"
+          },
+          {
+            "t": 198.4,
+            "text": "Yo te amo"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
+      }
+    },
+    {
+      "slug": "alt-j-pusher",
+      "title": "Pusher",
+      "artist": "alt‐J",
+      "album": "This Is All Yours",
+      "duration": 209,
+      "cover": "covers/alt-j-pusher.jpg",
+      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiWk9EZXNiSEhCWmswN1MxM3N3SWVveCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.9QYqgFqUjzzL6533eU-4-ZkHLMcte5lLB6agq1hIPXA",
+      "colors": {
+        "bg": "#10231a",
+        "bgAlt": "#1c3c5f",
+        "accent": "#f2270d",
+        "text": "#f0f4f2",
+        "muted": "#8d9893"
+      },
+      "lyrics": {
+        "synced": true,
+        "lines": [
+          {
+            "t": 3.62,
+            "text": "If you're willing to wait for the love of your life"
+          },
+          {
+            "t": 8.23,
+            "text": "Please wait by the line"
+          },
+          {
+            "t": 14.61,
+            "text": "And you know dispersive prisms rainbow"
+          },
+          {
+            "t": 20.04,
+            "text": "But my native optimism isn't broken by the light"
+          },
+          {
+            "t": 29.38,
+            "text": "The idea of life without company fell suddenly"
+          },
+          {
+            "t": 35.8,
+            "text": "It crashed through the ceiling on me"
+          },
+          {
+            "t": 38.79,
+            "text": "And pinned me to the pine"
+          },
+          {
+            "t": 45.68,
+            "text": "And layer upon layer of hope and doubt"
+          },
+          {
+            "t": 51.05,
+            "text": "Will crush bones to oil in time"
+          },
+          {
+            "t": 58.64,
+            "text": "Are you a pusher or are you a puller?"
+          },
+          {
+            "t": 65.79,
+            "text": "I pull the weight towards me"
+          },
+          {
+            "t": 72.14,
+            "text": "And I lack the zest of a lemon, looking forward"
+          },
+          {
+            "t": 79.91,
+            "text": "Unless I have a woman pushing me"
+          },
+          {
+            "t": 86.39,
+            "text": "A canopy of red-billed quelea"
+          },
+          {
+            "t": 90.25,
+            "text": "Passed over the blue"
+          },
+          {
+            "t": 96.42,
+            "text": "A five hour flock, not one dives down"
+          },
+          {
+            "t": 100.22,
+            "text": "To tell you the truth"
+          },
+          {
+            "t": 107.14,
+            "text": "As night falls, a quelea crawls"
+          },
+          {
+            "t": 111.18,
+            "text": "And whispers on his last wings:"
+          },
+          {
+            "t": 117.24,
+            "text": "So abundant are we, left alone I shall be"
+          },
+          {
+            "t": 122.38,
+            "text": "But a waited phone never rings"
+          },
+          {
+            "t": 128.65,
+            "text": "Are you a pusher or are you a puller?"
+          },
+          {
+            "t": 136.44,
+            "text": "I pull the weight towards me"
+          },
+          {
+            "t": 142.69,
+            "text": "And I lack the zest of a lemon, looking forward"
+          },
+          {
+            "t": 149.89,
+            "text": "Unless I have a woman pushing me"
+          },
+          {
+            "t": 156.25,
+            "text": "Are you a pusher or are you a puller?"
+          },
+          {
+            "t": 163.54,
+            "text": "We could hold hands for fifteen minutes in the sauna"
+          },
+          {
+            "t": 170.81,
+            "text": "We could hold hands for a pool length under water"
+          },
+          {
+            "t": 178.63,
+            "text": "I can push and pull"
+          },
+          {
+            "t": 181.36,
+            "text": "Her"
+          },
+          {
+            "t": 186.85,
+            "text": "If you're willing to wait for the love of your life"
+          },
+          {
+            "t": 191.35,
+            "text": "Please wait by the line"
+          }
+        ],
+        "source": "lrclib",
+        "durOk": true
       }
     }
   ]

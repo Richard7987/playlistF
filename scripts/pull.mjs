@@ -6,7 +6,7 @@
 //   npm run pull -- --allow-token   # permite el fallback autenticado (mete un token en el JSON)
 
 import { createHash, randomBytes } from 'node:crypto';
-import { mkdir, writeFile, rm } from 'node:fs/promises';
+import { mkdir, writeFile, readFile, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
@@ -34,6 +34,9 @@ const BASE = NAVIDROME_URL.replace(/\/+$/, '');
 const API_VERSION = '1.16.1';
 const CLIENT = 'playlistF';
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const fetchT = (url, opts = {}) => fetch(url, { ...opts, signal: AbortSignal.timeout(20000) });
+
 function authParams() {
   const salt = randomBytes(8).toString('hex');
   const token = createHash('md5').update(NAVIDROME_PASS + salt).digest('hex');
@@ -52,7 +55,7 @@ function authStreamURL(id) {
 }
 
 async function sub(method, params = {}) {
-  const res = await fetch(restURL(method, params));
+  const res = await fetchT(restURL(method, params));
   if (!res.ok) throw new Error(`${method}: HTTP ${res.status}`);
   const body = await res.json();
   const r = body['subsonic-response'];
@@ -66,26 +69,40 @@ const slugify = (s) =>
   s.normalize('NFD').replace(/\p{Diacritic}/gu, '')
     .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80);
 
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 const hexToRgb = (h) => {
   const n = parseInt(h.replace('#', ''), 16);
   return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
 };
 const rgbToHex = ([r, g, b]) =>
-  '#' + [r, g, b].map((v) => Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2, '0')).join('');
+  '#' + [r, g, b].map((v) => clamp(Math.round(v), 0, 255).toString(16).padStart(2, '0')).join('');
 const mix = (a, b, t) => {
   const x = hexToRgb(a), y = hexToRgb(b);
   return rgbToHex([0, 1, 2].map((i) => x[i] + (y[i] - x[i]) * t));
 };
-const luminance = (hex) => {
-  const [r, g, b] = hexToRgb(hex).map((v) => {
-    v /= 255;
-    return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
-  });
-  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-};
-const clampDark = (hex, max) => (luminance(hex) > max ? mix(hex, '#000000', 0.55) : hex);
-const clampLight = (hex, min) => (luminance(hex) < min ? mix(hex, '#ffffff', 0.5) : hex);
 
+const toHsl = (hex) => {
+  let [r, g, b] = hexToRgb(hex).map((v) => v / 255);
+  const mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn, l = (mx + mn) / 2;
+  const s = d === 0 ? 0 : d / (1 - Math.abs(2 * l - 1));
+  let h = 0;
+  if (d) {
+    if (mx === r) h = ((g - b) / d) % 6;
+    else if (mx === g) h = (b - r) / d + 2;
+    else h = (r - g) / d + 4;
+    h = (h * 60 + 360) % 360;
+  }
+  return [h, s, l];
+};
+const hslToHex = (h, s, l) => {
+  const c = (1 - Math.abs(2 * l - 1)) * s, x = c * (1 - Math.abs(((h / 60) % 2) - 1)), m = l - c / 2;
+  const [r, g, b] =
+    h < 60 ? [c, x, 0] : h < 120 ? [x, c, 0] : h < 180 ? [0, c, x] :
+    h < 240 ? [0, x, c] : h < 300 ? [x, 0, c] : [c, 0, x];
+  return rgbToHex([(r + m) * 255, (g + m) * 255, (b + m) * 255]);
+};
+
+// Deriva una paleta vibrante y con contraste garantizado entre bg y bgAlt.
 async function palette(buf) {
   let sw = {};
   try {
@@ -97,11 +114,20 @@ async function palette(buf) {
     for (const n of names) if (sw[n]?.hex) return sw[n].hex;
     return null;
   };
-  const bg = clampDark(pick('DarkMuted', 'DarkVibrant', 'Muted') || '#1b1b21', 0.14);
-  const bgAlt = clampDark(pick('DarkVibrant', 'Vibrant', 'Muted') || '#3a2f45', 0.30);
-  const accent = clampLight(clampDark(pick('Vibrant', 'LightVibrant', 'LightMuted') || '#e0a35c', 0.62), 0.34);
-  const text = mix(pick('LightMuted', 'LightVibrant') || '#ffffff', '#ffffff', 0.6);
-  const muted = mix(text, bg, 0.42);
+
+  const [ah, as, al] = toHsl(pick('Vibrant', 'LightVibrant', 'DarkVibrant', 'LightMuted') || '#e0a35c');
+  const accent = hslToHex(ah, clamp(Math.max(as, 0.55), 0, 0.9), clamp(al, 0.5, 0.72));
+
+  let [bh, bs] = toHsl(pick('DarkMuted', 'DarkVibrant', 'Muted') || '#1a1820');
+  if (bs < 0.12) bh = ah;
+  const bg = hslToHex(bh, clamp(Math.max(bs, 0.18), 0, 0.5), 0.1);
+
+  let [th, ts] = toHsl(pick('DarkVibrant', 'Muted', 'Vibrant') || '#3a2f45');
+  if (ts < 0.12) th = ah;
+  const bgAlt = hslToHex(th, clamp(Math.max(ts, 0.22), 0, 0.55), 0.24);
+
+  const text = hslToHex(bh, 0.14, 0.95);
+  const muted = mix(text, bg, 0.44);
   return { bg, bgAlt, accent, text, muted };
 }
 
@@ -122,7 +148,7 @@ async function ensureShare(playlistId, songIds) {
       const params = attempt.id ? { id: attempt.id, description: tag } : { description: tag };
       const url = new URL(restURL('createShare', params));
       if (attempt.ids) for (const id of attempt.ids) url.searchParams.append('id', id);
-      const res = await fetch(url);
+      const res = await fetchT(url);
       const body = (await res.json())['subsonic-response'];
       if (body?.status !== 'ok') throw new Error(body?.error?.message || 'no ok');
       const share = body.shares?.share?.[0];
@@ -139,7 +165,7 @@ async function ensureShare(playlistId, songIds) {
 
 async function probeStream(url) {
   try {
-    const res = await fetch(url, { headers: { Range: 'bytes=0-1' } });
+    const res = await fetchT(url, { headers: { Range: 'bytes=0-1' } });
     const ct = res.headers.get('content-type') || '';
     return (res.status === 200 || res.status === 206) && /audio|octet-stream|mpeg|ogg|flac/i.test(ct);
   } catch {
@@ -149,7 +175,7 @@ async function probeStream(url) {
 
 // Los ids de streaming del share son JWTs embebidos en window.__SHARE_INFO__ de su página.
 async function shareTracks(shareUrl) {
-  const res = await fetch(shareUrl);
+  const res = await fetchT(shareUrl);
   if (!res.ok) throw new Error(`página del share: HTTP ${res.status}`);
   const html = await res.text();
   const m = html.match(/window\.__SHARE_INFO__\s*=\s*("(?:[^"\\]|\\.)*")/);
@@ -157,29 +183,100 @@ async function shareTracks(shareUrl) {
   return JSON.parse(JSON.parse(m[1])).tracks || [];
 }
 
-async function lyricsFor(song) {
+const isMetaLine = (s) => /^\[[a-z#]+:[^\]]*\]\s*$/i.test((s || '').trim());
+
+function parseLRC(text) {
+  const stamp = /\[(\d+):(\d{2}(?:\.\d+)?)\]/g;
+  let synced = false;
+  const lines = [];
+  for (const raw of text.split(/\r?\n/)) {
+    const stamps = [...raw.matchAll(stamp)];
+    const content = raw.replace(stamp, '').trim();
+    if (!stamps.length) {
+      if (content && !isMetaLine(raw)) lines.push({ t: null, text: content });
+      continue;
+    }
+    if (!content || isMetaLine(content)) continue;
+    for (const s of stamps) {
+      synced = true;
+      lines.push({ t: +(Number(s[1]) * 60 + Number(s[2])).toFixed(2), text: content });
+    }
+  }
+  lines.sort((a, b) => (a.t ?? Infinity) - (b.t ?? Infinity));
+  return { synced, lines };
+}
+
+const LRCLIB = 'https://lrclib.net/api';
+const LRCLIB_UA = 'playlistF (https://github.com/Richard7987/playlistF)';
+
+async function fromLrclib(song) {
+  const headers = { 'User-Agent': LRCLIB_UA };
+  const dur = Math.round(song.duration || 0);
+  await sleep(150);
+  try {
+    let hit = null;
+    const get = await fetchT(`${LRCLIB}/get?${new URLSearchParams({
+      artist_name: song.artist || '', track_name: song.title || '',
+      album_name: song.album || '', duration: String(dur),
+    })}`, { headers });
+    if (get.ok) hit = await get.json();
+    if (!hit || hit.code === 404) {
+      const search = await fetchT(`${LRCLIB}/search?${new URLSearchParams({
+        track_name: song.title || '', artist_name: song.artist || '',
+      })}`, { headers });
+      const arr = search.ok ? await search.json() : [];
+      hit = arr
+        .filter((x) => x.syncedLyrics || x.plainLyrics)
+        .sort((a, b) => Math.abs((a.duration || 0) - dur) - Math.abs((b.duration || 0) - dur))[0] || null;
+    }
+    if (!hit || hit.instrumental) return null;
+    const durOk = Math.abs((hit.duration || 0) - dur) <= 7;
+    if (hit.syncedLyrics) return { ...parseLRC(hit.syncedLyrics), source: 'lrclib', durOk };
+    const plain = (hit.plainLyrics || '').split(/\r?\n/).map((t) => t.trim()).filter((t) => t && !isMetaLine(t));
+    if (plain.length) return { synced: false, source: 'lrclib', lines: plain.map((text) => ({ t: null, text })) };
+  } catch { /* red */ }
+  return null;
+}
+
+async function fromEmbedded(song) {
   try {
     const r = await sub('getLyricsBySongId', { id: song.id });
     const struct = r.lyricsList?.structuredLyrics?.[0];
     if (struct?.line?.length) {
       const synced = struct.synced ?? struct.line.every((l) => l.start != null);
       return {
-        synced: !!synced,
+        synced: !!synced, source: 'embedded',
         lines: struct.line.map((l) => ({
           t: l.start != null ? +(l.start / 1000).toFixed(2) : null,
           text: (l.value || '').trim(),
-        })).filter((l) => l.text),
+        })).filter((l) => l.text && !isMetaLine(l.text)),
       };
     }
   } catch { /* fallback */ }
   try {
     const r = await sub('getLyrics', { artist: song.artist || '', title: song.title || '' });
     const raw = (r.lyrics?.value || r.lyrics?.['#text'] || '').trim();
-    if (raw) {
-      return { synced: false, lines: raw.split('\n').map((t) => ({ t: null, text: t.trim() })).filter((l) => l.text) };
-    }
+    if (raw) return { ...parseLRC(raw), source: 'embedded' };
   } catch { /* sin letra */ }
-  return { synced: false, lines: [] };
+  return null;
+}
+
+const scoreLyrics = (r) => {
+  if (!r || !r.lines.length) return 0;
+  if (r.synced) return r.durOk === false ? 2 : 3;
+  return 1;
+};
+
+async function lyricsFor(song, prefer) {
+  if (prefer === 'none') return { synced: false, lines: [], source: 'omitida' };
+  const order = prefer === 'embedded' ? [fromEmbedded, fromLrclib] : [fromLrclib, fromEmbedded];
+  let best = { synced: false, lines: [], source: null };
+  for (const get of order) {
+    const r = await get(song).catch(() => null);
+    if (scoreLyrics(r) > scoreLyrics(best)) best = r;
+    if (scoreLyrics(best) === 3) break;
+  }
+  return best;
 }
 
 async function main() {
@@ -232,6 +329,11 @@ async function main() {
   await mkdir(OUT_COVERS, { recursive: true });
   await mkdir(OUT_DATA, { recursive: true });
 
+  let dedications = {};
+  try {
+    dedications = JSON.parse(await readFile(resolve(OUT_DATA, 'dedications.json'), 'utf8'));
+  } catch { /* aún no existe */ }
+
   const usedSlugs = new Set();
   const tracks = [];
 
@@ -246,7 +348,7 @@ async function main() {
     let cover = null;
     if (e.coverArt) {
       try {
-        const res = await fetch(restURL('getCoverArt', { id: e.coverArt, size: 900 }));
+        const res = await fetchT(restURL('getCoverArt', { id: e.coverArt, size: 900 }));
         if (res.ok) {
           const buf = Buffer.from(await res.arrayBuffer());
           await writeFile(resolve(OUT_COVERS, `${slug}.jpg`), buf);
@@ -258,9 +360,9 @@ async function main() {
       }
     }
 
-    const lyrics = await lyricsFor(e);
+    const lyrics = await lyricsFor(e, dedications[slug]?.lyricsSource);
     if (!lyrics.lines.length) console.warn('     · sin letra');
-    else if (!lyrics.synced) console.warn('     · letra sin sincronizar');
+    else console.log(`     · letra: ${lyrics.source}${lyrics.synced ? ' (sync)' : ' (texto)'}`);
 
     tracks.push({
       slug,
@@ -287,9 +389,9 @@ async function main() {
 
   // plantilla de dedicatorias — nunca toca dedications.json
   const template = {
-    _como_usar: 'Copia a src/data/dedications.json las canciones que quieras. Claves opcionales: dedication, highlightAt ("m:ss"), highlightFrom, highlightTo, fragmentNote.',
+    _como_usar: 'Copia a src/data/dedications.json las canciones que quieras. Claves opcionales: dedication, highlightAt ("m:ss"), highlightFrom, highlightTo, fragmentNote, lyricsOffset (segundos: + si la letra va adelantada, - si atrasada), lyricsSource ("lrclib" | "embedded" | "none" para forzar / omitir la letra en el próximo pull).',
   };
-  for (const t of tracks) template[t.slug] = { dedication: '', highlightAt: '' };
+  for (const t of tracks) template[t.slug] = { dedication: '', highlightAt: '', lyricsOffset: 0 };
   await writeFile(resolve(OUT_DATA, 'dedications.template.json'), JSON.stringify(template, null, 2) + '\n');
   console.log('✓ src/data/dedications.template.json');
 

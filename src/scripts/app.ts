@@ -37,15 +37,17 @@ function start(tracks: Track[]) {
   const grad = new MeshGradient(glCanvas);
   if (grad.ok) grad.start();
 
+  const wrapEl = q('.wrap');
   const cover = q<HTMLImageElement>('#cover');
   const titleEl = q('#title');
   const artistEl = q('#artist');
-  const cCur = q('#c-cur');
-  const dots = [...document.querySelectorAll<HTMLButtonElement>('#dots button')];
+  const queueToggle = q<HTMLButtonElement>('#queue-toggle');
+  const queue = q('#queue');
+  const queueItems = [...document.querySelectorAll<HTMLButtonElement>('.queue-item')];
   const lyricsBox = q('#lyrics');
   const lyricsInner = q('#lyrics-inner');
   const fragNote = q('#frag-note');
-  const dedCard = q('#ded-card');
+  const dedWrap = q('#dedication');
   const dedText = q('#ded-text');
   const playBtn = q<HTMLButtonElement>('#play');
   const playIcon = q('#play-icon');
@@ -63,7 +65,14 @@ function start(tracks: Track[]) {
   gsap.ticker.lagSmoothing(0);
 
   let idx = 0;
-  let started = false;
+  let wantPlaying = false;
+
+  let lineEls: HTMLElement[] = [];
+  let lineTimes: (number | null)[] = [];
+  let syncedNow = false;
+  let curAi = -2;
+  let lyricsH = 0;
+  let lastSec = -1;
 
   const rgbFor = (c: Track['colors']): RGB[] => [
     hexToRgb01(c.bg),
@@ -83,19 +92,27 @@ function start(tracks: Track[]) {
   }
 
   function renderLyrics(t: Track) {
-    lyricsInner.innerHTML = '';
+    curAi = -2;
+    lastSec = -1;
+    syncedNow = hasSync(t);
+    lineTimes = t.lines.map((l) => l.t);
+    lyricsH = lyricsBox.clientHeight;
+
     if (!t.lines.length) {
       lyricsInner.innerHTML = '<p class="lyrics-empty">sin letra</p>';
+      lineEls = [];
       return;
     }
     const marked = new Set(t.marked);
-    t.lines.forEach((l, i) => {
+    const frag = document.createDocumentFragment();
+    for (let i = 0; i < t.lines.length; i++) {
       const d = document.createElement('div');
-      d.className = 'line' + (marked.has(i) ? ' marked' : '');
-      if (l.t != null) d.dataset.t = String(l.t);
-      d.textContent = l.text;
-      lyricsInner.appendChild(d);
-    });
+      d.className = marked.has(i) ? 'line marked' : 'line';
+      d.textContent = t.lines[i].text;
+      frag.appendChild(d);
+    }
+    lyricsInner.replaceChildren(frag);
+    lineEls = [...lyricsInner.children] as HTMLElement[];
   }
 
   function setPlaying(v: boolean) {
@@ -103,49 +120,53 @@ function start(tracks: Track[]) {
     playBtn.setAttribute('aria-label', v ? 'Pausar' : 'Reproducir');
   }
 
-  function tick(snap = false) {
-    const t = tracks[idx];
-    const kids = [...lyricsInner.querySelectorAll<HTMLElement>('.line')];
-    const times = t.lines.map((l) => l.t);
-    const hasSync = t.synced && times.some((x) => x != null);
+  const hasSync = (t: Track) => t.synced && t.lines.some((l) => l.t != null);
 
-    let ai = 0;
-    for (let i = 0; i < times.length; i++) {
-      if (times[i] != null && audio.currentTime >= (times[i] as number)) ai = i;
-    }
-
-    kids.forEach((k, i) => {
-      const dist = Math.abs(i - ai);
-      k.classList.toggle('active', hasSync && i === ai);
-      k.classList.toggle('near', hasSync && dist === 1);
-      k.classList.toggle('far', hasSync && (dist === 2 || dist === 3));
-      k.classList.toggle('farther', hasSync && dist >= 4);
-      if (!hasSync) k.style.opacity = '0.5';
-    });
-
-    if (hasSync && kids[ai]) {
-      const curT = (times[ai] as number) ?? 0;
-      let nextT = t.duration;
-      for (let i = ai + 1; i < times.length; i++) {
-        if (times[i] != null) {
-          nextT = times[i] as number;
-          break;
-        }
-      }
-      const wipe = Math.max(0, Math.min(1, (audio.currentTime - curT) / Math.max(0.1, nextT - curT)));
-      kids[ai].style.setProperty('--wipe', `${(wipe * 100).toFixed(1)}%`);
-
-      const y = kids[ai].offsetTop + kids[ai].offsetHeight / 2 - lyricsBox.clientHeight / 2;
-      lyricsInner.style.transition = snap ? 'none' : '';
-      lyricsInner.style.transform = `translateY(${-y}px)`;
-      if (snap) void lyricsInner.offsetHeight;
-    }
-
-    const dur = audio.duration || t.duration;
-    const pct = dur ? Math.min(100, (audio.currentTime / dur) * 100) : 0;
+  function tick(force = false) {
+    if (force) lyricsH = lyricsBox.clientHeight;
+    const ct = audio.currentTime;
+    const dur = audio.duration || tracks[idx].duration || 1;
+    const pct = Math.min(100, Math.max(0, (ct / dur) * 100));
     scrubFill.style.width = `${pct}%`;
     scrubKnob.style.left = `${pct}%`;
-    tCur.textContent = mmss(audio.currentTime);
+
+    const sec = ct | 0;
+    if (sec !== lastSec || force) {
+      lastSec = sec;
+      tCur.textContent = mmss(ct);
+    }
+
+    if (!syncedNow) return;
+
+    let ai = -1;
+    for (let i = 0; i < lineTimes.length; i++) {
+      const lt = lineTimes[i];
+      if (lt == null) continue;
+      if (ct >= lt) ai = i;
+      else break;
+    }
+    if (ai === curAi && !force) return;
+    curAi = ai;
+
+    const ref = ai < 0 ? 0 : ai;
+    for (let i = 0; i < lineEls.length; i++) {
+      const d = Math.abs(i - ref);
+      const cl = lineEls[i].classList;
+      cl.toggle('active', i === ai);
+      cl.toggle('near', d === 1 || (ai < 0 && d === 0));
+      cl.toggle('far', d === 2 || d === 3);
+      cl.toggle('farther', d >= 4);
+    }
+
+    const el = lineEls[ref];
+    if (el) {
+      if (force) lyricsInner.style.transition = 'none';
+      lyricsInner.style.transform = `translateY(${(lyricsH / 2 - el.offsetTop - el.offsetHeight / 2).toFixed(1)}px)`;
+      if (force) {
+        void lyricsInner.offsetHeight;
+        lyricsInner.style.transition = '';
+      }
+    }
   }
 
   function swap(t: Track, instant: boolean) {
@@ -158,10 +179,17 @@ function start(tracks: Track[]) {
     }
     titleEl.textContent = t.title;
     artistEl.textContent = t.album ? `${t.artist} — ${t.album}` : t.artist;
-    cCur.textContent = String(idx + 1).padStart(2, '0');
-    dots.forEach((b, i) => b.toggleAttribute('aria-current', i === idx));
+    queueItems.forEach((b, i) => b.toggleAttribute('aria-current', i === idx));
+    const synced = hasSync(t);
+    wrapEl.classList.toggle('no-lyrics', !t.lines.length);
+    wrapEl.classList.toggle('no-dedication', !t.dedication);
+    lyricsBox.classList.toggle('unsynced', t.lines.length > 0 && !synced);
+    if (!synced) {
+      lyricsInner.style.transition = 'none';
+      lyricsInner.style.transform = 'none';
+    }
     renderLyrics(t);
-    dedCard.hidden = !t.dedication;
+    dedWrap.hidden = !t.dedication;
     dedText.textContent = t.dedication ?? '';
     fragNote.hidden = !t.fragmentNote;
     fragNote.textContent = t.fragmentNote ?? '';
@@ -172,41 +200,84 @@ function start(tracks: Track[]) {
     tick(true);
   }
 
+  function resume() {
+    if (wantPlaying) audio.play().catch(() => {});
+  }
+
+  const frameMax = { v: 1140 };
+  const setFrameMax = (v: number) => {
+    frameMax.v = v;
+    wrapEl.style.setProperty('--frame-max', `${v}px`);
+  };
+
+  const OUT = ['#cover', '.left .meta', '.right', '.dedication'];
+  let tl: gsap.core.Timeline | null = null;
+
   function show(n: number, instant = false) {
     idx = (n + tracks.length) % tracks.length;
     const t = tracks[idx];
-    const wasPlaying = started && !audio.paused;
+    const target = t.lines.length ? 1140 : 560;
     audio.pause();
+    tl?.kill();
+    gsap.killTweensOf([...OUT, frameMax]);
 
     if (instant || reduce) {
+      setFrameMax(target);
       swap(t, true);
-      if (wasPlaying) audio.play().catch(() => {});
+      gsap.set(OUT, { opacity: 1, y: 0, scale: 1, clearProps: 'transform' });
+      resume();
       return;
     }
 
-    const group = ['.art-wrap', '.left .meta', '.right', '.dedication'];
-    gsap
-      .timeline()
-      .to(group, { opacity: 0, y: 8, duration: 0.2, ease: 'power2.in' })
+    tl = gsap.timeline({
+      defaults: { ease: 'power3.inOut', overwrite: 'auto' },
+      onComplete: () => {
+        gsap.set(OUT, { clearProps: 'opacity,transform' });
+        tick(true);
+      },
+    });
+    tl.to(OUT, { opacity: 0, y: 6, duration: 0.28 }, 0)
+      .to(frameMax, { v: target, duration: 0.62, onUpdate: () => setFrameMax(frameMax.v) }, 0)
       .add(() => {
         swap(t, false);
-        if (wasPlaying) audio.play().catch(() => {});
-      })
-      .fromTo(group, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.42, ease: 'power2.out' });
+        resume();
+      }, 0.26)
+      .fromTo('#cover', { opacity: 0, scale: 0.985 }, { opacity: 1, scale: 1, duration: 0.52 }, 0.32)
+      .fromTo(
+        ['.left .meta', '.right', '.dedication'],
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0, duration: 0.5, stagger: 0.05 },
+        0.36,
+      );
   }
 
   playBtn.addEventListener('click', () => {
-    if (audio.paused) audio.play().catch(() => {});
+    wantPlaying = audio.paused;
+    if (wantPlaying) audio.play().catch(() => {});
     else audio.pause();
   });
   audio.addEventListener('play', () => {
-    started = true;
+    wantPlaying = true;
     setPlaying(true);
     raf();
   });
   audio.addEventListener('pause', () => setPlaying(false));
-  audio.addEventListener('timeupdate', () => tick());
+  audio.addEventListener('loadedmetadata', () => tick(true));
+  audio.addEventListener('seeked', () => tick(true));
   audio.addEventListener('ended', () => show(idx + 1));
+
+  let resizeRaf = 0;
+  addEventListener(
+    'resize',
+    () => {
+      cancelAnimationFrame(resizeRaf);
+      resizeRaf = requestAnimationFrame(() => {
+        lyricsH = lyricsBox.clientHeight;
+        tick(true);
+      });
+    },
+    { passive: true },
+  );
 
   let rafId = 0;
   function raf() {
@@ -221,10 +292,37 @@ function start(tracks: Track[]) {
 
   q('#prev').addEventListener('click', () => show(idx - 1));
   q('#next').addEventListener('click', () => show(idx + 1));
-  dots.forEach((b) => b.addEventListener('click', () => show(Number(b.dataset.i))));
+
+  let queueTimer = 0;
+  function setQueue(open: boolean) {
+    clearTimeout(queueTimer);
+    queueToggle.setAttribute('aria-expanded', String(open));
+    if (open) {
+      queue.hidden = false;
+      requestAnimationFrame(() => {
+        queue.classList.add('open');
+        queueItems[idx]?.scrollIntoView({ inline: 'center', block: 'nearest' });
+        q<HTMLButtonElement>('#queue-close').focus();
+      });
+    } else {
+      queue.classList.remove('open');
+      queueTimer = window.setTimeout(() => (queue.hidden = true), reduce ? 0 : 380);
+      queueToggle.focus();
+    }
+  }
+  queueToggle.addEventListener('click', () => setQueue(queue.hidden));
+  q('#queue-close').addEventListener('click', () => setQueue(false));
+  q('#queue-backdrop').addEventListener('click', () => setQueue(false));
+  queueItems.forEach((b) =>
+    b.addEventListener('click', () => {
+      show(Number(b.dataset.i));
+      setQueue(false);
+    }),
+  );
 
   addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowRight') show(idx + 1);
+    if (e.key === 'Escape' && !queue.hidden) setQueue(false);
+    else if (e.key === 'ArrowRight') show(idx + 1);
     else if (e.key === 'ArrowLeft') show(idx - 1);
     else if (e.code === 'Space' && e.target === document.body) {
       e.preventDefault();
@@ -237,26 +335,38 @@ function start(tracks: Track[]) {
     const r = scrub.getBoundingClientRect();
     const ratio = Math.max(0, Math.min(1, (clientX - r.left) / r.width));
     audio.currentTime = ratio * (audio.duration || tracks[idx].duration);
-    tick();
+    tick(true);
   };
   scrub.addEventListener('pointerdown', (e) => {
     dragging = true;
     scrub.setPointerCapture(e.pointerId);
     seek(e.clientX);
   });
-  scrub.addEventListener('pointermove', (e) => dragging && seek(e.clientX));
-  scrub.addEventListener('pointerup', () => (dragging = false));
+  scrub.addEventListener('pointermove', (e) => {
+    if (dragging) seek(e.clientX);
+  });
+  const endDrag = () => (dragging = false);
+  scrub.addEventListener('pointerup', endDrag);
+  scrub.addEventListener('pointercancel', endDrag);
 
   let sx = 0;
+  let sy = 0;
   const stage = q('.stage');
   stage.addEventListener('pointerdown', (e) => {
-    if (!(e.target as Element).closest('.scrub')) sx = e.clientX;
+    if ((e.target as Element).closest('button, a, input, .scrub')) {
+      sx = 0;
+      return;
+    }
+    sx = e.clientX;
+    sy = e.clientY;
   });
+  stage.addEventListener('pointercancel', () => (sx = 0));
   stage.addEventListener('pointerup', (e) => {
     if (!sx) return;
     const dx = e.clientX - sx;
+    const dy = e.clientY - sy;
     sx = 0;
-    if (Math.abs(dx) > 60) show(idx + (dx < 0 ? 1 : -1));
+    if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.6) show(idx + (dx < 0 ? 1 : -1));
   });
 
   show(0, true);
