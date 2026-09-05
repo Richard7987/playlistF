@@ -55,6 +55,7 @@ export class MeshGradient {
   private uni: Record<string, WebGLUniformLocation | null> = {};
   private raf = 0;
   private resizeRaf = 0;
+  private maxH = 0;
   private running = false;
   private drawn = false;
   private readonly reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -64,6 +65,10 @@ export class MeshGradient {
   constructor(private canvas: HTMLCanvasElement) {
     this.init();
     addEventListener('resize', this.onResize, { passive: true });
+    addEventListener('orientationchange', () => {
+      this.maxH = 0;
+      this.onResize();
+    });
     canvas.addEventListener('webglcontextlost', (e) => {
       e.preventDefault();
       this.stop();
@@ -80,7 +85,8 @@ export class MeshGradient {
   }
 
   private init() {
-    const gl = this.canvas.getContext('webgl', { antialias: false, alpha: false, powerPreference: 'low-power' });
+    // alpha:true → al limpiarse el canvas se ve el gradiente CSS de #gl, no negro
+    const gl = this.canvas.getContext('webgl', { antialias: false, alpha: true, powerPreference: 'low-power' });
     if (!gl) return;
 
     const compile = (type: number, src: string) => {
@@ -124,7 +130,9 @@ export class MeshGradient {
     if (!this.gl) return;
     const dpr = Math.min(devicePixelRatio || 1, 1.75);
     const w = Math.max(1, Math.floor(innerWidth * dpr));
-    const h = Math.max(1, Math.floor(innerHeight * dpr));
+    // altura solo-crece desde la pantalla completa: la barra de direcciones del móvil no reasigna el canvas al hacer scroll
+    this.maxH = Math.max(this.maxH, Math.floor(Math.max(innerHeight, screen.height || 0) * dpr));
+    const h = this.maxH;
     if (w === this.canvas.width && h === this.canvas.height) return;
     this.canvas.width = w;
     this.canvas.height = h;
