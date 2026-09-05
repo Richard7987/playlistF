@@ -6,7 +6,7 @@
 //   npm run pull -- --allow-token   # permite el fallback autenticado (mete un token en el JSON)
 
 import { createHash, randomBytes } from 'node:crypto';
-import { mkdir, writeFile, readFile, rm } from 'node:fs/promises';
+import { mkdir, writeFile, readFile, rm, rename } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
@@ -16,6 +16,7 @@ import sharp from 'sharp';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DATA = resolve(ROOT, 'src/data');
 const OUT_COVERS = resolve(ROOT, 'public/covers');
+const OUT_COVERS_TMP = resolve(ROOT, 'public/covers.tmp');
 
 const {
   NAVIDROME_URL,
@@ -330,8 +331,8 @@ async function main() {
     process.exit(1);
   }
 
-  await rm(OUT_COVERS, { recursive: true, force: true });
-  await mkdir(OUT_COVERS, { recursive: true });
+  await rm(OUT_COVERS_TMP, { recursive: true, force: true });
+  await mkdir(OUT_COVERS_TMP, { recursive: true });
   await mkdir(OUT_DATA, { recursive: true });
 
   let dedications = {};
@@ -357,7 +358,7 @@ async function main() {
         if (res.ok) {
           const buf = Buffer.from(await res.arrayBuffer());
           const webp = await sharp(buf).resize(640, 640, { fit: 'cover' }).webp({ quality: 80 }).toBuffer();
-          await writeFile(resolve(OUT_COVERS, `${slug}.webp`), webp);
+          await writeFile(resolve(OUT_COVERS_TMP, `${slug}.webp`), webp);
           cover = `covers/${slug}.webp`;
           colors = await palette(buf);
         }
@@ -392,6 +393,11 @@ async function main() {
   };
   await writeFile(resolve(OUT_DATA, 'playlist.json'), JSON.stringify(playlist, null, 2) + '\n');
   console.log(`✓ src/data/playlist.json (${tracks.length} canciones)`);
+
+  // swap atómico: si algo falló arriba, las portadas anteriores quedan intactas
+  await rm(OUT_COVERS, { recursive: true, force: true });
+  await rename(OUT_COVERS_TMP, OUT_COVERS);
+  console.log(`✓ public/covers/ (${tracks.filter((t) => t.cover).length} portadas)`);
 
   // plantilla de dedicatorias — nunca toca dedications.json
   const template = {

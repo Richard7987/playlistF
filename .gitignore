@@ -1,6 +1,11 @@
 node_modules/
 dist/
+dev-dist/
 .astro/
 .env
 *.log
 .DS_Store
+public/covers.tmp/
+test-results/
+playwright-report/
+.playwright/

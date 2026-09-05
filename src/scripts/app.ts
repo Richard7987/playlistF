@@ -1,5 +1,8 @@
 import gsap from 'gsap';
+import { registerSW } from 'virtual:pwa-register';
 import { MeshGradient, hexToRgb01, type RGB } from '../lib/gradient';
+
+registerSW({ immediate: true });
 
 interface Track {
   slug: string;
