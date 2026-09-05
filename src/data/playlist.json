@@ -1,170 +1,16 @@
 {
   "name": "Fa",
-  "generatedAt": "2026-09-05T23:11:40.268Z",
+  "generatedAt": "2026-09-05T23:46:02.649Z",
   "navidromeUrl": "https://mu.richard69.lat",
   "shareUrl": "https://mu.richard69.lat/share/zXqxDyzOAP",
   "tracks": [
-    {
-      "slug": "zoe-via-lactea-en-vivo",
-      "title": "Vía Láctea - En Vivo",
-      "artist": "Zoé",
-      "album": "MTV Unplugged Música De Fondo (Reissue/Live)",
-      "duration": 248,
-      "cover": "covers/zoe-via-lactea-en-vivo.jpg",
-      "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiZFVIZzlhSk9pUnZsZ3JPWGozdDlXVSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.FoinqDxefl6DeH5P4pcoCBkyphrC2VJ3IHCSAUdMP8Q",
-      "colors": {
-        "bg": "#1f1e14",
-        "bgAlt": "#1c4e5f",
-        "accent": "#c64539",
-        "text": "#f4f4f0",
-        "muted": "#96968f"
-      },
-      "lyrics": {
-        "synced": true,
-        "source": "embedded",
-        "lines": [
-          {
-            "t": 12.66,
-            "text": "Llevo tu voz en mi voz"
-          },
-          {
-            "t": 18.46,
-            "text": "Grabada con aerosol"
-          },
-          {
-            "t": 24.21,
-            "text": "Beso fantasma"
-          },
-          {
-            "t": 25.44,
-            "text": "Pegado en mi labio inferior"
-          },
-          {
-            "t": 30.12,
-            "text": "Y el mapa de tu desnudez"
-          },
-          {
-            "t": 35.77,
-            "text": "Llevo el prisma de tus ojos"
-          },
-          {
-            "t": 38.81,
-            "text": "En mi casco de astronauta"
-          },
-          {
-            "t": 41.85,
-            "text": "Y la tímida aurora de tus células"
-          },
-          {
-            "t": 48.28,
-            "text": "Y todas las noches bajo la Vía Láctea"
-          },
-          {
-            "t": 54.43,
-            "text": "Parecen eternas, si tú no estás"
-          },
-          {
-            "t": 61.09,
-            "text": "Y todas las noches desde mi ventana"
-          },
-          {
-            "t": 67.55,
-            "text": "Conjuro tu nombre inmortal"
-          },
-          {
-            "t": 86.16,
-            "text": "Y a veces llora mi piel"
-          },
-          {
-            "t": 92.01,
-            "text": "Cuando se empaña de anhelo"
-          },
-          {
-            "t": 97.68,
-            "text": "Se infla mi mente"
-          },
-          {
-            "t": 98.87,
-            "text": "Con tantos recuerdos"
-          },
-          {
-            "t": 103.59,
-            "text": "Que ya no me puedo dormir"
-          },
-          {
-            "t": 109.21,
-            "text": "Y en la alfombra de tus sueños"
-          },
-          {
-            "t": 112.3,
-            "text": "Soy el rayo vagabundo"
-          },
-          {
-            "t": 115.32,
-            "text": "Desmaya y dolece"
-          },
-          {
-            "t": 118.39,
-            "text": "Pero no se apaga"
-          },
-          {
-            "t": 147.47,
-            "text": "Y todas las noches bajo la Vía Láctea"
-          },
-          {
-            "t": 154.12,
-            "text": "Parecen eternas si tú no estás"
-          },
-          {
-            "t": 160.63,
-            "text": "Y todas las noches desde mi ventana"
-          },
-          {
-            "t": 166.95,
-            "text": "Conjuro tu nombre inmortal"
-          },
-          {
-            "t": 184.7,
-            "text": "Vía Láctea"
-          },
-          {
-            "t": 187.61,
-            "text": "Vía Láctea"
-          },
-          {
-            "t": 190.54,
-            "text": "Vía Láctea"
-          },
-          {
-            "t": 193.5,
-            "text": "Si tú no estas"
-          },
-          {
-            "t": 196.54,
-            "text": "Vía Láctea"
-          },
-          {
-            "t": 199.42,
-            "text": "Vía Láctea"
-          },
-          {
-            "t": 202.37,
-            "text": "Vía Láctea"
-          },
-          {
-            "t": 208.21,
-            "text": "Y sé que te vuelvo a encontrar"
-          }
-        ]
-      }
-    },
     {
       "slug": "daft-punk-something-about-us",
       "title": "Something About Us",
       "artist": "Daft Punk",
       "album": "Discovery",
       "duration": 232,
-      "cover": "covers/daft-punk-something-about-us.jpg",
+      "cover": "covers/daft-punk-something-about-us.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoianlVRk1wOWtKTnV1TlVMY2taQ3ZPcyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.FHbN8r2R4aJ9xFVLfUPegELOTcRqVfP6E3Y0gvzQVBs",
       "colors": {
         "bg": "#12211f",
@@ -235,7 +81,7 @@
       "artist": "La Gusana Ciega",
       "album": "Monarca",
       "duration": 210,
-      "cover": "covers/la-gusana-ciega-californica.jpg",
+      "cover": "covers/la-gusana-ciega-californica.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiVnNCR3hyTVR4R0FiU1ZIbEFKNktGdSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.62iwQ9XAG_J-LhFKniS72AVW2ll44OJScaX6E0GF9Fw",
       "colors": {
         "bg": "#1e1a15",
@@ -362,7 +208,7 @@
       "artist": "Dead Poet Society",
       "album": "-!- (Deluxe)",
       "duration": 202,
-      "cover": "covers/dead-poet-society-georgia.jpg",
+      "cover": "covers/dead-poet-society-georgia.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiSDdmNTRzSUJUQXFoN0psM3JDM05ibCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.9u2VRE-cmtJ-YiF-0eGvcrLV6ESIBLEueInaLzQE6U4",
       "colors": {
         "bg": "#211912",
@@ -493,7 +339,7 @@
       "artist": "Joan Jett & the Blackhearts",
       "album": "Up Your Alley",
       "duration": 246,
-      "cover": "covers/joan-jett-the-blackhearts-i-hate-myself-for-loving-you.jpg",
+      "cover": "covers/joan-jett-the-blackhearts-i-hate-myself-for-loving-you.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoia09BSUlUSmtyZVdRUUcyMkpxUEdCMyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.-wFO0ibSRqMcbfnnb57G9alEptrDa0iLXSn_nAT2S_A",
       "colors": {
         "bg": "#201513",
@@ -688,7 +534,7 @@
       "artist": "Peter Gundry",
       "album": "The Edge of Darkness",
       "duration": 191,
-      "cover": "covers/peter-gundry-the-vampire-masquerade.jpg",
+      "cover": "covers/peter-gundry-the-vampire-masquerade.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoieXJsd0MydExtY2k5TVB0N1hYMnBQayIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.Sgn0ViYep3Vx8I9m_7n7Bgc3_nRDpj4P2Tf3T_bHm1E",
       "colors": {
         "bg": "#1e1515",
@@ -709,7 +555,7 @@
       "artist": "Vanessa Paradis • -M-",
       "album": "Best Of & Variations",
       "duration": 167,
-      "cover": "covers/vanessa-paradis-m-la-seine-extrait-de-la-bande-originale-un-monstre-a-paris.jpg",
+      "cover": "covers/vanessa-paradis-m-la-seine-extrait-de-la-bande-originale-un-monstre-a-paris.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiU1dPU1JVMzJQd3NROVBYanpVSXdEQyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.uH9Lao1MdAX6ZZmcF5oBinxUHJHuz3w3rF7HA17lfw8",
       "colors": {
         "bg": "#151e1a",
@@ -876,7 +722,7 @@
       "artist": "Will Paquin",
       "album": "Chandelier",
       "duration": 127,
-      "cover": "covers/will-paquin-chandelier.jpg",
+      "cover": "covers/will-paquin-chandelier.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiNjlyaUluTlRjUWVPZXhRS0N1YVNqOSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.9miPWBnsQTZ3JT4GpRaiAHrF1aNv1O8k7S56RHbqO7c",
       "colors": {
         "bg": "#211218",
@@ -1007,7 +853,7 @@
       "artist": "Secos & Molhados",
       "album": "A volta de Secos & Molhados",
       "duration": 128,
-      "cover": "covers/secos-molhados-sangue-latino.jpg",
+      "cover": "covers/secos-molhados-sangue-latino.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiYkdJZ1BsNjBSZ25IN2s1NWhGNFFHbSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.8WYQrPxhzo5dFsCI019Y63GY5dbppSJ8nTmzU2pXzSs",
       "colors": {
         "bg": "#211512",
@@ -1086,7 +932,7 @@
       "artist": "Glimmer of Blooms",
       "album": "Can't Get You out Of My Head",
       "duration": 200,
-      "cover": "covers/glimmer-of-blooms-can-t-get-you-out-of-my-head.jpg",
+      "cover": "covers/glimmer-of-blooms-can-t-get-you-out-of-my-head.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiN1NhTXFMdXRsVkNaTm11c0xGb1luayIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.ALL6naJagUaK0B15LoZ-1A2ZPYc7DKcPjDtScNJZJ9A",
       "colors": {
         "bg": "#231b10",
@@ -1233,7 +1079,7 @@
       "artist": "El Cuarteto De Nos",
       "album": "Porfiado",
       "duration": 259,
-      "cover": "covers/el-cuarteto-de-nos-enamorado-tuyo.jpg",
+      "cover": "covers/el-cuarteto-de-nos-enamorado-tuyo.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiYVNXOElHb011WEhYVVZ3cU5FVm1tVyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.XKOhYBSOk6TMD8eZN_3t5gR7r_4MP0ys0Tk4J2IRNsY",
       "colors": {
         "bg": "#211e12",
@@ -1384,7 +1230,7 @@
       "artist": "Zcar JPG",
       "album": "Gustarme Tanto",
       "duration": 114,
-      "cover": "covers/zcar-jpg-gustarme-tanto.jpg",
+      "cover": "covers/zcar-jpg-gustarme-tanto.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiejZaN3N0UGtHOWdZQnhvYWdhT3lFayIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.QSafKzLc17Y92FSSQrfqBua3gcEtxTb-T48J15VCURI",
       "colors": {
         "bg": "#201713",
@@ -1511,7 +1357,7 @@
       "artist": "Nico Play",
       "album": "Desilusión",
       "duration": 197,
-      "cover": "covers/nico-play-la-ciruela.jpg",
+      "cover": "covers/nico-play-la-ciruela.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiZ3lhc3ZVQjVxRmk1bXoyckFPb0FiVSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.Eb4nlvl4kDTc-NmjOKJ8reJuvRJXuikh40YzFNguPN0",
       "colors": {
         "bg": "#151d1e",
@@ -1618,7 +1464,7 @@
       "artist": "Michael Bublé",
       "album": "The Essential Michael Bublé",
       "duration": 254,
-      "cover": "covers/michael-buble-cry-me-a-river.jpg",
+      "cover": "covers/michael-buble-cry-me-a-river.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoidVFpMFBQY1phdU4zVXNPWWdCSEVucyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.CTklDXOyzfns2eoVnaUybzJTem5HCdavJ914eSWOgUI",
       "colors": {
         "bg": "#1e1a15",
@@ -1781,7 +1627,7 @@
       "artist": "Porter",
       "album": "Respuesta Sensorial",
       "duration": 220,
-      "cover": "covers/porter-respuesta-sensorial.jpg",
+      "cover": "covers/porter-respuesta-sensorial.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiWHlOSUpKYmhVWkdmbHlvSFF2N0prNiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.g_a06qMWj8eNa7C8n4udadz7WngO9Ml_upBunGI6b_E",
       "colors": {
         "bg": "#1e1b15",
@@ -1940,7 +1786,7 @@
       "artist": "Will Smith",
       "album": "Aladdin (Original Motion Picture Soundtrack)",
       "duration": 209,
-      "cover": "covers/will-smith-prince-ali.jpg",
+      "cover": "covers/will-smith-prince-ali.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiRDBJa1RLbjhBSGRCNktGaWFMUjBDcSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.FVwCCzoBHTod2vQrJfQ5P02JqpFreOJnFXomTlB2B8E",
       "colors": {
         "bg": "#171122",
@@ -2187,7 +2033,7 @@
       "artist": "Isabella Fontaine",
       "album": "Inspired by Mozart",
       "duration": 227,
-      "cover": "covers/isabella-fontaine-symphony-of-a-golden-age.jpg",
+      "cover": "covers/isabella-fontaine-symphony-of-a-golden-age.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiTklQN29vYXdQNFE3Z0F4enpLeGpNOCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.qubNBqqqIRRoHcmUb8UM0Zcyfc5E3L6edIJZczaGRxg",
       "colors": {
         "bg": "#241b0f",
@@ -2208,7 +2054,7 @@
       "artist": "Julio Jaramillo",
       "album": "30 Mejores",
       "duration": 171,
-      "cover": "covers/julio-jaramillo-odiame.jpg",
+      "cover": "covers/julio-jaramillo-odiame.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiNERiWXNqeVZ0S25MSXFFM1RqQVpVYSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.DdC0S0RYWXYEUBTeig81MGSmJGROgFcWaUwMkDkdmAg",
       "colors": {
         "bg": "#211c12",
@@ -2346,7 +2192,7 @@
       "artist": "La Garfield",
       "album": "Love Paraíso",
       "duration": 212,
-      "cover": "covers/la-garfield-paraiso.jpg",
+      "cover": "covers/la-garfield-paraiso.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiTW92RFRaN3hFOUZzYlZGSWRncWFaUSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.q5cE2lQvEfvApgdz3vC5dRT2mrdR4mWG-YcO6Oswa7Y",
       "colors": {
         "bg": "#122112",
@@ -2497,7 +2343,7 @@
       "artist": "Sandro",
       "album": "Sandro Lo Mejor",
       "duration": 214,
-      "cover": "covers/sandro-porque-yo-te-amo.jpg",
+      "cover": "covers/sandro-porque-yo-te-amo.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiQ2ZFYmVia1M0akpYdkZrWTR2U2RpSCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.zC5qaXuBo_D8vmb6uEa5_h6XXjFW4sR9p8JC2yXzcos",
       "colors": {
         "bg": "#221118",
@@ -2748,7 +2594,7 @@
       "artist": "alt‐J",
       "album": "This Is All Yours",
       "duration": 209,
-      "cover": "covers/alt-j-pusher.jpg",
+      "cover": "covers/alt-j-pusher.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiWk9EZXNiSEhCWmswN1MxM3N3SWVveCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.9QYqgFqUjzzL6533eU-4-ZkHLMcte5lLB6agq1hIPXA",
       "colors": {
         "bg": "#10231a",
@@ -2899,7 +2745,7 @@
       "artist": "Fujii Kaze",
       "album": "HELP EVER HURT NEVER",
       "duration": 185,
-      "cover": "covers/fujii-kaze-shinunoga-e-wa.jpg",
+      "cover": "covers/fujii-kaze-shinunoga-e-wa.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiZHVNRktXWWphUGg4ZFh2bWlJZDdYciIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.1n60h_pn4XemLo6iyWkt777bWJ2_WnPR570JImLfBLg",
       "colors": {
         "bg": "#1e1515",
@@ -3094,7 +2940,7 @@
       "artist": "Marvin Gaye; Tammi Terrell",
       "album": "Favorites",
       "duration": 147,
-      "cover": "covers/marvin-gaye-tammi-terrell-ain-t-no-mountain-high-enough.jpg",
+      "cover": "covers/marvin-gaye-tammi-terrell-ain-t-no-mountain-high-enough.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiMkl3NmpqaHNSWkpVaXZnMEZZUzU1MyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.FBWFMBftOpScGK1-GnM8_1qr75AAtFRP30_NJiFhxQM",
       "colors": {
         "bg": "#141d1f",
@@ -3241,7 +3087,7 @@
       "artist": "KISS",
       "album": "Dynasty",
       "duration": 272,
-      "cover": "covers/kiss-i-was-made-for-lovin-you.jpg",
+      "cover": "covers/kiss-i-was-made-for-lovin-you.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiWUk2ZnBWYUc0NU1VSFRJTzhzVWk3VyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.TtnWWhboMLuMZ5IBoZPorrD_4cPIygG_LskTDJZ0bgs",
       "colors": {
         "bg": "#161f14",
@@ -3488,7 +3334,7 @@
       "artist": "Arctic Monkeys",
       "album": "AM",
       "duration": 272,
-      "cover": "covers/arctic-monkeys-do-i-wanna-know.jpg",
+      "cover": "covers/arctic-monkeys-do-i-wanna-know.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiOHlzdjV0dmFMazdPUHVWdXJlUmsySSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.9y_FvATljn1zQvsHSbdNfjfHtY1UCvEZ5TgdwDvLW3w",
       "colors": {
         "bg": "#151b1e",
@@ -3703,7 +3549,7 @@
       "artist": "Arctic Monkeys",
       "album": "AM",
       "duration": 201,
-      "cover": "covers/arctic-monkeys-r-u-mine.jpg",
+      "cover": "covers/arctic-monkeys-r-u-mine.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiUW5POXNMWFpQWVdWMWJkRVZveXRwNiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.5-qFewksFP2ONHJt5rJKJ4HFShSPcRL2O0qDVHtUXy0",
       "colors": {
         "bg": "#151b1e",
@@ -3890,7 +3736,7 @@
       "artist": "Arctic Monkeys",
       "album": "AM",
       "duration": 185,
-      "cover": "covers/arctic-monkeys-i-want-it-all.jpg",
+      "cover": "covers/arctic-monkeys-i-want-it-all.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiTTNLRFJldTI1TmU3WjRJYmRoNVR3WiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.xEsUBAsoftEFYMdbqzR8IhJsm4SveUIUvVB7WQ9dqAo",
       "colors": {
         "bg": "#151b1e",
@@ -4033,7 +3879,7 @@
       "artist": "Arctic Monkeys",
       "album": "AM",
       "duration": 161,
-      "cover": "covers/arctic-monkeys-why-d-you-only-call-me-when-you-re-high.jpg",
+      "cover": "covers/arctic-monkeys-why-d-you-only-call-me-when-you-re-high.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiYXM5UHlSNkVna1VkVWxjeFFUdXJtWSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.XD_Ii2f9dto_nS_XGH_9dSvONZzxAEUaHIOEsHDtgiM",
       "colors": {
         "bg": "#151b1e",
@@ -4172,7 +4018,7 @@
       "artist": "Esteman • Lila Downs",
       "album": "Si Volviera A Nacer",
       "duration": 224,
-      "cover": "covers/esteman-lila-downs-si-volviera-a-nacer.jpg",
+      "cover": "covers/esteman-lila-downs-si-volviera-a-nacer.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiVnBTT08yOUVhQUNxUG43QTdSaXBucCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.-JX0LTTHnzJF3_bNnwZu97H0QK3QCwvAnyjRTh7xdL4",
       "colors": {
         "bg": "#231910",
@@ -4355,7 +4201,7 @@
       "artist": "Zoé",
       "album": "MTV Unplugged Música De Fondo (Reissue/Live)",
       "duration": 254,
-      "cover": "covers/zoe-poli-love-en-vivo.jpg",
+      "cover": "covers/zoe-poli-love-en-vivo.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoibUR5TlNOaDVDV1ZzY2xLTXhhOTM0eCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.LAkf6DlcQJgh_3oLlQElb2Q505aa1L-6HHr4nkmkhfk",
       "colors": {
         "bg": "#1f1e14",
@@ -4546,7 +4392,7 @@
       "artist": "Lucky Dog • Elliot Lee",
       "album": "The Boneyard, Vol. 1",
       "duration": 147,
-      "cover": "covers/lucky-dog-elliot-lee-papertiger.jpg",
+      "cover": "covers/lucky-dog-elliot-lee-papertiger.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiMHJ3Uk5URkxXeENtOE9PNGlVZVUySiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.rvaxsVgH1XzRRjPDRcWKh0Lir4lAyku5YQojTP-Nu5Q",
       "colors": {
         "bg": "#161221",
@@ -4736,7 +4582,7 @@
       "artist": "Electric Light Orchestra",
       "album": "Discovery",
       "duration": 243,
-      "cover": "covers/electric-light-orchestra-don-t-bring-me-down.jpg",
+      "cover": "covers/electric-light-orchestra-don-t-bring-me-down.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiUUt3cE5IUHo5MnpSemRlb2Y4R09kUyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.unVH3Fv1gzVapV5zjIikcjpWAdG28nUxJ0a53W3tJkI",
       "colors": {
         "bg": "#211312",
@@ -4967,7 +4813,7 @@
       "artist": "I Monster",
       "album": "A Dense Swarm of Ancient Stars",
       "duration": 273,
-      "cover": "covers/i-monster-lust-for-a-vampyr.jpg",
+      "cover": "covers/i-monster-lust-for-a-vampyr.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiMFVDM2EyMmt5c3VGUnNVZGVlaE52YSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.IOgJwQ4Kwg0OC-nQrBaVMl81fs7PVAOhYbSMd9gZ3Z0",
       "colors": {
         "bg": "#1f1914",
@@ -5142,7 +4988,7 @@
       "artist": "Johnny Goth",
       "album": "Voulez-Vous",
       "duration": 158,
-      "cover": "covers/johnny-goth-come-2-me.jpg",
+      "cover": "covers/johnny-goth-come-2-me.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiY1hjZWZYaVdQYW92TVBlY1BTS2kyYSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.SveToNK84F-mPH0iPVEpSix7arWY72eJsfwIhBFywAI",
       "colors": {
         "bg": "#201613",
@@ -5233,7 +5079,7 @@
       "artist": "Cesare Cremonini",
       "album": "Possibili Scenari",
       "duration": 293,
-      "cover": "covers/cesare-cremonini-poetica.jpg",
+      "cover": "covers/cesare-cremonini-poetica.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiY0Z5dWd0RkVub0tpS0VDbzh2TVc0NSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.mQH9siygY23xkqe9zsa90m1dju4t8EwIFbfRgK47o2U",
       "colors": {
         "bg": "#171221",
@@ -5400,7 +5246,7 @@
       "artist": "Lykke Li • Autoerotique",
       "album": "Little Bit (feat. Autoerotique) [Remix]",
       "duration": 234,
-      "cover": "covers/lykke-li-autoerotique-little-bit-feat-autoerotique-remix.jpg",
+      "cover": "covers/lykke-li-autoerotique-little-bit-feat-autoerotique-remix.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiT3NZZ0RTRFpDRUNXTHZ4czYwYkpCdSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.Sx-tEGI9KYC6L_T7pxmvSYx6iW6ndsTJFmC3LPDzD9g",
       "colors": {
         "bg": "#1e1515",
@@ -5675,7 +5521,7 @@
       "artist": "Deorro • DyCy • Adrian Delgado",
       "album": "Perdoname (feat. DyCy & Adrian Delgado)",
       "duration": 270,
-      "cover": "covers/deorro-dycy-adrian-delgado-perdoname-feat-dycy-adrian-delgado.jpg",
+      "cover": "covers/deorro-dycy-adrian-delgado-perdoname-feat-dycy-adrian-delgado.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiOUh5NG5WN3lSbnFZTjRjN3ZRU1QwMyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.KQvJ4XeBH9r57khUPGA7s2ATCmXBjsKf73VkyzRyJGQ",
       "colors": {
         "bg": "#1e1b15",
@@ -5902,7 +5748,7 @@
       "artist": "Blood Cultures",
       "album": "Skate Story: Vol. I",
       "duration": 442,
-      "cover": "covers/blood-cultures-emptylands.jpg",
+      "cover": "covers/blood-cultures-emptylands.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiNTBmZEd5b29FQWowVmdBWG1NT0tkUiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.Sh_F-JwHF5PYSX_6X132IuWHf7eO-Kb-N7eFYf-sb_U",
       "colors": {
         "bg": "#260d0d",
@@ -6117,7 +5963,7 @@
       "artist": "The Zombies",
       "album": "Odessey and Oracle (Mono Remastered)",
       "duration": 210,
-      "cover": "covers/the-zombies-time-of-the-season-mono-remastered.jpg",
+      "cover": "covers/the-zombies-time-of-the-season-mono-remastered.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiMU1BdzNLeGw0cEVBRlFPV242VUdBRSIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.wtA8N8MaLadGXQVJqdXij72ppED4dAyL7-vopdg71F4",
       "colors": {
         "bg": "#1f2013",
@@ -6252,7 +6098,7 @@
       "artist": "SIAMES",
       "album": "BOUNCE INTO THE MUSIC",
       "duration": 246,
-      "cover": "covers/siames-mr-fear.jpg",
+      "cover": "covers/siames-mr-fear.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiU053SjduT08zRUxzRTdkZHVLalFiZyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.72XY4YadxlfBrnhY1XZH3wPmCcjr_Ls0GSJE0wlA0rU",
       "colors": {
         "bg": "#1e1915",
@@ -6435,7 +6281,7 @@
       "artist": "Mareux",
       "album": "The Perfect Girl",
       "duration": 194,
-      "cover": "covers/mareux-the-perfect-girl.jpg",
+      "cover": "covers/mareux-the-perfect-girl.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiNUZUSlFQaGVxY3VkQ2QwcGNyTW54MCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.qzgtj3tQ5-Nl6jIOT7loFv6ftaRqQyeQc4D3hi3oy04",
       "colors": {
         "bg": "#151e1b",
@@ -6586,7 +6432,7 @@
       "artist": "Muse",
       "album": "The 2nd Law",
       "duration": 281,
-      "cover": "covers/muse-madness.jpg",
+      "cover": "covers/muse-madness.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiV2VRTmFudDFkaVlDM05SVkVCNGZhWCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.43-wo-2Wiv1CKuDvZiVmaUse_4G5YWQsjsy2G1A8-6E",
       "colors": {
         "bg": "#111322",
@@ -6721,7 +6567,7 @@
       "artist": "Arawato",
       "album": "Suplentes",
       "duration": 230,
-      "cover": "covers/arawato-suplentes.jpg",
+      "cover": "covers/arawato-suplentes.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiekhtT2dGODhBaFdKNnVYTXJ6RmllVyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.bSttrW_k_RrQdk5ycMy5V2gEFUV4HA2w846Sdf79_eg",
       "colors": {
         "bg": "#1e1d15",
@@ -6900,7 +6746,7 @@
       "artist": "Elliot Moss",
       "album": "Highspeeds",
       "duration": 298,
-      "cover": "covers/elliot-moss-slip.jpg",
+      "cover": "covers/elliot-moss-slip.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiVnNsQ1RLZ2N0Z3VWRDJIWThhakQ2RyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.hn4tinTrwoO2HjffmZZU_ZpJY1Grk_OkYjRpzcePT2Y",
       "colors": {
         "bg": "#15171e",
@@ -7139,7 +6985,7 @@
       "artist": "The Taxpayers",
       "album": "\"God, Forgive These Bastards\" Songs From The Forgotten Life of Henry Turner",
       "duration": 216,
-      "cover": "covers/the-taxpayers-i-love-you-like-an-alcoholic.jpg",
+      "cover": "covers/the-taxpayers-i-love-you-like-an-alcoholic.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiemJ3NXFtNzhvV25ONmlSeHZ3b2YwZyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.ec-ax6X1259RlH7wQqqPUDaq4JyCbXcyg4UTGJccVmQ",
       "colors": {
         "bg": "#111122",
@@ -7306,7 +7152,7 @@
       "artist": "Muse",
       "album": "Absolution",
       "duration": 228,
-      "cover": "covers/muse-endlessly.jpg",
+      "cover": "covers/muse-endlessly.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiT25ETnM2WXdJTTJ3WEFyZ01LSHhhNiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.N6RrAq-2e0QHmLf865xTqUoxulOUwT7rno_Iwi6YROA",
       "colors": {
         "bg": "#121821",
@@ -7417,7 +7263,7 @@
       "artist": "BØRNS",
       "album": "Dopamine",
       "duration": 218,
-      "cover": "covers/b-rns-electric-love.jpg",
+      "cover": "covers/b-rns-electric-love.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiSkhpdFk5RlBpWFdGYTAydUo5cFVxMyIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.wPjmXs94FSmahmw_1lmYvA5f5LfVZv8ARBG-ztJ8dpY",
       "colors": {
         "bg": "#211512",
@@ -7556,7 +7402,7 @@
       "artist": "Reyno",
       "album": "Viaje Por Lo Eterno",
       "duration": 209,
-      "cover": "covers/reyno-dos-mundos.jpg",
+      "cover": "covers/reyno-dos-mundos.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiOWNDWDR3TGdMQXZyTllsbW5TWkNYdCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.ICKgjm4bbMM6r_HRxvtJjaaxb9QtyWo_RjfEwjxKU10",
       "colors": {
         "bg": "#201813",
@@ -7707,7 +7553,7 @@
       "artist": "The Neighbourhood",
       "album": "Hard To Imagine The Neighbourhood Ever Changing",
       "duration": 222,
-      "cover": "covers/the-neighbourhood-scary-love.jpg",
+      "cover": "covers/the-neighbourhood-scary-love.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiYnJwZGdBTUdMWHFrdzI2WjRWdERUNiIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.idcgwKQgstvYknDvGRyHsE7n9pE8LwFRD35tRbRQxeM",
       "colors": {
         "bg": "#231610",
@@ -7942,7 +7788,7 @@
       "artist": "Gorillaz; Tame Impala; Bootie Brown",
       "album": "Cracker Island",
       "duration": 215,
-      "cover": "covers/gorillaz-tame-impala-bootie-brown-new-gold-feat-tame-impala-and-bootie-brown.jpg",
+      "cover": "covers/gorillaz-tame-impala-bootie-brown-new-gold-feat-tame-impala-and-bootie-brown.webp",
       "streamUrl": "https://mu.richard69.lat/share/s/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4MjAxNzYwOTIsImlkIjoiSGtSV1h1bE4wVjdFMkUxaVpuU05qOCIsImlzcyI6Ik5EIiwic2lkIjoielhxeER5ek9BUCJ9.ATwiZbrbExDJJSX7ZPrTF0iLOjVd-1hvU6DtlI5YLvg",
       "colors": {
         "bg": "#221116",

@@ -1,10 +1,5 @@
 {
   "_como_usar": "Copia a src/data/dedications.json las canciones que quieras. Claves opcionales: dedication, highlightAt (\"m:ss\"), highlightFrom, highlightTo, fragmentNote, lyricsOffset (segundos: + si la letra va adelantada, - si atrasada), lyricsSource (\"lrclib\" | \"embedded\" | \"none\" para forzar / omitir la letra en el próximo pull).",
-  "zoe-via-lactea-en-vivo": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
   "daft-punk-something-about-us": {
     "dedication": "",
     "highlightAt": "",
