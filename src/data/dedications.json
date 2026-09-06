@@ -1,7 +1,8 @@
 {
   "daft-punk-something-about-us": {
     "dedication": "No lo vi venir, pero contigo todo encaja.",
-    "highlightAt": "1:48",
+    "highlightFrom": "1:45",
+    "highlightTo": "2:06",
     "fragmentNote": "el coro: hay algo entre los dos"
   },
   "la-gusana-ciega-californica": {
