@@ -60,6 +60,14 @@ describe('markedIndices', () => {
   it('rango con highlightAt + highlightTo (sin highlightFrom)', () => {
     expect(markedIndices({ highlightAt: '0:30', highlightTo: '1:00' }, lines)).toEqual([1, 2]);
   });
+  it('rango incluye la línea que empieza dentro del segundo final (decimales del LRC)', () => {
+    const frac: Line[] = [
+      { t: 63.04, text: 'a' },
+      { t: 68.04, text: 'b' },
+      { t: 71.8, text: 'c' },
+    ];
+    expect(markedIndices({ highlightFrom: '1:03', highlightTo: '1:08' }, frac)).toEqual([0, 1]);
+  });
   it('punto: marca la línea activa en ese instante', () => {
     expect(markedIndices({ highlightAt: '1:05' }, lines)).toEqual([2]);
     expect(markedIndices({ highlightAt: '0:00' }, lines)).toEqual([0]);

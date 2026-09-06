@@ -44,11 +44,12 @@ export function markedIndices(d: Dedication, lines: Line[]): number[] {
   const from = parseTime(d.highlightFrom) ?? (to != null ? at : null);
 
   if (from != null && to != null) {
-    const lo = Math.min(from, to);
-    const hi = Math.max(from, to);
+    // el LRC trae decimales; una línea entra si empieza dentro del segundo indicado
+    const lo = Math.floor(Math.min(from, to));
+    const hi = Math.floor(Math.max(from, to)) + 1;
     const out: number[] = [];
     lines.forEach((l, i) => {
-      if (l.t != null && l.t >= lo && l.t <= hi) out.push(i);
+      if (l.t != null && l.t >= lo && l.t < hi) out.push(i);
     });
     return out;
   }
