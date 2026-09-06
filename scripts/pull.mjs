@@ -23,8 +23,8 @@ const {
   NAVIDROME_USER,
   NAVIDROME_PASS,
   PLAYLIST_NAME = 'Fa',
-  NAVIDROME_SHARE_FORMAT = 'opus',
-  NAVIDROME_SHARE_BITRATE = '96',
+  NAVIDROME_SHARE_FORMAT = 'mp3',
+  NAVIDROME_SHARE_BITRATE = '128',
 } = process.env;
 
 const ALLOW_TOKEN = process.argv.includes('--allow-token');
