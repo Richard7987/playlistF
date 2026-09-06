@@ -406,6 +406,7 @@ function start(tracks: Track[]) {
   });
   audio.addEventListener('loadedmetadata', () => tick(true));
   audio.addEventListener('loadeddata', () => (loadError.hidden = true));
+  audio.addEventListener('timeupdate', () => tick());
   audio.addEventListener('seeked', () => tick(true));
   audio.addEventListener('ended', () => show(idx + 1));
   audio.addEventListener('error', () => {

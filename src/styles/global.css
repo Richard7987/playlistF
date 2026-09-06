@@ -547,6 +547,9 @@ body {
 }
 
 @media (max-width: 520px) {
+  .transport {
+    justify-content: center;
+  }
   .vol {
     order: 3;
   }
@@ -602,6 +605,7 @@ body {
   top: 0;
   padding: 42% 0;
   transition: transform 0.6s var(--ease);
+  will-change: transform;
 }
 
 .lyrics.unsynced .lyrics-inner {
@@ -655,6 +659,20 @@ body {
 .line.farther {
   opacity: 0.16;
   filter: blur(3px);
+}
+
+/* móvil: el blur en decenas de líneas ahoga la GPU y la letra se retrasa */
+@media (max-width: 880px) {
+  .lyrics-inner {
+    transition-duration: 0.36s;
+  }
+  .line {
+    transition-duration: 0.32s;
+  }
+  .line.far,
+  .line.farther {
+    filter: none;
+  }
 }
 
 .line.active {
