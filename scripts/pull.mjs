@@ -181,20 +181,22 @@ async function ensureShare(playlistId, songIds) {
   if (wantTranscode) {
     try {
       const headers = await nativeLogin();
-      const payload = {
+      // el formato solo se fija al CREAR el share: si existe uno viejo (o sin transcode), se borra
+      if (existing) {
+        await nativeShare(headers, 'DELETE', `/${existing.id}`).catch((e) => console.warn(`· borrar share viejo: ${e.message}`));
+        existing = null;
+      }
+      const share = await nativeShare(headers, 'POST', '', {
         description: tag,
         downloadable: false,
         resourceType: 'playlist',
         resourceIds: playlistId,
         format,
         maxBitRate,
-      };
-      const share = existing
-        ? await nativeShare(headers, 'PUT', `/${existing.id}`, payload).then(() => ({ id: existing.id }))
-        : await nativeShare(headers, 'POST', '', payload);
-      const id = share.id || existing?.id;
+      });
+      const id = share.id;
       if (id) {
-        console.log(`· share ${existing ? 'actualizado' : 'creado'} (${format} ${maxBitRate}k): ${BASE}/share/${id}`);
+        console.log(`· share creado (${format} ${maxBitRate}k): ${BASE}/share/${id}`);
         return { id, url: `${BASE}/share/${id}`, expires: null };
       }
     } catch (e) {
