@@ -38,9 +38,10 @@ export function parseTime(v: string | number | null | undefined): number | null 
 /** Índices de las líneas marcadas por la dedicatoria (rango o punto). */
 export function markedIndices(d: Dedication, lines: Line[]): number[] {
   if (!lines.length) return [];
-  const from = parseTime(d.highlightFrom);
   const to = parseTime(d.highlightTo);
   const at = parseTime(d.highlightAt);
+  // rango: highlightFrom..highlightTo, o highlightAt..highlightTo si no hay highlightFrom
+  const from = parseTime(d.highlightFrom) ?? (to != null ? at : null);
 
   if (from != null && to != null) {
     const lo = Math.min(from, to);

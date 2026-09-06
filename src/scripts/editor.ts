@@ -1,4 +1,4 @@
-import { parseTime, shiftLines, type Dedication, type Line } from '../lib/time';
+import { markedIndices, shiftLines, type Dedication, type Line } from '../lib/time';
 
 interface EdTrack {
   slug: string;
@@ -79,20 +79,7 @@ function run(data: { tracks: EdTrack[]; dedications: Record<string, Dedication> 
   }
 
   function markedSet(): Set<number> {
-    const from = parseTime(entry.highlightFrom);
-    const to = parseTime(entry.highlightTo);
-    const at = parseTime(entry.highlightAt);
-    const out = new Set<number>();
-    if (from != null && to != null) {
-      const lo = Math.min(from, to);
-      const hi = Math.max(from, to);
-      lines.forEach((l, i) => l.t != null && l.t >= lo && l.t <= hi && out.add(i));
-    } else if (at != null) {
-      let best = -1;
-      lines.forEach((l, i) => l.t != null && l.t <= at && (best = i));
-      if (best >= 0) out.add(best);
-    }
-    return out;
+    return new Set(markedIndices(entry, lines));
   }
 
   function paintMarks() {

@@ -57,6 +57,9 @@ describe('markedIndices', () => {
   it('rango invertido: se ordena solo', () => {
     expect(markedIndices({ highlightFrom: '1:00', highlightTo: '0:30' }, lines)).toEqual([1, 2]);
   });
+  it('rango con highlightAt + highlightTo (sin highlightFrom)', () => {
+    expect(markedIndices({ highlightAt: '0:30', highlightTo: '1:00' }, lines)).toEqual([1, 2]);
+  });
   it('punto: marca la línea activa en ese instante', () => {
     expect(markedIndices({ highlightAt: '1:05' }, lines)).toEqual([2]);
     expect(markedIndices({ highlightAt: '0:00' }, lines)).toEqual([0]);
