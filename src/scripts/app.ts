@@ -361,7 +361,8 @@ function start(tracks: Track[]) {
   }
   let storedVol = 1;
   try {
-    const v = Number(localStorage.getItem('fa:vol'));
+    const raw = localStorage.getItem('fa:vol');
+    const v = raw == null ? NaN : Number(raw);
     if (v >= 0 && v <= 1) storedVol = v;
   } catch {
     /* almacenamiento no disponible */
