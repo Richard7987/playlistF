@@ -72,6 +72,8 @@ function start(tracks: Track[]) {
 
   let idx = 0;
   let wantPlaying = false;
+  let recoverTimer = 0;
+  let recoverTries = 0;
 
   let lineEls: HTMLElement[] = [];
   let lineTimes: (number | null)[] = [];
@@ -300,6 +302,9 @@ function start(tracks: Track[]) {
     tl?.kill();
     gsap.killTweensOf([...OUT, frameMax]);
     clearPreload();
+    clearTimeout(recoverTimer);
+    recoverTimer = 0;
+    recoverTries = 0;
 
     if (instant || reduce) {
       setFrameMax(target);
@@ -374,17 +379,25 @@ function start(tracks: Track[]) {
     updateVolIcon();
   });
 
+  // Solo precargamos la siguiente pista en conexiones holgadas: los FLAC son grandes
+  // (~20 MB) y en móvil compiten con el stream actual y lo hacen tartamudear.
+  function goodConnection() {
+    const c = (navigator as { connection?: { saveData?: boolean; effectiveType?: string } }).connection;
+    if (!c) return true;
+    return !c.saveData && (c.effectiveType === undefined || c.effectiveType === '4g');
+  }
   let preloadEl: HTMLAudioElement | null = null;
   let preloadTimer = 0;
   function schedulePreload() {
     clearTimeout(preloadTimer);
+    if (!goodConnection()) return;
     preloadTimer = window.setTimeout(() => {
       const next = tracks[(idx + 1) % tracks.length];
-      if (!next.streamUrl) return;
+      if (!next.streamUrl || !goodConnection()) return;
       preloadEl = new Audio();
       preloadEl.preload = 'auto';
       preloadEl.src = next.streamUrl;
-    }, 4000);
+    }, 8000);
   }
   function clearPreload() {
     clearTimeout(preloadTimer);
@@ -392,6 +405,31 @@ function start(tracks: Track[]) {
       preloadEl.removeAttribute('src');
       preloadEl = null;
     }
+  }
+
+  // Recuperación ante cortes de red / servidor: reintenta desde donde iba.
+  function scheduleRecover() {
+    if (!wantPlaying || audio.ended || recoverTimer) return;
+    recoverTimer = window.setTimeout(() => {
+      recoverTimer = 0;
+      if (!wantPlaying || audio.ended) return;
+      if (audio.readyState >= 3 && !audio.paused) return;
+      if (recoverTries >= 4) {
+        loadError.hidden = false;
+        return;
+      }
+      recoverTries++;
+      const at = audio.currentTime;
+      const src = tracks[idx].streamUrl;
+      audio.src = src;
+      audio.load();
+      const back = () => {
+        audio.currentTime = at;
+        audio.play().catch(() => {});
+        audio.removeEventListener('loadedmetadata', back);
+      };
+      audio.addEventListener('loadedmetadata', back);
+    }, 2500);
   }
 
   audio.addEventListener('play', () => {
@@ -405,13 +443,22 @@ function start(tracks: Track[]) {
     setPlaying(false);
     if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
   });
+  audio.addEventListener('playing', () => {
+    recoverTries = 0;
+    loadError.hidden = true;
+  });
   audio.addEventListener('loadedmetadata', () => tick(true));
   audio.addEventListener('loadeddata', () => (loadError.hidden = true));
   audio.addEventListener('timeupdate', () => tick());
   audio.addEventListener('seeked', () => tick(true));
-  audio.addEventListener('ended', () => show(idx + 1));
+  audio.addEventListener('ended', () => {
+    recoverTries = 0;
+    show(idx + 1);
+  });
+  audio.addEventListener('stalled', scheduleRecover);
+  audio.addEventListener('waiting', scheduleRecover);
   audio.addEventListener('error', () => {
-    if (audio.src) loadError.hidden = false;
+    if (audio.src) scheduleRecover();
   });
 
   let resizeRaf = 0;

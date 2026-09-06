@@ -23,9 +23,16 @@ export default defineConfig({
         theme_color: '#08070b',
       },
       workbox: {
-        globPatterns: ['**/*.{html,js,css,woff2,webp,svg}'],
-        navigateFallback: '/playlistF/index.html',
+        globPatterns: ['**/*.{js,css,woff2,webp,svg}'],
         navigateFallbackDenylist: [/^\/playlistF\/editor/],
+        runtimeCaching: [
+          {
+            // el HTML lleva las URLs de streaming embebidas: siempre red primero
+            urlPattern: ({ request, sameOrigin }) => sameOrigin && request.mode === 'navigate',
+            handler: 'NetworkFirst',
+            options: { cacheName: 'html', networkTimeoutSeconds: 4, expiration: { maxEntries: 8 } },
+          },
+        ],
       },
       devOptions: { enabled: false },
     }),
