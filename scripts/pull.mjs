@@ -23,6 +23,8 @@ const {
   NAVIDROME_USER,
   NAVIDROME_PASS,
   PLAYLIST_NAME = 'Fa',
+  NAVIDROME_SHARE_FORMAT = 'opus',
+  NAVIDROME_SHARE_BITRATE = '96',
 } = process.env;
 
 const ALLOW_TOKEN = process.argv.includes('--allow-token');
@@ -133,17 +135,76 @@ async function palette(buf) {
   return { bg, bgAlt, accent, text, muted };
 }
 
+// API nativa de Navidrome: sirve para crear un share que TRANSCODIFICA (format + maxBitRate),
+// cosa que el createShare de Subsonic no permite. El transcode se fija al crear el share.
+async function nativeLogin() {
+  const res = await fetchT(`${BASE}/auth/login`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ username: NAVIDROME_USER, password: NAVIDROME_PASS }),
+  });
+  if (!res.ok) throw new Error(`auth/login: HTTP ${res.status}`);
+  const body = await res.json();
+  if (!body.token) throw new Error('auth/login sin token');
+  return {
+    'x-nd-authorization': `Bearer ${body.token}`,
+    'x-nd-client-unique-id': 'playlistF-pull',
+    'content-type': 'application/json',
+  };
+}
+
+async function nativeShare(headers, method, path, payload) {
+  const res = await fetchT(`${BASE}/api/share${path}`, {
+    method,
+    headers,
+    body: payload ? JSON.stringify(payload) : undefined,
+  });
+  const text = await res.text();
+  if (!res.ok) throw new Error(`api/share ${method}: HTTP ${res.status} ${text.slice(0, 120)}`);
+  return text ? JSON.parse(text) : {};
+}
+
 async function ensureShare(playlistId, songIds) {
   const tag = `playlistF:${PLAYLIST_NAME}`;
+  const format = NAVIDROME_SHARE_FORMAT.trim().toLowerCase();
+  const maxBitRate = Number(NAVIDROME_SHARE_BITRATE) || 0;
+  const wantTranscode = format && format !== 'raw' && format !== 'original';
+
+  let existing = null;
   try {
     const r = await sub('getShares');
-    const found = (r.shares?.share || []).find((s) => s.description === tag);
-    if (found?.url) {
-      console.log(`· share reutilizado: ${found.url}`);
-      return { id: found.id, url: found.url.replace(/\/+$/, ''), expires: found.expires || null };
-    }
+    existing = (r.shares?.share || []).find((s) => s.description === tag) || null;
   } catch (e) {
     console.warn(`· getShares: ${e.message}`);
+  }
+
+  if (wantTranscode) {
+    try {
+      const headers = await nativeLogin();
+      const payload = {
+        description: tag,
+        downloadable: false,
+        resourceType: 'playlist',
+        resourceIds: playlistId,
+        format,
+        maxBitRate,
+      };
+      const share = existing
+        ? await nativeShare(headers, 'PUT', `/${existing.id}`, payload).then(() => ({ id: existing.id }))
+        : await nativeShare(headers, 'POST', '', payload);
+      const id = share.id || existing?.id;
+      if (id) {
+        console.log(`· share ${existing ? 'actualizado' : 'creado'} (${format} ${maxBitRate}k): ${BASE}/share/${id}`);
+        return { id, url: `${BASE}/share/${id}`, expires: null };
+      }
+    } catch (e) {
+      console.warn(`· share con transcode (${e.message}) — sigo con FLAC crudo`);
+    }
+  }
+
+  if (existing?.url) {
+    console.log(`· share reutilizado: ${existing.url}`);
+    return { id: existing.id, url: existing.url.replace(/\/+$/, ''), expires: existing.expires || null };
   }
   for (const attempt of [{ id: playlistId }, ...(songIds.length ? [{ ids: songIds }] : [])]) {
     try {
@@ -155,7 +216,7 @@ async function ensureShare(playlistId, songIds) {
       if (body?.status !== 'ok') throw new Error(body?.error?.message || 'no ok');
       const share = body.shares?.share?.[0];
       if (share?.url) {
-        console.log(`· share creado: ${share.url}`);
+        console.log(`· share creado (FLAC crudo): ${share.url}`);
         return { id: share.id, url: share.url.replace(/\/+$/, ''), expires: share.expires || null };
       }
     } catch (e) {
