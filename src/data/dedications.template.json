@@ -10,32 +10,7 @@
     "highlightAt": "",
     "lyricsOffset": 0
   },
-  "dead-poet-society-georgia": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "joan-jett-the-blackhearts-i-hate-myself-for-loving-you": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "peter-gundry-the-vampire-masquerade": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
   "vanessa-paradis-m-la-seine-extrait-de-la-bande-originale-un-monstre-a-paris": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "will-paquin-chandelier": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "secos-molhados-sangue-latino": {
     "dedication": "",
     "highlightAt": "",
     "lyricsOffset": 0
@@ -60,27 +35,7 @@
     "highlightAt": "",
     "lyricsOffset": 0
   },
-  "michael-buble-cry-me-a-river": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
   "porter-respuesta-sensorial": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "will-smith-prince-ali": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "isabella-fontaine-symphony-of-a-golden-age": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "julio-jaramillo-odiame": {
     "dedication": "",
     "highlightAt": "",
     "lyricsOffset": 0
@@ -91,16 +46,6 @@
     "lyricsOffset": 0
   },
   "sandro-porque-yo-te-amo": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "alt-j-pusher": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "fujii-kaze-shinunoga-e-wa": {
     "dedication": "",
     "highlightAt": "",
     "lyricsOffset": 0
@@ -125,37 +70,12 @@
     "highlightAt": "",
     "lyricsOffset": 0
   },
-  "arctic-monkeys-i-want-it-all": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "arctic-monkeys-why-d-you-only-call-me-when-you-re-high": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
   "esteman-lila-downs-si-volviera-a-nacer": {
     "dedication": "",
     "highlightAt": "",
     "lyricsOffset": 0
   },
   "zoe-poli-love-en-vivo": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "lucky-dog-elliot-lee-papertiger": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "electric-light-orchestra-don-t-bring-me-down": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "i-monster-lust-for-a-vampyr": {
     "dedication": "",
     "highlightAt": "",
     "lyricsOffset": 0
@@ -175,22 +95,7 @@
     "highlightAt": "",
     "lyricsOffset": 0
   },
-  "deorro-dycy-adrian-delgado-perdoname-feat-dycy-adrian-delgado": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "blood-cultures-emptylands": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
   "the-zombies-time-of-the-season-mono-remastered": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "siames-mr-fear": {
     "dedication": "",
     "highlightAt": "",
     "lyricsOffset": 0
@@ -200,22 +105,7 @@
     "highlightAt": "",
     "lyricsOffset": 0
   },
-  "muse-madness": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "arawato-suplentes": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
   "elliot-moss-slip": {
-    "dedication": "",
-    "highlightAt": "",
-    "lyricsOffset": 0
-  },
-  "the-taxpayers-i-love-you-like-an-alcoholic": {
     "dedication": "",
     "highlightAt": "",
     "lyricsOffset": 0
@@ -230,12 +120,102 @@
     "highlightAt": "",
     "lyricsOffset": 0
   },
-  "reyno-dos-mundos": {
+  "the-neighbourhood-scary-love": {
     "dedication": "",
     "highlightAt": "",
     "lyricsOffset": 0
   },
-  "the-neighbourhood-scary-love": {
+  "joan-jett-the-blackhearts-i-hate-myself-for-loving-you": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "peter-gundry-the-vampire-masquerade": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "secos-molhados-sangue-latino": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "michael-buble-cry-me-a-river": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "will-smith-prince-ali": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "isabella-fontaine-symphony-of-a-golden-age": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "julio-jaramillo-odiame": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "fujii-kaze-shinunoga-e-wa": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "arctic-monkeys-why-d-you-only-call-me-when-you-re-high": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "lucky-dog-elliot-lee-papertiger": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "electric-light-orchestra-don-t-bring-me-down": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "i-monster-lust-for-a-vampyr": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "deorro-dycy-adrian-delgado-perdoname-feat-dycy-adrian-delgado": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "blood-cultures-emptylands": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "siames-mr-fear": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "muse-madness": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "arawato-suplentes": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "the-taxpayers-i-love-you-like-an-alcoholic": {
+    "dedication": "",
+    "highlightAt": "",
+    "lyricsOffset": 0
+  },
+  "reyno-dos-mundos": {
     "dedication": "",
     "highlightAt": "",
     "lyricsOffset": 0
