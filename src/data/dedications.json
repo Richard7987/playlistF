@@ -1,9 +1,114 @@
 {
   "daft-punk-something-about-us": {
-    "dedication": "Sin letra durante minuto y medio y aun así ya lo había dicho todo.",
-    "highlightFrom": "1:45",
-    "highlightTo": "2:00",
-    "fragmentNote": "este tramo"
+    "dedication": "No lo vi venir, pero contigo todo encaja.",
+    "highlightAt": "1:48",
+    "fragmentNote": "el coro: hay algo entre los dos"
+  },
+  "la-gusana-ciega-californica": {
+    "dedication": "Eres mi verano en pleno invierno.",
+    "fragmentNote": "el estribillo, cuando te compara con algo cálido"
+  },
+  "vanessa-paradis-m-la-seine-extrait-de-la-bande-originale-un-monstre-a-paris": {
+    "dedication": "Contigo hasta perderme por cualquier calle está bien.",
+    "fragmentNote": "la invitación a pasear juntos sin rumbo"
+  },
+  "glimmer-of-blooms-can-t-get-you-out-of-my-head": {
+    "dedication": "Llevo días con tu nombre en la cabeza.",
+    "highlightAt": "0:17",
+    "fragmentNote": "el estribillo: no puedo sacarte de mi cabeza"
+  },
+  "el-cuarteto-de-nos-enamorado-tuyo": {
+    "dedication": "Desde que llegaste, todo me sabe distinto.",
+    "fragmentNote": "la estrofa donde enumera lo que provoca esa persona"
+  },
+  "zcar-jpg-gustarme-tanto": {
+    "dedication": "No esperaba que me gustaras tanto.",
+    "highlightAt": "0:13",
+    "fragmentNote": "el coro: la confesión de gustarle tanto"
+  },
+  "nico-play-la-ciruela": {
+    "dedication": "Nunca te lo he dicho, pero eres lo único que quiero.",
+    "fragmentNote": "la primera estrofa: es lo único que quiero"
+  },
+  "porter-respuesta-sensorial": {
+    "dedication": "Me da miedo decirlo, pero prefiero arriesgarme contigo.",
+    "fragmentNote": "el puente, donde admite el miedo"
+  },
+  "la-garfield-paraiso": {
+    "dedication": "Contigo encontré mi paraíso.",
+    "highlightAt": "1:06",
+    "fragmentNote": "el coro, cuando nombra el paraíso"
+  },
+  "sandro-porque-yo-te-amo": {
+    "dedication": "Simple: porque te amo.",
+    "fragmentNote": "el estribillo, la declaración directa"
+  },
+  "marvin-gaye-tammi-terrell-ain-t-no-mountain-high-enough": {
+    "dedication": "No hay obstáculo que me detenga para llegar a ti.",
+    "fragmentNote": "el coro, la promesa de cruzar cualquier distancia"
+  },
+  "kiss-i-was-made-for-lovin-you": {
+    "dedication": "Siento que estaba hecho para quererte.",
+    "highlightAt": "1:08",
+    "fragmentNote": "el estribillo, el título repetido"
+  },
+  "arctic-monkeys-do-i-wanna-know": {
+    "dedication": "¿Tú también piensas en mí a estas horas?",
+    "highlightAt": "1:13",
+    "fragmentNote": "el coro, pensar en alguien de madrugada"
+  },
+  "arctic-monkeys-r-u-mine": {
+    "dedication": "Solo quiero saber si eres mío.",
+    "highlightAt": "0:36",
+    "fragmentNote": "el estribillo, la pregunta del título"
+  },
+  "esteman-lila-downs-si-volviera-a-nacer": {
+    "dedication": "Si pudiera volver a nacer, te volvería a elegir.",
+    "fragmentNote": "el coro: volver a nacer y elegir de nuevo"
+  },
+  "zoe-poli-love-en-vivo": {
+    "dedication": "Contigo el amor se siente ligero.",
+    "fragmentNote": "la parte donde el amor casi flota"
+  },
+  "johnny-goth-come-2-me": {
+    "dedication": "Ven a mí, aquí siempre vas a tener un lugar.",
+    "fragmentNote": "el coro, la invitación directa"
+  },
+  "cesare-cremonini-poetica": {
+    "dedication": "Contigo hasta lo simple se vuelve poesía.",
+    "fragmentNote": "el estribillo, la relación como algo poético"
+  },
+  "lykke-li-autoerotique-little-bit-feat-autoerotique-remix": {
+    "dedication": "Solo quiero un poco más de ti.",
+    "highlightAt": "0:34",
+    "fragmentNote": "el coro, pidiendo un poco más"
+  },
+  "the-zombies-time-of-the-season-mono-remastered": {
+    "dedication": "Esta es justo la época para enamorarme de ti.",
+    "fragmentNote": "el verso de apertura: es la época del año"
+  },
+  "mareux-the-perfect-girl": {
+    "dedication": "Para mí, eres justo lo que imaginaba.",
+    "fragmentNote": "el coro, la idea de la chica perfecta"
+  },
+  "elliot-moss-slip": {
+    "dedication": "Contigo no me importa perder el control.",
+    "highlightAt": "1:08",
+    "fragmentNote": "la parte de resbalar / perder el control"
+  },
+  "muse-endlessly": {
+    "dedication": "Te voy a querer sin condiciones, sin final.",
+    "highlightAt": "0:38",
+    "fragmentNote": "el estribillo, amar sin fin"
+  },
+  "b-rns-electric-love": {
+    "dedication": "Contigo todo se siente eléctrico.",
+    "highlightAt": "1:07",
+    "fragmentNote": "el coro, electric love repetido"
+  },
+  "the-neighbourhood-scary-love": {
+    "dedication": "Me da miedo lo que siento, pero no quiero que pare.",
+    "fragmentNote": "el estribillo, el amor como algo que asusta"
   },
   "peter-gundry-the-vampire-masquerade": {
     "lyricsSource": "none"

@@ -1,0 +1,27 @@
+# Orden deseado de la playlist "Fa": estas van primero, en este orden.
+# El resto quedan detrás en su orden actual. Formato: Artista — Título (basta con un trozo).
+Daft Punk — Something About Us
+La Gusana Ciega — Califórnica
+Vanessa Paradis — La Seine
+Glimmer of Blooms — Can't Get You out Of My Head
+El Cuarteto De Nos — Enamorado tuyo
+Zcar JPG — Gustarme Tanto
+Nico Play — La Ciruela
+Porter — Respuesta Sensorial
+La Garfield — Paraíso
+Sandro — Porque Yo Te Amo
+Marvin Gaye — Ain't No Mountain High Enough
+KISS — I Was Made For Lovin' You
+Arctic Monkeys — Do I Wanna Know?
+Arctic Monkeys — R U Mine?
+Esteman — Si Volviera A Nacer
+Zoé — Poli / Love
+Johnny Goth — Come 2 Me
+Cesare Cremonini — Poetica
+Lykke Li — Little Bit
+The Zombies — Time of the Season
+Mareux — The Perfect Girl
+Elliot Moss — Slip
+Muse — Endlessly
+BØRNS — Electric Love
+The Neighbourhood — Scary Love

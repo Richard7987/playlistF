@@ -10,7 +10,8 @@
     "check": "astro check",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "pull": "node --env-file=.env scripts/pull.mjs"
+    "pull": "node --env-file=.env scripts/pull.mjs",
+    "reorder": "node --env-file=.env scripts/reorder.mjs"
   },
   "dependencies": {
     "@fontsource/fraunces": "^5.3.0",
